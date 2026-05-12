@@ -35,16 +35,56 @@ npm run preview  # serve dist/ local
 
 ## Configuração antes do deploy
 
+### 1. URL pública do site (OBRIGATÓRIO para SEO/OG)
+
+Copie `.env.example` para `.env` e ajuste:
+
+```bash
+cp .env.example .env
+```
+
+```env
+VITE_SITE_URL=https://meu-dominio-real.com
+```
+
+Esse valor é injetado em todas as meta `og:*`, `twitter:*`, `canonical` e
+`sitemap.xml`. Se ficar errado, **WhatsApp/Facebook/LinkedIn não conseguem
+carregar a imagem de preview**.
+
+Vercel/Netlify: setar `VITE_SITE_URL` como Environment Variable do projeto.
+
+### 2. WhatsApp
+
 Edite [src/config/site.ts](src/config/site.ts):
 
 ```ts
 export const WHATSAPP_NUMBER = '5511999999999'; // formato internacional
 ```
 
+### 3. Dados institucionais
+
 Substitua os placeholders em:
 - [src/components/layout/Footer.tsx](src/components/layout/Footer.tsx) — endereço, CNPJ
 - [src/pages/Privacidade.tsx](src/pages/Privacidade.tsx) — razão social, DPO
 - [src/pages/Termos.tsx](src/pages/Termos.tsx) — razão social, foro
+
+### 4. Imagens sociais (regenerar se quiser ajustar)
+
+```bash
+npm run og
+```
+
+Gera `og-image.png` (1200×630), `og-image-square.png` (1200×1200) e
+`twitter-card.png` (1600×900) em `public/`. Edite `scripts/make-og.mjs`
+pra mudar tagline ou estilo.
+
+### 5. Validar preview antes de divulgar
+
+Depois de fazer o deploy, valide o preview do link em:
+- WhatsApp: [opengraph.xyz](https://www.opengraph.xyz/) — cola a URL
+- Facebook: [Sharing Debugger](https://developers.facebook.com/tools/debug/)
+- LinkedIn: [Post Inspector](https://www.linkedin.com/post-inspector/)
+- Twitter/X: [Card Validator](https://cards-dev.twitter.com/validator)
 
 ## Estrutura
 

@@ -9,7 +9,7 @@ type Props = {
   noindex?: boolean;
 };
 
-const SITE_URL = 'https://iprotector.com.br';
+const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://iprotector.com.br').replace(/\/+$/, '');
 const DEFAULT_IMAGE = '/og-image.png';
 
 export function SEO({
@@ -36,6 +36,8 @@ export function SEO({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={imgUrl} />
+      <meta property="og:image:secure_url" content={imgUrl} />
+      <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
