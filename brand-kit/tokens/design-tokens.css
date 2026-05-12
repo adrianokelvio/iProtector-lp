@@ -1,0 +1,107 @@
+/* ============================================================
+   iProtector — Design Tokens (CSS variables)
+   Cole esse :root no início do seu CSS pra ter acesso completo.
+   ============================================================ */
+
+:root {
+  /* ---------- COLOR · NAVY (background system) ---------- */
+  --color-navy-100: #1A3258;    /* surfaces ativas */
+  --color-navy-200: #122847;    /* cards e modais */
+  --color-navy-300: #0A1A2F;    /* superfícies */
+  --color-navy-400: #06101F;    /* background base */
+  --color-navy-500: #050B17;    /* fade profundo */
+
+  /* ---------- COLOR · GOLD (brand accent) ---------- */
+  --color-gold-100: #E8CC8B;    /* highlight claro */
+  --color-gold-200: #C9A961;    /* gold padrão (CTAs) */
+  --color-gold-300: #8E7438;    /* hover / pressed */
+  --color-gold-soft: rgba(201, 169, 97, 0.14);
+
+  /* ---------- COLOR · ACCENTS ---------- */
+  --color-signal:  #4FB3FF;     /* azul operacional / tech */
+  --color-emerald: #34D399;     /* verde ativo / ok */
+  --color-danger:  #E5484D;     /* vermelho emergência */
+
+  /* ---------- COLOR · NEUTRALS ---------- */
+  --color-fg:      #F4F6FA;     /* texto principal */
+  --color-fg-dim:  #C7CFDB;     /* texto secundário */
+  --color-muted:   #9AA4B2;     /* texto auxiliar */
+  --color-muted-2: #6B7585;     /* texto desativado */
+
+  /* ---------- COLOR · LINES ---------- */
+  --color-line:        rgba(244, 246, 250, 0.08);
+  --color-line-strong: rgba(244, 246, 250, 0.14);
+
+  /* ---------- TYPOGRAPHY ---------- */
+  --font-display: 'Manrope', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+
+  --fs-h1:       clamp(36px, 5vw, 64px);
+  --fs-h2:       clamp(28px, 3.6vw, 48px);
+  --fs-h3:       clamp(19px, 1.6vw, 24px);
+  --fs-h4:       16px;
+  --fs-lead:     clamp(16px, 1.2vw, 19px);
+  --fs-body:     15px;
+  --fs-small:    13.5px;
+  --fs-caption:  11.5px;
+  --fs-eyebrow:  11px;
+
+  --lh-tight:    1.04;
+  --lh-snug:     1.2;
+  --lh-normal:   1.55;
+  --lh-loose:    1.7;
+
+  --ls-h1:       -0.035em;
+  --ls-h2:       -0.028em;
+  --ls-eyebrow:  0.18em;
+
+  /* ---------- SPACING (use só essas!) ---------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  32px;
+  --space-8:  40px;
+  --space-9:  56px;
+  --space-10: 80px;
+  --space-11: 120px;
+
+  /* ---------- RADIUS ---------- */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-card: 14px;
+  --radius-lg:   20px;
+  --radius-xl:   22px;
+  --radius-pill: 999px;
+
+  /* ---------- SHADOWS (depth system) ---------- */
+  --depth-1: 0 4px 14px -2px rgba(0, 0, 0, 0.35);
+  --depth-2: 0 14px 30px -10px rgba(0, 0, 0, 0.55);
+  --depth-3: 0 40px 80px -24px rgba(0, 0, 0, 0.75);
+  --glow-gold:   0 0 24px rgba(201, 169, 97, 0.45);
+  --glow-signal: 0 0 24px rgba(79, 179, 255, 0.55);
+
+  /* ---------- MOTION ---------- */
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast:    150ms;
+  --dur-default: 250ms;
+  --dur-slow:    400ms;
+  --dur-morph:   600ms;
+
+  /* ---------- LAYOUT ---------- */
+  --container-max:    1240px;
+  --container-pad:    clamp(20px, 4vw, 48px);
+  --header-height:    76px;
+  --header-height-mobile: 64px;
+}
+
+/* ---------- BREAKPOINTS (use em @media) ----------
+  @media (max-width: 480px)  { /* mobile  */ }
+  @media (max-width: 768px)  { /* tablet  */ }
+  @media (max-width: 1024px) { /* laptop  */ }
+  @media (max-width: 1280px) { /* desktop */ }
+  @media (max-width: 1440px) { /* wide    */ }
+*/

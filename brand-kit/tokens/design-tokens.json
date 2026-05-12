@@ -1,0 +1,121 @@
+{
+  "$schema": "https://schemas.amzn.com/design-tokens/v1/design-tokens.schema.json",
+  "brand": {
+    "name": "iProtector",
+    "tagline": "Proteção pessoal sob demanda, monitorada 24h",
+    "category": "Personal Protection as a Service",
+    "voice": "Premium · Técnico · Confiável · Discreto"
+  },
+  "color": {
+    "primary": {
+      "navy": {
+        "100": { "value": "#1A3258", "comment": "Navy lifted — surfaces ativas" },
+        "200": { "value": "#122847", "comment": "Navy elevated — cards e modais" },
+        "300": { "value": "#0A1A2F", "comment": "Navy padrão — superfícies" },
+        "400": { "value": "#06101F", "comment": "Navy base — background do site" },
+        "500": { "value": "#050B17", "comment": "Navy profundo — fade de fundo" }
+      },
+      "gold": {
+        "100": { "value": "#E8CC8B", "comment": "Gold claro — highlight" },
+        "200": { "value": "#C9A961", "comment": "Gold padrão — CTAs e marca" },
+        "300": { "value": "#8E7438", "comment": "Gold escuro — hover e pressed" }
+      }
+    },
+    "accent": {
+      "signal": { "value": "#4FB3FF", "comment": "Azul de sinal — operacional/tech" },
+      "emerald": { "value": "#34D399", "comment": "Verde — status ok / ativo" },
+      "danger": { "value": "#E5484D", "comment": "Vermelho — emergência / erro" }
+    },
+    "neutral": {
+      "fg": { "value": "#F4F6FA", "comment": "Texto principal sobre fundo navy" },
+      "fg-dim": { "value": "#C7CFDB", "comment": "Texto secundário / lead" },
+      "muted": { "value": "#9AA4B2", "comment": "Texto auxiliar / mono" },
+      "muted-2": { "value": "#6B7585", "comment": "Texto desativado" }
+    },
+    "line": {
+      "subtle": { "value": "rgba(244,246,250,0.08)", "comment": "Borda padrão" },
+      "default": { "value": "rgba(244,246,250,0.14)", "comment": "Borda destacada" }
+    },
+    "gold-soft": { "value": "rgba(201,169,97,0.14)", "comment": "Tinte dourado para highlights" }
+  },
+  "typography": {
+    "fontFamily": {
+      "display": {
+        "value": "Manrope, system-ui, sans-serif",
+        "weights": [400, 500, 600, 700, 800],
+        "use": "Headlines, títulos, botões, números grandes"
+      },
+      "body": {
+        "value": "Inter, system-ui, sans-serif",
+        "weights": [400, 500, 600],
+        "use": "Corpo de texto, parágrafos, legendas"
+      },
+      "mono": {
+        "value": "'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace",
+        "weights": [400, 500],
+        "use": "Labels, eyebrows, números, badges técnicos"
+      }
+    },
+    "fontSize": {
+      "h1": { "value": "clamp(36px, 5vw, 64px)", "lineHeight": 1.04, "letterSpacing": "-0.035em" },
+      "h2": { "value": "clamp(28px, 3.6vw, 48px)", "lineHeight": 1.08, "letterSpacing": "-0.028em" },
+      "h3": { "value": "clamp(19px, 1.6vw, 24px)", "lineHeight": 1.2 },
+      "h4": { "value": "16px", "lineHeight": 1.35 },
+      "lead": { "value": "clamp(16px, 1.2vw, 19px)", "lineHeight": 1.55 },
+      "body": { "value": "15px", "lineHeight": 1.55 },
+      "small": { "value": "13.5px", "lineHeight": 1.5 },
+      "caption": { "value": "11.5px", "lineHeight": 1.4 },
+      "eyebrow": { "value": "11px", "lineHeight": 1.4, "letterSpacing": "0.18em", "transform": "uppercase" }
+    }
+  },
+  "spacing": {
+    "1": { "value": "4px" },
+    "2": { "value": "8px" },
+    "3": { "value": "12px" },
+    "4": { "value": "16px" },
+    "5": { "value": "20px" },
+    "6": { "value": "24px" },
+    "7": { "value": "32px" },
+    "8": { "value": "40px" },
+    "9": { "value": "56px" },
+    "10": { "value": "80px" },
+    "11": { "value": "120px" }
+  },
+  "radius": {
+    "sm": { "value": "8px" },
+    "md": { "value": "12px" },
+    "card": { "value": "14px" },
+    "lg": { "value": "20px" },
+    "xl": { "value": "22px" },
+    "pill": { "value": "999px" }
+  },
+  "shadow": {
+    "depth-1": { "value": "0 4px 14px -2px rgba(0,0,0,0.35)" },
+    "depth-2": { "value": "0 14px 30px -10px rgba(0,0,0,0.55)" },
+    "depth-3": { "value": "0 40px 80px -24px rgba(0,0,0,0.75)" },
+    "gold-glow": { "value": "0 0 24px rgba(201,169,97,0.45)" },
+    "signal-glow": { "value": "0 0 24px rgba(79,179,255,0.55)" }
+  },
+  "motion": {
+    "easeOutQuint": { "value": "cubic-bezier(0.22, 1, 0.36, 1)" },
+    "duration": {
+      "fast": { "value": "150ms" },
+      "default": { "value": "250ms" },
+      "slow": { "value": "400ms" },
+      "morph": { "value": "600ms" }
+    }
+  },
+  "breakpoint": {
+    "mobile": { "value": "480px" },
+    "tablet": { "value": "768px" },
+    "laptop": { "value": "1024px" },
+    "desktop": { "value": "1280px" },
+    "wide": { "value": "1440px" }
+  },
+  "layout": {
+    "containerMax": { "value": "1240px" },
+    "headerHeight": { "value": "76px" },
+    "headerHeightMobile": { "value": "64px" },
+    "containerPad": { "value": "clamp(20px, 4vw, 48px)" }
+  }
+}
