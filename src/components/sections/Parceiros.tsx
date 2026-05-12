@@ -78,11 +78,11 @@ export function Parceiros() {
             <div className="b2b-pitch-stats">
               <div>
                 <div className="stat-num">15–30%</div>
-                <div className="stat-lbl">Take rate transparente</div>
+                <div className="stat-lbl">[TAKE RATE TRANSPARENTE]</div>
               </div>
               <div>
                 <div className="stat-num">24/7</div>
-                <div className="stat-lbl">Central iProtector</div>
+                <div className="stat-lbl">[CENTRAL IPROTECTOR]</div>
               </div>
             </div>
 
@@ -114,7 +114,7 @@ export function Parceiros() {
 
         <div className="takerate">
           <div>
-            <div className="label">Modelo de remuneração</div>
+            <div className="label">[MODELO DE REMUNERAÇÃO]</div>
             <div className="value">Take rate de 15% a 30%</div>
           </div>
           <p>

@@ -52,10 +52,10 @@ export function Hero() {
       {/* Trust strip — largura total para caber em uma única linha */}
       <div className="container">
         <div className="hero-trust">
-          <span>Central 24h</span>
-          <span>Agentes certificados</span>
-          <span>Rastreabilidade total</span>
-          <span>LGPD</span>
+          <span>[CENTRAL 24H]</span>
+          <span>[AGENTES CERTIFICADOS]</span>
+          <span>[RASTREABILIDADE TOTAL]</span>
+          <span>[LGPD]</span>
         </div>
       </div>
     </section>

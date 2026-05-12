@@ -50,7 +50,7 @@ export function Planos() {
 
         <div className="plans">
           <article className="plan">
-            <div className="plan-name">Plano Silver</div>
+            <div className="plan-name">[PLANO SILVER]</div>
             <div className="plan-price">
               R$ 59<small> /mês</small>
             </div>
@@ -67,7 +67,7 @@ export function Planos() {
           </article>
           <article className="plan featured">
             <span className="pop-badge">[MAIS POPULAR]</span>
-            <div className="plan-name">Plano Gold</div>
+            <div className="plan-name">[PLANO GOLD]</div>
             <div className="plan-price">
               R$ 149<small> /mês</small>
             </div>
@@ -84,7 +84,7 @@ export function Planos() {
             </button>
           </article>
           <article className="plan">
-            <div className="plan-name">Plano Black</div>
+            <div className="plan-name">[PLANO BLACK]</div>
             <div className="plan-price">
               R$ 499<small> /mês</small>
             </div>

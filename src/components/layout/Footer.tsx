@@ -32,7 +32,7 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
           </div>
 
           <div className="footer-col">
-            <h5>Produto</h5>
+            <h5>[PRODUTO]</h5>
             <ul>
               <li>
                 <HashLink to="/#como-funciona">Como funciona</HashLink>
@@ -50,7 +50,7 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
           </div>
 
           <div className="footer-col">
-            <h5>Parceiros</h5>
+            <h5>[PARCEIROS]</h5>
             <ul>
               <li>
                 <HashLink to="/#parceiros">Para empresas de segurança</HashLink>
@@ -67,7 +67,7 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
           </div>
 
           <div className="footer-col">
-            <h5>Empresa</h5>
+            <h5>[EMPRESA]</h5>
             <ul>
               <li>
                 <Link to="/contato">Contato</Link>
@@ -85,7 +85,7 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
           </div>
 
           <div className="footer-col">
-            <h5>Legal</h5>
+            <h5>[LEGAL]</h5>
             <ul>
               <li>
                 <Link to="/privacidade">Política de Privacidade</Link>

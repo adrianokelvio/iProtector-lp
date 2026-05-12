@@ -268,13 +268,28 @@ h4 { font-size: 16px !important; line-height: 1.35 !important; }
    ============================================================ */
 
 .segment-grid { gap: var(--space-6) !important; }
-.segment-card { padding: clamp(24px, 3vw, 40px) !important; }
+.segment-card {
+  padding: clamp(24px, 3vw, 40px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
 .segment-card .tag {
   font-size: 10px !important;
-  letter-spacing: 0.16em !important;
+  letter-spacing: 0.14em !important;
+  align-self: flex-start;
 }
-.segment-card ul { gap: var(--space-2) !important; margin-top: var(--space-4) !important; }
+.segment-card ul {
+  gap: var(--space-2) !important;
+  margin-top: var(--space-4) !important;
+  margin-bottom: var(--space-6) !important;       /* respiro até o CTA */
+}
 .segment-card ul li { padding-left: 22px !important; }
+.segment-card .btn {
+  margin-top: auto !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  align-self: flex-start;
+}
 
 /* ============================================================
    COMO FUNCIONA — steps

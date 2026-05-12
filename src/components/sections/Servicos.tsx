@@ -18,7 +18,7 @@ export function Servicos() {
         <div className="delivery-grid">
           <div className="delivery-col">
             <h3>
-              <span className="num">01</span> Atuação presencial
+              <span className="num">[01]</span> Atuação presencial
             </h3>
             <ul>
               <li>
@@ -33,7 +33,7 @@ export function Servicos() {
           </div>
           <div className="delivery-col">
             <h3>
-              <span className="num">02</span> Monitoramento avançado
+              <span className="num">[02]</span> Monitoramento avançado
             </h3>
             <ul>
               <li>Central de operações 24h</li>
@@ -46,7 +46,7 @@ export function Servicos() {
           </div>
           <div className="delivery-col">
             <h3>
-              <span className="num">03</span> Tecnologia operacional
+              <span className="num">[03]</span> Tecnologia operacional
             </h3>
             <ul>
               <li>Drones profissionais para vigilância aérea e perímetro</li>

@@ -497,17 +497,33 @@
    ============================================================ */
 
 @media (max-width: 768px) {
-  .phone-mock { max-width: 280px; }
-  .hero-visual-stack { min-height: 0 !important; padding-top: 24px; }
-  .phone-screen { padding: 50px 14px 12px; gap: 12px; }
-  .phone-greet .hi { font-size: 16px; }
-  .phone-card-title { font-size: 14px; }
-  .phone-action { font-size: 10px; padding: 10px 4px; }
-  .phone-action svg { width: 16px; height: 16px; }
+  .phone-mock { max-width: 340px; }
+  .hero-visual-stack { min-height: 0 !important; padding-top: 16px; }
+  .phone-frame { padding: 11px; border-radius: 42px; }
+  .phone-screen { padding: 52px 16px 12px; gap: 14px; border-radius: 32px; }
+  .phone-greet .hi { font-size: 17px; }
+  .phone-greet .loc { font-size: 10px; }
+  .phone-avatar { width: 36px; height: 36px; font-size: 14px; }
+  .phone-card { padding: 14px; }
+  .phone-card-head .tag { font-size: 9px; letter-spacing: 0.10em; }
+  .phone-card-head .phone-eta { font-size: 10.5px; }
+  .phone-card-title { font-size: 15px; }
+  .phone-card-sub { font-size: 9.5px; }
+  .phone-action { font-size: 11px; padding: 12px 4px; }
+  .phone-action svg { width: 18px; height: 18px; }
+  .phone-tile .val { font-size: 16px; }
+  .phone-tile .lbl { font-size: 9px; }
+  .tab-item { font-size: 8.5px; }
+  .tab-item svg { width: 16px; height: 16px; }
 }
 
 @media (max-width: 480px) {
-  .phone-mock { max-width: 250px; }
+  .phone-mock { max-width: 320px; }
+}
+
+@media (max-width: 380px) {
+  .phone-mock { max-width: 290px; }
+  .phone-screen { padding: 48px 14px 10px; gap: 12px; }
 }
 
 /* ============================================================

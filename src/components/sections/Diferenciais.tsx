@@ -1,31 +1,31 @@
 const ITEMS = [
   {
-    num: '01',
+    num: '[01]',
     title: 'Plataforma, não empresa de portaria.',
     desc: 'Não somos uma empresa de vigilância. Somos uma plataforma de tecnologia que conecta demanda qualificada a oferta qualificada.',
   },
   {
-    num: '02',
+    num: '[02]',
     title: 'Rede multi-fornecedor.',
     desc: 'Trabalhamos com várias empresas parceiras — você sempre tem o profissional certo, no momento certo, no lugar certo.',
   },
   {
-    num: '03',
+    num: '[03]',
     title: 'Operação 100% auditável.',
     desc: 'Cada atendimento é registrado, gravado, geolocalizado e disponibilizado para o cliente em forma de relatório.',
   },
   {
-    num: '04',
+    num: '[04]',
     title: 'Tecnologia em campo.',
     desc: 'Drones, bodycams, rastreadores, IoT e integração com câmeras inteligentes urbanas.',
   },
   {
-    num: '05',
+    num: '[05]',
     title: 'Contratação flexível.',
     desc: 'Do acionamento avulso ao contrato enterprise mensal. Você paga pelo que usa.',
   },
   {
-    num: '06',
+    num: '[06]',
     title: 'Padrão único, em qualquer cidade.',
     desc: 'Cliente, atendimento e tecnologia funcionam da mesma forma — independentemente da empresa parceira na ponta.',
   },
