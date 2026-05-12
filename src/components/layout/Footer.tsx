@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { HashLink } from '../ui/HashLink';
-import { getWhatsAppUrl } from '../../config/site';
+import { getWhatsAppUrl, COMPANY } from '../../config/site';
 
 type Props = {
   onOpenPartner: () => void;
@@ -23,9 +23,13 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
             </Link>
             <p>A nova geração de proteção como serviço.</p>
             <div className="footer-meta">
-              [Endereço a preencher]
+              {COMPANY.address.street}
               <br />
-              CNPJ [a preencher]
+              {COMPANY.address.neighborhood} — {COMPANY.address.city} / {COMPANY.address.state}
+              <br />
+              CEP {COMPANY.address.postalCode}
+              <br />
+              CNPJ {COMPANY.cnpj}
               <br />
               contato@iprotector.com.br
             </div>

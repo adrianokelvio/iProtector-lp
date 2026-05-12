@@ -92,7 +92,7 @@ export function Contato() {
               Já está sendo atendido pelo iProtector e precisa falar com a
               central agora?
             </p>
-            <div className="email">central 24h · [número direto]</div>
+            <div className="email">Central 24h · +55 (11) 99719-4408</div>
           </article>
         </div>
       </section>
@@ -122,9 +122,13 @@ export function Contato() {
           <div>
             <h4 className="contact-info-label">Sede</h4>
             <p style={{ fontSize: 15 }}>
-              [Endereço completo]
+              Av. Dr. Chucri Zaidan, 1649
               <br />
-              CNPJ: [a preencher]
+              Vila São Francisco — São Paulo / SP
+              <br />
+              CEP 04711-130
+              <br />
+              CNPJ 17.738.538/0001-09
             </p>
           </div>
           <div>

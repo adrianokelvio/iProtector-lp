@@ -19,8 +19,13 @@ export function Termos() {
         <p>
           Estes Termos de Uso ("Termos") regulam o acesso e a utilização da
           plataforma iProtector — incluindo site, aplicativo móvel e painel web
-          ("Plataforma") — operada por <strong>[RAZÃO SOCIAL]</strong>, inscrita
-          no CNPJ sob o nº <strong>[CNPJ]</strong> ("iProtector", "nós").
+          ("Plataforma") — operada pela pessoa jurídica inscrita no CNPJ sob o
+          nº <strong>17.738.538/0001-09</strong>, com sede na{' '}
+          <strong>
+            Av. Dr. Chucri Zaidan, 1649 — Vila São Francisco, São Paulo / SP ·
+            04711-130
+          </strong>{' '}
+          ("iProtector", "nós").
         </p>
         <p>
           Ao acessar ou utilizar a Plataforma, você ("Usuário") declara ter
@@ -175,7 +180,7 @@ export function Termos() {
         <h2 data-num="12">Lei aplicável e foro</h2>
         <p>
           Estes Termos são regidos pelas leis da República Federativa do Brasil.
-          Fica eleito o foro da Comarca de <strong>[Cidade/UF]</strong> para
+          Fica eleito o foro da Comarca de <strong>São Paulo / SP</strong> para
           dirimir quaisquer controvérsias decorrentes destes Termos, salvo
           disposição legal em sentido diverso.
         </p>
@@ -184,7 +189,10 @@ export function Termos() {
         <p>
           <strong>E-mail:</strong> legal@iprotector.com.br
           <br />
-          <strong>Endereço:</strong> [endereço completo]
+          <strong>WhatsApp:</strong> +55 (11) 99719-4408
+          <br />
+          <strong>Endereço:</strong> Av. Dr. Chucri Zaidan, 1649 — Vila São
+          Francisco, São Paulo / SP · 04711-130
         </p>
       </article>
     </main>

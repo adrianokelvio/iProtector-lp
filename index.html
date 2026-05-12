@@ -88,9 +88,22 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "iProtector",
+        "alternateName": "iProtector — Personal Protection as a Service",
         "url": "%VITE_SITE_URL%",
         "logo": "%VITE_SITE_URL%/assets/iprotector-logo-gold.png",
+        "image": "%VITE_SITE_URL%/og-image.png",
         "description": "Plataforma de intermediação de serviços de segurança privada — Personal Protection as a Service com agentes certificados, monitoramento 24h e tecnologia em campo.",
+        "telephone": "+55-11-99719-4408",
+        "taxID": "17.738.538/0001-09",
+        "vatID": "17738538000109",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Dr. Chucri Zaidan, 1649",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "postalCode": "04711-130",
+          "addressCountry": "BR"
+        },
         "areaServed": { "@type": "Country", "name": "Brasil" },
         "sameAs": [
           "https://www.instagram.com/iprotector",
@@ -101,14 +114,57 @@
           {
             "@type": "ContactPoint",
             "contactType": "customer service",
+            "telephone": "+55-11-99719-4408",
             "email": "comercial@iprotector.com.br",
-            "availableLanguage": ["pt-BR"]
+            "availableLanguage": ["pt-BR"],
+            "areaServed": "BR"
           },
           {
             "@type": "ContactPoint",
             "contactType": "partnership",
             "email": "parcerias@iprotector.com.br",
             "availableLanguage": ["pt-BR"]
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "emergency",
+            "telephone": "+55-11-99719-4408",
+            "availableLanguage": ["pt-BR"],
+            "hoursAvailable": "Mo-Su 00:00-23:59"
+          }
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "%VITE_SITE_URL%/#localbusiness",
+        "name": "iProtector",
+        "image": "%VITE_SITE_URL%/og-image.png",
+        "url": "%VITE_SITE_URL%",
+        "telephone": "+55-11-99719-4408",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Dr. Chucri Zaidan, 1649",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "postalCode": "04711-130",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -23.6276,
+          "longitude": -46.7032
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
           }
         ]
       }

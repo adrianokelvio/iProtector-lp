@@ -28,10 +28,14 @@ export function Privacidade() {
         <h2 data-num="01">Quem somos</h2>
         <p>
           O iProtector é uma plataforma de intermediação de serviços de
-          segurança privada, operada por <strong>[RAZÃO SOCIAL]</strong>,
-          inscrita no CNPJ sob o nº <strong>[CNPJ]</strong>, com sede em{' '}
-          <strong>[ENDEREÇO]</strong>. Para fins desta Política, "iProtector",
-          "nós", "nosso" ou "nossa" referem-se a essa pessoa jurídica.
+          segurança privada, inscrita no CNPJ sob o nº{' '}
+          <strong>17.738.538/0001-09</strong>, com sede na{' '}
+          <strong>
+            Av. Dr. Chucri Zaidan, 1649 — Vila São Francisco, São Paulo / SP ·
+            04711-130
+          </strong>
+          . Para fins desta Política, "iProtector", "nós", "nosso" ou "nossa"
+          referem-se a essa pessoa jurídica.
         </p>
 
         <h2 data-num="02">Dados que coletamos</h2>
@@ -157,11 +161,12 @@ export function Privacidade() {
           Contato
         </h2>
         <p>
-          <strong>Encarregado de Dados (DPO):</strong> [Nome do DPO]
+          <strong>E-mail do DPO:</strong> dpo@iprotector.com.br
           <br />
-          <strong>E-mail:</strong> dpo@iprotector.com.br
+          <strong>WhatsApp da central:</strong> +55 (11) 99719-4408
           <br />
-          <strong>Endereço:</strong> [endereço completo]
+          <strong>Endereço:</strong> Av. Dr. Chucri Zaidan, 1649 — Vila São
+          Francisco, São Paulo / SP · 04711-130
         </p>
       </article>
     </main>
