@@ -36,7 +36,7 @@ export function Diferenciais() {
     <section>
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">O que nos diferencia</span>
+          <span className="eyebrow">[DIFERENCIAIS]</span>
           <h2>
             Por que o iProtector é diferente de uma empresa tradicional de
             segurança.

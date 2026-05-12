@@ -2,22 +2,22 @@ import { useModals } from '../modals/ModalsContext';
 
 const MODELS = [
   {
-    num: '01',
+    num: '[01]',
     title: 'Sob demanda',
     desc: 'Contratação instantânea para situações pontuais — um evento, um deslocamento, uma visita.',
   },
   {
-    num: '02',
+    num: '[02]',
     title: 'Assinaturas recorrentes',
     desc: 'Planos mensais com benefícios, tarifas reduzidas e prioridade na fila de atendimento.',
   },
   {
-    num: '03',
+    num: '[03]',
     title: 'Contratos corporativos',
     desc: 'Operação contínua para empresas, condomínios, fazendas, hotéis e estruturas que exigem presença mensal.',
   },
   {
-    num: '04',
+    num: '[04]',
     title: 'Operações especiais',
     desc: 'Mobilização de campo para eventos de grande porte, ações sensíveis e missões dedicadas.',
   },
@@ -29,7 +29,7 @@ export function Planos() {
     <section id="planos">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Contratação que se adapta ao seu momento</span>
+          <span className="eyebrow">[MODELOS DE CONTRATAÇÃO]</span>
           <h2>Sob demanda, recorrente ou corporativo. Você escolhe.</h2>
           <p className="lead">
             Cada cliente tem uma necessidade diferente. Por isso o iProtector
@@ -66,7 +66,7 @@ export function Planos() {
             </button>
           </article>
           <article className="plan featured">
-            <span className="pop-badge">Mais popular</span>
+            <span className="pop-badge">[MAIS POPULAR]</span>
             <div className="plan-name">Plano Gold</div>
             <div className="plan-price">
               R$ 149<small> /mês</small>

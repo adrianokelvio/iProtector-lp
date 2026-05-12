@@ -30,23 +30,23 @@ const VALUE_PROPS = [
 
 const STEPS = [
   {
-    n: '01',
-    title: 'Cadastro',
+    n: '1º',
+    title: 'CADASTRO',
     desc: 'Sua empresa preenche o formulário. Validamos CNPJ, alvarás, certificações e perfil operacional.',
   },
   {
-    n: '02',
-    title: 'Homologação',
+    n: '2ª',
+    title: 'HOMOLOGAÇÃO',
     desc: 'Verificamos estrutura, equipe, processos e capacidade de atendimento por região.',
   },
   {
-    n: '03',
-    title: 'Onboarding',
+    n: '3º',
+    title: 'ONBOARDING',
     desc: 'Sua equipe é treinada na operação iProtector — uso do app, protocolos da central, padrão de atendimento.',
   },
   {
-    n: '04',
-    title: 'Operação ativa',
+    n: '4ª',
+    title: 'OPERAÇÃO ATIVA',
     desc: 'Sua empresa passa a receber demanda da plataforma e ser remunerada por atendimento concluído.',
   },
 ];
@@ -57,7 +57,7 @@ export function Parceiros() {
     <section className="b2b" id="parceiros">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Para empresas de segurança</span>
+          <span className="eyebrow">[PARCEIROS B2B]</span>
           <h2>Sua operação. Nossa demanda. Um padrão único.</h2>
         </div>
 

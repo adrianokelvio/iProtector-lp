@@ -100,9 +100,7 @@ export function Agentes() {
     <section>
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">
-            O profissional por trás de cada atendimento
-          </span>
+          <span className="eyebrow">[AGENTES CERTIFICADOS]</span>
           <h2>
             Agentes selecionados para um padrão que não negocia qualidade.
           </h2>

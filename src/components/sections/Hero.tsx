@@ -15,7 +15,7 @@ export function Hero() {
       <div className="container hero-inner">
         <div className="hero-content">
           <div className="hero-eyebrow-row">
-            <span className="eyebrow">Personal Protection as a Service</span>
+            <span className="eyebrow">[PERSONAL PROTECTION AS A SERVICE]</span>
             <span className="hero-live">Central ao vivo</span>
           </div>
           <h1>

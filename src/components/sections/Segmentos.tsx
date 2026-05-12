@@ -78,7 +78,7 @@ export function Segmentos() {
     <section>
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Para quem servimos</span>
+          <span className="eyebrow">[SEGMENTOS ATENDIDOS]</span>
           <h2>Da cidade ao campo. Da família à corporação.</h2>
           <p className="lead">
             A nossa rede atende perfis muito distintos — porque o padrão

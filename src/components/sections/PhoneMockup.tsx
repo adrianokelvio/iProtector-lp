@@ -49,7 +49,7 @@ export function PhoneMockup() {
           <div className="phone-card phone-card--active">
             <div className="phone-card-head">
               <span className="dot" />
-              <span className="tag">Proteção ativa</span>
+              <span className="tag">[PROTEÇÃO ATIVA]</span>
               <span className="phone-eta">ETA 06'12"</span>
             </div>
             <div className="phone-card-title">Rodrigo A. a caminho</div>

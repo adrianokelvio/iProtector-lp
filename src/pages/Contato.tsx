@@ -11,7 +11,7 @@ export function Contato() {
           ← Início
         </Link>
         <div className="section-head" style={{ marginTop: 24 }}>
-          <span className="eyebrow">Fale com o iProtector</span>
+          <span className="eyebrow">[CONTATO]</span>
           <h1>Estamos prontos para atender. 24 horas por dia.</h1>
           <p className="lead">
             Escolha o canal mais adequado ao seu caso — atendimento comercial,
@@ -94,7 +94,7 @@ export function Contato() {
       <section style={{ paddingBottom: 100 }}>
         <div style={{ maxWidth: 720 }}>
           <div className="section-head">
-            <span className="eyebrow">Formulário geral</span>
+            <span className="eyebrow">[FORMULÁRIO GERAL]</span>
             <h2 style={{ fontSize: 'clamp(28px, 3vw, 40px)' }}>
               Envie uma mensagem.
             </h2>

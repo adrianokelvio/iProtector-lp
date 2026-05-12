@@ -101,7 +101,7 @@ export function Tecnologia() {
     <section>
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Plataforma + campo</span>
+          <span className="eyebrow">[PLATAFORMA + CAMPO]</span>
           <h2>Cada agente em campo. Toda a operação na sua tela.</h2>
           <p className="lead">
             O iProtector é, antes de tudo, uma plataforma de tecnologia que

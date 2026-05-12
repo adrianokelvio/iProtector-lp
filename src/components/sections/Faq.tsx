@@ -86,7 +86,7 @@ export function Faq() {
     <section id="faq">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Perguntas frequentes</span>
+          <span className="eyebrow">[FAQ]</span>
           <h2>Tudo o que você precisa saber antes de contratar.</h2>
         </div>
 

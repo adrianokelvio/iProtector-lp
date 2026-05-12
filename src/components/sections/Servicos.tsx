@@ -3,7 +3,7 @@ export function Servicos() {
     <section id="servicos">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Operação completa</span>
+          <span className="eyebrow">[OPERAÇÃO COMPLETA]</span>
           <h2>
             Não vendemos vigilância. Entregamos presença, resposta e resultado.
           </h2>

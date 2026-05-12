@@ -7,12 +7,12 @@ export function ParaQuem() {
     <section id="para-quem">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">Para quem é o iProtector</span>
+          <span className="eyebrow">[PARA QUEM]</span>
           <h2>Duas jornadas. Uma única plataforma de proteção.</h2>
         </div>
         <div className="segment-grid">
           <article className="segment-card">
-            <span className="tag">Cliente final</span>
+            <span className="tag">[CLIENTE FINAL]</span>
             <h3>Para você, sua família ou sua empresa.</h3>
             <p>
               Solicite um agente de segurança qualificado para um evento, um
@@ -33,7 +33,7 @@ export function ParaQuem() {
           </article>
 
           <article className="segment-card">
-            <span className="tag">Empresa parceira</span>
+            <span className="tag">[EMPRESA PARCEIRA]</span>
             <h3>Para empresas de segurança que querem escalar.</h3>
             <p>
               Sua empresa tem agentes qualificados, estrutura operacional e
