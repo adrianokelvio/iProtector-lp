@@ -1,0 +1,210 @@
+/* ============================================================
+   iProtector — Otimização mobile e correções React
+   Carregado depois de styles.css em main.tsx
+   ============================================================ */
+
+/* ---------- Brand logo (SVG completo) ---------- */
+
+.brand-svg { display: inline-flex; align-items: center; }
+.brand-svg img {
+  display: block;
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+.brand-svg--footer img { height: 56px; }
+
+@media (max-width: 768px) {
+  .brand-svg img { height: 38px; }
+  .brand-svg--footer img { height: 48px; }
+}
+
+/* ---------- React-only utilities ---------- */
+
+.link-button {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 0.15s ease;
+}
+.link-button:hover { opacity: 0.7; }
+
+.gold-link { color: var(--gold); }
+
+.field-error {
+  margin: 6px 0 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: #E5484D;
+}
+.field-error.full { grid-column: 1 / -1; }
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.contact-info-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* ---------- Mobile breakpoints ---------- */
+
+@media (max-width: 1024px) {
+  .nav { display: none; }
+  .mobile-toggle { display: inline-flex; }
+}
+
+@media (max-width: 768px) {
+  /* Header: esconde o "Sou empresa de segurança" no header pra deixar espaço */
+  .header-cta .btn-ghost.btn-sm { display: none; }
+
+  /* Hero: stack vertical com Command Center responsivo */
+  .hero-inner { grid-template-columns: 1fr !important; gap: 48px; }
+  .hero-visual-stack { max-width: 100%; }
+  .hero-visual { max-width: 100%; }
+  .panel-map svg { width: 100%; height: auto; }
+  .hero h1 { font-size: clamp(34px, 9vw, 56px); line-height: 1.05; }
+  .hero .lead { font-size: clamp(15px, 4vw, 18px); }
+
+  /* Trust band em 2 colunas */
+  .trust-band-inner { grid-template-columns: 1fr 1fr; gap: 24px 16px; }
+
+  /* Seções com paddings menores */
+  section { padding: 60px 0 !important; }
+
+  /* Section heads */
+  .section-head h2 { font-size: clamp(28px, 7vw, 40px); line-height: 1.1; }
+  .section-head .lead { font-size: 15px; }
+
+  /* Segmentos / cards em coluna */
+  .segment-grid,
+  .delivery-grid,
+  .b2b-grid,
+  .b2b-process,
+  .agents-wrap { grid-template-columns: 1fr !important; gap: 24px; }
+
+  .steps { grid-template-columns: 1fr; gap: 20px; }
+  .step-line { display: none; }
+
+  .tech-grid,
+  .agents-grid,
+  .segments,
+  .diffs { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  .models-row { grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  /* Planos: coluna única, featured no topo via order */
+  .plans { grid-template-columns: 1fr; gap: 16px; }
+  .plan.featured { order: -1; }
+
+  /* Takerate em coluna */
+  .takerate { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Final CTA */
+  .final-cta h2 { font-size: clamp(28px, 8vw, 44px); }
+  .final-cta .ctas { flex-direction: column; align-items: stretch; }
+  .final-cta .ctas .btn { width: 100%; justify-content: center; }
+
+  /* Footer: 1 coluna */
+  .footer-grid { grid-template-columns: 1fr !important; gap: 32px; }
+  .footer-about { grid-column: auto !important; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 18px; }
+
+  /* Hero CTAs em coluna */
+  .hero-ctas { flex-direction: column; align-items: stretch; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+
+  /* Trust pills viram lista */
+  .hero-trust { flex-wrap: wrap; gap: 8px; }
+  .hero-trust span { font-size: 11px; }
+
+  /* Áreas de toque mínimas */
+  .btn { min-height: 44px; }
+  .btn-sm { min-height: 38px; }
+  .faq-q { min-height: 56px; }
+
+  /* FAQ tabs grudadinhos */
+  .faq-tabs { flex-wrap: wrap; }
+
+  /* Modal: full screen com sticky bottom CTA */
+  .modal { padding: 0; align-items: stretch; }
+  .modal-card {
+    max-width: 100% !important;
+    width: 100% !important;
+    border-radius: 0;
+    min-height: 100vh;
+    padding: 24px 20px 28px;
+    padding-bottom: calc(28px + env(safe-area-inset-bottom));
+  }
+  .form-grid { grid-template-columns: 1fr !important; }
+  .form-grid label.full,
+  .form-grid label { grid-column: 1 / -1 !important; }
+  /* submit é estilizado em polish.css */
+
+  /* Contact grid em 1 coluna */
+  .contact-grid { grid-template-columns: 1fr !important; }
+  .contact-info-grid { grid-template-columns: 1fr; gap: 24px; }
+
+  /* WhatsApp FAB safe area + não cobrir cookies */
+  .wa-fab { right: 16px; bottom: calc(20px + env(safe-area-inset-bottom)); }
+  .wa-card { right: 16px; left: 16px; max-width: none; bottom: calc(80px + env(safe-area-inset-bottom)); }
+
+  /* Quando cookies banner aparece, sobe o FAB */
+  body:has(.cookies.show) .wa-fab { bottom: calc(140px + env(safe-area-inset-bottom)); }
+  body:has(.cookies.show) .wa-card { bottom: calc(200px + env(safe-area-inset-bottom)); }
+
+  /* Cookies em uma coluna */
+  .cookies { left: 12px; right: 12px; bottom: 12px; flex-direction: column; align-items: stretch; }
+  .cookies-actions { flex-direction: column; }
+  .cookies-actions .btn { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .container { padding-left: 18px; padding-right: 18px; }
+
+  .tech-grid,
+  .agents-grid,
+  .segments,
+  .diffs,
+  .models-row { grid-template-columns: 1fr; }
+
+  .hero-eyebrow-row { flex-wrap: wrap; gap: 10px; }
+
+  .agent-card { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .agent-card .agent-eta { align-self: flex-end; }
+
+  .modal-card h3 { font-size: 22px; }
+}
+
+/* ---------- Pequenas melhorias gerais ---------- */
+
+img { max-width: 100%; height: auto; }
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* HashLink/Link no nav herdam estilo de <a> nativo */
+.nav a,
+.drawer a {
+  color: inherit;
+  text-decoration: none;
+}

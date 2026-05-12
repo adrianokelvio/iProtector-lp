@@ -1,0 +1,60 @@
+import { Arrow } from '../ui/Arrow';
+import { StoreBadges } from '../ui/StoreBadges';
+import { PhoneMockup } from './PhoneMockup';
+import { useModals } from '../modals/ModalsContext';
+
+export function Hero() {
+  const { openClient, openPartner } = useModals();
+
+  return (
+    <section className="hero" id="top">
+      <div className="hero-watermark" aria-hidden="true">
+        <img src="/assets/iprotector-mark-gold.png" alt="" />
+      </div>
+
+      <div className="container hero-inner">
+        <div className="hero-content">
+          <div className="hero-eyebrow-row">
+            <span className="eyebrow">Personal Protection as a Service</span>
+            <span className="hero-live">Central ao vivo</span>
+          </div>
+          <h1>
+            A nova geração de{' '}
+            <span className="gold">
+              <em>proteção</em>
+            </span>{' '}
+            como <span className="stroke">serviço</span>.
+          </h1>
+          <p className="lead">
+            Conectamos você a agentes de segurança altamente qualificados, com
+            operação monitorada 24&nbsp;horas, resposta imediata e tecnologia
+            avançada em campo. Proteção real, contratada em poucos cliques —
+            do app ao painel web.
+          </p>
+          <div className="hero-ctas">
+            <button className="btn btn-primary" onClick={openClient}>
+              Contratar proteção agora <Arrow />
+            </button>
+            <button className="btn btn-ghost" onClick={openPartner}>
+              Sou empresa de segurança parceira
+            </button>
+          </div>
+
+          <StoreBadges />
+
+          <div className="hero-trust">
+            <span>Central 24h</span>
+            <span>Agentes certificados</span>
+            <span>Rastreabilidade total</span>
+            <span>LGPD</span>
+          </div>
+        </div>
+
+        {/* Phone mockup — preview do app iProtector */}
+        <div className="hero-visual-stack" aria-hidden="true">
+          <PhoneMockup />
+        </div>
+      </div>
+    </section>
+  );
+}
