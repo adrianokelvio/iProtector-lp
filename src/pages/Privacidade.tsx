@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/seo/SEO';
 
 export function Privacidade() {
   return (
     <main className="container">
+      <SEO
+        title="Política de Privacidade — iProtector"
+        description="Como o iProtector trata dados pessoais em conformidade com a LGPD: coleta, finalidades, bases legais, direitos do titular, retenção e contato com o Encarregado de Dados (DPO)."
+        path="/privacidade"
+      />
       <article className="legal-page">
         <Link className="back-link" to="/">
           ← Início

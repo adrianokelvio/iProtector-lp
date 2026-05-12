@@ -1,3 +1,4 @@
+import { SEO } from '../components/seo/SEO';
 import { Hero } from '../components/sections/Hero';
 import { TrustBand } from '../components/sections/TrustBand';
 import { ParaQuem } from '../components/sections/ParaQuem';
@@ -15,6 +16,11 @@ import { FinalCta } from '../components/sections/FinalCta';
 export function Home() {
   return (
     <main>
+      <SEO
+        title="iProtector — Proteção pessoal sob demanda, monitorada 24h"
+        description="Personal Protection as a Service. Contrate seguranças certificados em poucos cliques, com central 24h, monitoramento em tempo real, drones, rastreamento e tecnologia em campo."
+        path="/"
+      />
       <Hero />
       <TrustBand />
       <ParaQuem />

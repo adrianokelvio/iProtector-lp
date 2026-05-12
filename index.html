@@ -2,14 +2,82 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/iprotector-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#06101F" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- =============================================================
+         PRIMARY SEO META
+         ============================================================= -->
     <title>iProtector — Proteção pessoal sob demanda, monitorada 24h</title>
     <meta
       name="description"
-      content="Contrate seguranças qualificados em poucos cliques. Personal Protection as a Service com agentes certificados, monitoramento 24h e tecnologia em campo."
+      content="Plataforma de proteção pessoal como serviço. Contrate seguranças certificados em poucos cliques, com central 24h, monitoramento em tempo real, drones, rastreamento e tecnologia em campo. Personal Protection as a Service para clientes finais e empresas parceiras."
     />
+    <meta
+      name="keywords"
+      content="proteção pessoal, segurança privada, segurança sob demanda, segurança 24 horas, bodyguard, seguranças qualificados, escolta executiva, segurança residencial, segurança patrimonial, segurança eventos, segurança fazenda, segurança rural, central 24h, monitoramento, rastreamento, drones segurança, proteção VIP, segurança São Paulo, iProtector, personal protection as a service, plataforma de segurança, app de segurança, segurança corporativa"
+    />
+    <meta name="author" content="iProtector" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://iprotector.com.br/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://iprotector.com.br/" />
+    <link rel="alternate" hreflang="x-default" href="https://iprotector.com.br/" />
+
+    <!-- =============================================================
+         OPEN GRAPH (WhatsApp, Facebook, LinkedIn, Telegram, Discord)
+         ============================================================= -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="iProtector" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://iprotector.com.br/" />
+    <meta property="og:title" content="iProtector — Proteção pessoal sob demanda, monitorada 24h" />
+    <meta
+      property="og:description"
+      content="Personal Protection as a Service. Conecte-se a agentes certificados com central 24h e tecnologia avançada em campo — do app ao painel web."
+    />
+    <meta property="og:image" content="https://iprotector.com.br/og-image.png" />
+    <meta property="og:image:secure_url" content="https://iprotector.com.br/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="iProtector — Proteção pessoal sob demanda, monitorada 24 horas" />
+
+    <!-- Imagem alternativa quadrada (Instagram-style) -->
+    <meta property="og:image" content="https://iprotector.com.br/og-image-square.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+
+    <!-- =============================================================
+         TWITTER / X CARD
+         ============================================================= -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@iprotector" />
+    <meta name="twitter:creator" content="@iprotector" />
+    <meta name="twitter:title" content="iProtector — Proteção pessoal sob demanda, monitorada 24h" />
+    <meta
+      name="twitter:description"
+      content="Conecte-se a agentes certificados com central 24h e tecnologia avançada em campo. Personal Protection as a Service."
+    />
+    <meta name="twitter:image" content="https://iprotector.com.br/twitter-card.png" />
+    <meta name="twitter:image:alt" content="iProtector — Personal Protection as a Service" />
+
+    <!-- =============================================================
+         FAVICONS + PWA
+         ============================================================= -->
+    <link rel="icon" type="image/svg+xml" href="/assets/iprotector-logo.svg" />
+    <link rel="alternate icon" type="image/png" href="/assets/iprotector-mark-gold.png" />
+    <link rel="apple-touch-icon" href="/assets/iprotector-mark-gold.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- =============================================================
+         FONTES + PRELOAD
+         ============================================================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="image" type="image/svg+xml" href="/assets/iprotector-logo.svg" />
@@ -17,6 +85,99 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- =============================================================
+         JSON-LD — Structured Data
+         ============================================================= -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "iProtector",
+        "url": "https://iprotector.com.br",
+        "logo": "https://iprotector.com.br/assets/iprotector-logo-gold.png",
+        "description": "Plataforma de intermediação de serviços de segurança privada — Personal Protection as a Service com agentes certificados, monitoramento 24h e tecnologia em campo.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Brasil"
+        },
+        "sameAs": [
+          "https://www.instagram.com/iprotector",
+          "https://www.linkedin.com/company/iprotector",
+          "https://www.youtube.com/@iprotector"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "comercial@iprotector.com.br",
+            "availableLanguage": ["pt-BR"]
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "partnership",
+            "email": "parcerias@iprotector.com.br",
+            "availableLanguage": ["pt-BR"]
+          }
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "iProtector",
+        "url": "https://iprotector.com.br",
+        "inLanguage": "pt-BR",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://iprotector.com.br/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Personal Protection as a Service",
+        "provider": {
+          "@type": "Organization",
+          "name": "iProtector"
+        },
+        "areaServed": { "@type": "Country", "name": "Brasil" },
+        "description": "Contratação de proteção pessoal sob demanda com agentes certificados, central 24h e tecnologia operacional em campo.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Plano Silver",
+            "price": "59",
+            "priceCurrency": "BRL",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": 59,
+              "priceCurrency": "BRL",
+              "billingIncrement": 1,
+              "unitText": "mês"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Plano Gold",
+            "price": "149",
+            "priceCurrency": "BRL"
+          },
+          {
+            "@type": "Offer",
+            "name": "Plano Black",
+            "price": "499",
+            "priceCurrency": "BRL"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/seo/SEO';
 import { Arrow } from '../components/ui/Arrow';
 import { ContactForm } from '../components/sections/ContactForm';
 import { getWhatsAppUrl } from '../config/site';
@@ -6,6 +7,11 @@ import { getWhatsAppUrl } from '../config/site';
 export function Contato() {
   return (
     <main className="container">
+      <SEO
+        title="Contato — iProtector | Fale com nossa equipe 24h"
+        description="Fale com o iProtector. Atendimento comercial, parcerias, imprensa, LGPD e suporte. Central 24h e canais por WhatsApp, e-mail e formulário."
+        path="/contato"
+      />
       <section style={{ padding: '140px 0 60px' }}>
         <Link className="back-link" to="/">
           ← Início

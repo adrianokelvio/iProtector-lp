@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/seo/SEO';
 
 export function Termos() {
   return (
     <main className="container">
+      <SEO
+        title="Termos de Uso — iProtector"
+        description="Termos de uso da plataforma iProtector: objeto, cadastro, modelos de contratação, obrigações, responsabilidades, pagamentos, cancelamento, propriedade intelectual e lei aplicável."
+        path="/termos"
+      />
       <article className="legal-page">
         <Link className="back-link" to="/">
           ← Início

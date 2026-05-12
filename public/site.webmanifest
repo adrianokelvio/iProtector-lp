@@ -1,0 +1,49 @@
+{
+  "name": "iProtector — Personal Protection as a Service",
+  "short_name": "iProtector",
+  "description": "Proteção pessoal sob demanda, monitorada 24h. Conecte-se a agentes certificados com central 24h e tecnologia avançada em campo.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#06101F",
+  "theme_color": "#06101F",
+  "lang": "pt-BR",
+  "categories": ["security", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/assets/iprotector-mark-gold.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/iprotector-mark-gold.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/iprotector-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contratar proteção",
+      "short_name": "Contratar",
+      "description": "Solicite um agente de segurança qualificado",
+      "url": "/?action=contratar",
+      "icons": [{ "src": "/assets/iprotector-mark-gold.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Falar com a central",
+      "short_name": "Central",
+      "description": "Atendimento 24 horas",
+      "url": "/contato",
+      "icons": [{ "src": "/assets/iprotector-mark-gold.png", "sizes": "192x192" }]
+    }
+  ]
+}

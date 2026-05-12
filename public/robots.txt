@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://iprotector.com.br/sitemap.xml
+
+# Block sensitive paths (caso existam no futuro)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*?q=*           # search query params
+
+# Crawler-friendly delays
+Crawl-delay: 1
