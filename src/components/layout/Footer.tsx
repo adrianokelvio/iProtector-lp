@@ -25,9 +25,7 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
             <div className="footer-meta">
               {COMPANY.address.street}
               <br />
-              {COMPANY.address.neighborhood} — {COMPANY.address.city} / {COMPANY.address.state}
-              <br />
-              CEP {COMPANY.address.postalCode}
+              {COMPANY.address.city} / {COMPANY.address.state} · CEP {COMPANY.address.postalCode}
               <br />
               CNPJ {COMPANY.cnpj}
               <br />

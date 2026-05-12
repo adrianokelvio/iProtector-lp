@@ -22,8 +22,7 @@ export function Termos() {
           ("Plataforma") — operada pela pessoa jurídica inscrita no CNPJ sob o
           nº <strong>17.738.538/0001-09</strong>, com sede na{' '}
           <strong>
-            Av. Dr. Chucri Zaidan, 1649 — Vila São Francisco, São Paulo / SP ·
-            04711-130
+            Av. Dr. Chucri Zaidan, 1649 · São Paulo / SP · CEP 04711-130
           </strong>{' '}
           ("iProtector", "nós").
         </p>
@@ -191,8 +190,8 @@ export function Termos() {
           <br />
           <strong>WhatsApp:</strong> +55 (11) 99719-4408
           <br />
-          <strong>Endereço:</strong> Av. Dr. Chucri Zaidan, 1649 — Vila São
-          Francisco, São Paulo / SP · 04711-130
+          <strong>Endereço:</strong> Av. Dr. Chucri Zaidan, 1649 · São Paulo /
+          SP · CEP 04711-130
         </p>
       </article>
     </main>

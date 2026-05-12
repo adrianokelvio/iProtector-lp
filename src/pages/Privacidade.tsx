@@ -31,8 +31,7 @@ export function Privacidade() {
           segurança privada, inscrita no CNPJ sob o nº{' '}
           <strong>17.738.538/0001-09</strong>, com sede na{' '}
           <strong>
-            Av. Dr. Chucri Zaidan, 1649 — Vila São Francisco, São Paulo / SP ·
-            04711-130
+            Av. Dr. Chucri Zaidan, 1649 · São Paulo / SP · CEP 04711-130
           </strong>
           . Para fins desta Política, "iProtector", "nós", "nosso" ou "nossa"
           referem-se a essa pessoa jurídica.
@@ -165,8 +164,8 @@ export function Privacidade() {
           <br />
           <strong>WhatsApp da central:</strong> +55 (11) 99719-4408
           <br />
-          <strong>Endereço:</strong> Av. Dr. Chucri Zaidan, 1649 — Vila São
-          Francisco, São Paulo / SP · 04711-130
+          <strong>Endereço:</strong> Av. Dr. Chucri Zaidan, 1649 · São Paulo /
+          SP · CEP 04711-130
         </p>
       </article>
     </main>

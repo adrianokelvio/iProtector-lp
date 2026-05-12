@@ -124,9 +124,7 @@ export function Contato() {
             <p style={{ fontSize: 15 }}>
               Av. Dr. Chucri Zaidan, 1649
               <br />
-              Vila São Francisco — São Paulo / SP
-              <br />
-              CEP 04711-130
+              São Paulo / SP · CEP 04711-130
               <br />
               CNPJ 17.738.538/0001-09
             </p>

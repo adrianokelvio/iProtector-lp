@@ -11,7 +11,7 @@ export const COMPANY = {
     state: 'SP',
     postalCode: '04711-130',
     country: 'BR',
-    full: 'Av. Dr. Chucri Zaidan, 1649 — Vila São Francisco, São Paulo / SP · 04711-130',
+    full: 'Av. Dr. Chucri Zaidan, 1649 · São Paulo / SP · CEP 04711-130',
   },
   phoneDisplay: '+55 (11) 99719-4408',
   foro: 'São Paulo / SP',
