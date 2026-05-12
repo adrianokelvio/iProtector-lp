@@ -527,6 +527,16 @@
 }
 
 /* ============================================================
+   FOOTER — Logo da footer-about centralizada (no lugar original)
+   ============================================================ */
+
+.footer-about .brand-svg--footer {
+  align-self: center;
+  justify-content: center;
+  margin-bottom: var(--space-4, 16px);
+}
+
+/* ============================================================
    ICON CONTAINERS — Tecnologia + Segmentos refinados
    ============================================================ */
 
