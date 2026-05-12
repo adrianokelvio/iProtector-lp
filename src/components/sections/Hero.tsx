@@ -41,18 +41,21 @@ export function Hero() {
           </div>
 
           <StoreBadges />
-
-          <div className="hero-trust">
-            <span>Central 24h</span>
-            <span>Agentes certificados</span>
-            <span>Rastreabilidade total</span>
-            <span>LGPD</span>
-          </div>
         </div>
 
         {/* Phone mockup — preview do app iProtector */}
         <div className="hero-visual-stack" aria-hidden="true">
           <PhoneMockup />
+        </div>
+      </div>
+
+      {/* Trust strip — largura total para caber em uma única linha */}
+      <div className="container">
+        <div className="hero-trust">
+          <span>Central 24h</span>
+          <span>Agentes certificados</span>
+          <span>Rastreabilidade total</span>
+          <span>LGPD</span>
         </div>
       </div>
     </section>
