@@ -32,7 +32,7 @@ export function Contato() {
               Fale com um especialista comercial e contrate o serviço ideal
               para o seu caso.
             </p>
-            <div className="email">comercial@iprotector.com.br</div>
+            <div className="email">contato@iprotector.com.br</div>
             <a
               className="btn btn-primary btn-sm"
               href={getWhatsAppUrl()}
@@ -48,7 +48,7 @@ export function Contato() {
             <p>
               Cadastre sua empresa na rede iProtector e amplie sua operação.
             </p>
-            <div className="email">parcerias@iprotector.com.br</div>
+            <div className="email">contato@iprotector.com.br</div>
             <Link className="btn btn-dark btn-sm" to="/#parceiros">
               Cadastrar empresa <Arrow />
             </Link>
@@ -60,7 +60,7 @@ export function Contato() {
               Já é cliente iProtector e precisa de ajuda com algo? Estamos
               aqui.
             </p>
-            <div className="email">suporte@iprotector.com.br</div>
+            <div className="email">contato@iprotector.com.br</div>
             <a
               className="btn btn-dark btn-sm"
               href={getWhatsAppUrl()}
@@ -77,13 +77,13 @@ export function Contato() {
               Solicitações de imprensa, entrevistas, materiais institucionais e
               parcerias estratégicas.
             </p>
-            <div className="email">imprensa@iprotector.com.br</div>
+            <div className="email">contato@iprotector.com.br</div>
           </article>
 
           <article className="contact-card">
             <h4>LGPD / Encarregado de Dados</h4>
             <p>Para exercício de direitos relacionados a dados pessoais.</p>
-            <div className="email">dpo@iprotector.com.br</div>
+            <div className="email">contato@iprotector.com.br</div>
           </article>
 
           <article className="contact-card">

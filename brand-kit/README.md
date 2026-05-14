@@ -88,7 +88,7 @@ Detalhes completos em [`typography/typography.md`](typography/typography.md#4-pa
 - **CNPJ**: 17.738.538/0001-09
 - **Endereço**: Av. Dr. Chucri Zaidan, 1649 · São Paulo / SP · CEP 04711-130
 - **WhatsApp**: +55 (11) 99719-4408
-- **E-mails**: comercial@ · parcerias@ · suporte@ · imprensa@ · dpo@ · legal@iprotector.com.br
+- **E-mail**: contato@iprotector.com.br
 
 ---
 

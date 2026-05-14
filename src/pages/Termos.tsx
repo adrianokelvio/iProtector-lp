@@ -186,7 +186,7 @@ export function Termos() {
 
         <h2 data-num="13">Contato</h2>
         <p>
-          <strong>E-mail:</strong> legal@iprotector.com.br
+          <strong>E-mail:</strong> contato@iprotector.com.br
           <br />
           <strong>WhatsApp:</strong> +55 (11) 99719-4408
           <br />

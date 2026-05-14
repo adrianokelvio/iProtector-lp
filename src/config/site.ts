@@ -23,13 +23,7 @@ export const SITE = {
   description:
     'Contrate seguranças qualificados em poucos cliques. Personal Protection as a Service com agentes certificados, monitoramento 24h e tecnologia em campo.',
   email: {
-    comercial: 'comercial@iprotector.com.br',
-    parcerias: 'parcerias@iprotector.com.br',
-    suporte: 'suporte@iprotector.com.br',
-    imprensa: 'imprensa@iprotector.com.br',
-    dpo: 'dpo@iprotector.com.br',
-    legal: 'legal@iprotector.com.br',
-    geral: 'contato@iprotector.com.br',
+    contato: 'contato@iprotector.com.br',
   },
   nav: [
     { href: '/#como-funciona', label: 'Como funciona' },

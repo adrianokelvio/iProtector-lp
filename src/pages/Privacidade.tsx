@@ -138,7 +138,7 @@ export function Privacidade() {
         </ul>
         <p>
           Para exercer seus direitos, envie e-mail ao Encarregado de Dados (DPO)
-          em <strong>dpo@iprotector.com.br</strong>.
+          em <strong>contato@iprotector.com.br</strong>.
         </p>
 
         <h2 data-num="10">Cookies</h2>
@@ -160,7 +160,7 @@ export function Privacidade() {
           Contato
         </h2>
         <p>
-          <strong>E-mail do DPO:</strong> dpo@iprotector.com.br
+          <strong>E-mail:</strong> contato@iprotector.com.br
           <br />
           <strong>WhatsApp da central:</strong> +55 (11) 99719-4408
           <br />

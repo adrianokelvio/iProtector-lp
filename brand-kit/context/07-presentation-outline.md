@@ -113,8 +113,7 @@
 - Fundadores + advisors + estrutura operacional
 
 ## Slide 19 — Contato
-- Comercial: comercial@iprotector.com.br
-- Parcerias: parcerias@iprotector.com.br
+- E-mail: contato@iprotector.com.br
 - WhatsApp: +55 (11) 99719-4408
 - Site: iprotector.com.br
 - Endereço: Av. Dr. Chucri Zaidan, 1649 · São Paulo / SP
