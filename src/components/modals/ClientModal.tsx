@@ -10,12 +10,14 @@ import { getWhatsAppUrl } from '../../config/site';
 import type { ClientFormData, FieldErrors } from '../../types/forms';
 
 const TIPOS = [
-  'Proteção pessoal (bodyguard)',
-  'Proteção residencial / patrimonial',
-  'Proteção executiva / VIP',
-  'Evento privado ou corporativo',
-  'Propriedade rural / fazenda',
-  'Transporte de valores',
+  'Proteção executiva — Plano Essential',
+  'Proteção executiva — Plano Premium',
+  'Proteção executiva — Family Office',
+  'Monitoramento robótico — Condomínio',
+  'Monitoramento robótico — Fazenda / Rural',
+  'Monitoramento robótico — Resort / Evento',
+  'Treinamento de elite corporativo',
+  'Veículos blindados / Transporte executivo',
   'Outro',
 ];
 
@@ -90,11 +92,11 @@ export function ClientModal({ isOpen, onClose }: Props) {
     <ModalShell id="modal-client" isOpen={isOpen} onClose={handleClose}>
       {!submitted ? (
         <div className="form-body">
-          <h3>Fale com um especialista iProtector.</h3>
+          <h3>Solicite proteção executiva ou patrimonial.</h3>
           <p className="sub">
-            Preencha os campos abaixo e nossa equipe entra em contato em até 30
-            minutos (em horário comercial) ou na sequência se você estiver fora do
-            horário.
+            Preencha o formulário e nossa equipe comercial realiza a análise de
+            risco e retorna em até 30 minutos (horário comercial) com a proposta
+            ideal para o seu perfil.
           </p>
           <form className="form-grid" onSubmit={handleSubmit} noValidate>
             <label className="full">

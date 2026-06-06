@@ -1,52 +1,7 @@
 const ITEMS = [
   {
-    title: 'Aplicativo do cliente',
-    desc: 'Solicitação, acompanhamento, pagamento, histórico, relatórios e botão de pânico em um único lugar.',
-    svg: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <rect x="6" y="2" width="12" height="20" rx="2" />
-        <line x1="10" y1="18" x2="14" y2="18" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Painel web corporativo',
-    desc: 'Gerencie múltiplos endereços, agentes, ocorrências e centros de custo em um único dashboard.',
-    svg: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <rect x="2" y="4" width="20" height="14" rx="2" />
-        <line x1="6" y1="20" x2="18" y2="20" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Botão de ação imediata',
-    desc: 'Físico ou digital, individual ou corporativo, com acionamento direto na central 24h.',
-    svg: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <circle cx="12" cy="12" r="9" />
-        <circle cx="12" cy="12" r="4" fill="currentColor" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Drones homologados',
-    desc: 'Vigilância aérea, mapeamento de perímetro e suporte a eventos e operações de campo.',
+    title: 'Drone Dock',
+    desc: 'Ativação remota, operação autônoma, vigilância aérea e resposta rápida a invasões, incêndios, furtos e monitoramento perimetral.',
     svg: (
       <svg
         viewBox="0 0 24 24"
@@ -65,8 +20,22 @@ const ITEMS = [
     ),
   },
   {
-    title: 'Rastreamento',
-    desc: 'Geolocalização pessoal e veicular para escolta, transporte de valores e operações sensíveis.',
+    title: 'Torres de vigilância',
+    desc: 'Altura de 30m, alcance até 10 km, rotação 360°, câmeras térmicas, infravermelho e operação remota para fazendas, condomínios, resorts e eventos.',
+    svg: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      >
+        <path d="M12 2 v20 M8 6 h8 M7 10 h10 M6 14 h12 M5 18 h14" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Tags de rastreamento',
+    desc: 'Geolocalização, alertas automáticos e histórico operacional para veículos, máquinas, equipamentos, animais e ativos críticos.',
     svg: (
       <svg
         viewBox="0 0 24 24"
@@ -80,8 +49,8 @@ const ITEMS = [
     ),
   },
   {
-    title: 'Integração Smart Sampa',
-    desc: 'Acesso a câmeras inteligentes com reconhecimento facial — uma das maiores redes de monitoramento da América Latina.',
+    title: 'Mapeamento topográfico',
+    desc: 'Mapeamento com drones, georreferenciamento, análise de vulnerabilidades e planejamento de segurança para grandes propriedades.',
     svg: (
       <svg
         viewBox="0 0 24 24"
@@ -89,8 +58,38 @@ const ITEMS = [
         stroke="currentColor"
         strokeWidth="1.5"
       >
-        <rect x="3" y="6" width="14" height="12" rx="1" />
-        <path d="M17 10 L22 7 V17 L17 14 Z" />
+        <path d="M3 18 L9 10 L14 14 L21 6" />
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Central de monitoramento',
+    desc: 'Security as a Service recorrente para condomínios, fazendas, resorts, associações e eventos abertos — com operação 24h.',
+    svg: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      >
+        <rect x="2" y="4" width="20" height="14" rx="2" />
+        <line x1="6" y1="20" x2="18" y2="20" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Integração tecnológica',
+    desc: 'CRM operacional com IA, integração LEGALCERT, RWB Telecom e plataforma unificada de gerenciamento de riscos.',
+    svg: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      >
+        <circle cx="12" cy="12" r="3" />
+        <path d="M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4" />
       </svg>
     ),
   },
@@ -98,16 +97,16 @@ const ITEMS = [
 
 export function Tecnologia() {
   return (
-    <section>
+    <section id="tecnologia">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">[PLATAFORMA + CAMPO]</span>
-          <h2>Cada agente em campo. Toda a operação na sua tela.</h2>
+          <span className="eyebrow">[MONITORAMENTO ROBÓTICO]</span>
+          <h2>Security as a Service. Vigilância inteligente e recorrente.</h2>
           <p className="lead">
-            O iProtector é, antes de tudo, uma plataforma de tecnologia que
-            organiza segurança como serviço. Isso significa que cada
-            atendimento é digitalizado, auditável e mensurável — para o cliente
-            final, para a empresa contratante e para a central de operações.
+            Solução SaaS para condomínios residenciais horizontais, condomínios
+            rurais, fazendas, resorts, associações e eventos abertos — com
+            tecnologia de ativação remota, operação autônoma e resposta rápida
+            a incidentes.
           </p>
         </div>
 

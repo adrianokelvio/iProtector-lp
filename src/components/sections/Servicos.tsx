@@ -3,60 +3,67 @@ export function Servicos() {
     <section id="servicos">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">[OPERAÇÃO COMPLETA]</span>
+          <span className="eyebrow">[SOLUÇÕES]</span>
           <h2>
-            Não vendemos vigilância. Entregamos presença, resposta e resultado.
+            Proteção executiva, banco de protetores e veículos blindados.
           </h2>
           <p className="lead">
-            O iProtector reúne três camadas de operação que se complementam:
-            atuação presencial em campo, monitoramento avançado e tecnologia
-            integrada. Cada atendimento combina essas frentes de acordo com o
-            nível de proteção exigido.
+            O iProtector opera como marketplace de segurança, SaaS, treinamento
+            corporativo, agenciamento de proteção executiva e captação de
+            investimentos para empresas de segurança — tudo em um único
+            ecossistema.
           </p>
         </div>
 
         <div className="delivery-grid">
           <div className="delivery-col">
             <h3>
-              <span className="num">[01]</span> Atuação presencial
+              <span className="num">[01]</span> Agenciamento de proteção pessoal
+              e patrimonial
             </h3>
+            <p style={{ marginBottom: '1rem', color: 'var(--fg-dim)', fontSize: '14px' }}>
+              CEOs, empresários, investidores, autoridades, executivos C-Level
+              e famílias de alta renda.
+            </p>
             <ul>
-              <li>
-                Proteção pessoal (bodyguard, acompanhamento e presença
-                preventiva)
-              </li>
-              <li>Proteção patrimonial e residencial</li>
-              <li>Proteção executiva e de lideranças</li>
-              <li>Suporte em deslocamentos, eventos e operações em campo</li>
-              <li>Transporte de valores e operações sensíveis</li>
+              <li>Segurança pessoal armada</li>
+              <li>Segurança pessoal desarmada</li>
+              <li>Escolta executiva</li>
+              <li>Proteção familiar</li>
+              <li>Segurança em viagens</li>
+              <li>Segurança para eventos privados</li>
             </ul>
           </div>
           <div className="delivery-col">
             <h3>
-              <span className="num">[02]</span> Monitoramento avançado
+              <span className="num">[02]</span> Banco de protetores
             </h3>
+            <p style={{ marginBottom: '1rem', color: 'var(--fg-dim)', fontSize: '14px' }}>
+              O maior banco nacional de agentes de proteção para atendimento
+              sob demanda.
+            </p>
             <ul>
-              <li>Central de operações 24h</li>
-              <li>Acompanhamento por telemetria em tempo real</li>
-              <li>Auditoria de rotas, tempos e deslocamentos</li>
-              <li>Registro completo de ocorrências</li>
-              <li>Bodycam quando aplicável</li>
-              <li>Histórico disponível para auditoria corporativa</li>
+              <li>Vigilantes</li>
+              <li>Carros blindados</li>
+              <li>Escoltas</li>
+              <li>Agentes de segurança</li>
+              <li>Operadores táticos</li>
+              <li>Empresas de segurança</li>
             </ul>
           </div>
           <div className="delivery-col">
             <h3>
-              <span className="num">[03]</span> Tecnologia operacional
+              <span className="num">[03]</span> Veículos blindados
             </h3>
+            <p style={{ marginBottom: '1rem', color: 'var(--fg-dim)', fontSize: '14px' }}>
+              Empresas de blindagem, locadoras de blindados e motoristas
+              executivos integrados à plataforma.
+            </p>
             <ul>
-              <li>Drones profissionais para vigilância aérea e perímetro</li>
-              <li>Rastreamento pessoal e veicular</li>
-              <li>Sensores, câmeras, alarmes e soluções IoT</li>
-              <li>Botão de ação imediata (corporativo ou individual)</li>
-              <li>Aplicativo e painel web para controle completo</li>
-              <li>
-                Integração com Smart Sampa e redes públicas de inteligência
-              </li>
+              <li>Locação diária</li>
+              <li>Locação mensal</li>
+              <li>Eventos corporativos</li>
+              <li>Transporte executivo</li>
             </ul>
           </div>
         </div>

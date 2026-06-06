@@ -1,7 +1,7 @@
 {
-  "name": "iProtector — Personal Protection as a Service",
+  "name": "iProtector — Marketplace de Segurança",
   "short_name": "iProtector",
-  "description": "Proteção pessoal sob demanda, monitorada 24h. Conecte-se a agentes certificados com central 24h e tecnologia avançada em campo.",
+  "description": "Plataforma de tecnologia para agenciamento de Proteção Pessoal, Patrimonial e Monitoramento Robótico com Treinamentos de Elite.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -34,7 +34,7 @@
     {
       "name": "Contratar proteção",
       "short_name": "Contratar",
-      "description": "Solicite um agente de segurança qualificado",
+      "description": "Solicite proteção executiva ou patrimonial",
       "url": "/?action=contratar",
       "icons": [{ "src": "/assets/iprotector-mark-gold.png", "sizes": "192x192" }]
     },

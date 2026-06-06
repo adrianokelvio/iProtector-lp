@@ -1,7 +1,7 @@
 const CRITERIA = [
   {
-    title: 'Certificação obrigatória',
-    desc: 'Profissionais com formação reconhecida e habilitação válida para a função.',
+    title: 'Vigilantes',
+    desc: 'Profissionais habilitados para proteção patrimonial, controle de acesso e operações de prevenção.',
     svg: (
       <svg
         viewBox="0 0 24 24"
@@ -16,8 +16,41 @@ const CRITERIA = [
     ),
   },
   {
-    title: 'Verificação de antecedentes',
-    desc: 'Investigação criminal, civil e de histórico profissional antes da inclusão na rede.',
+    title: 'Escoltas e operadores táticos',
+    desc: 'Agentes especializados em proteção executiva, condução evasiva e resposta a cenários de alto risco.',
+    svg: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <circle cx="12" cy="7" r="3" />
+        <path d="M5 22 L9 13 L15 13 L19 22" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Carros blindados',
+    desc: 'Frota integrada de veículos blindados com motoristas executivos para transporte e escolta.',
+    svg: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect x="2" y="10" width="20" height="8" rx="2" />
+        <circle cx="7" cy="18" r="2" />
+        <circle cx="17" cy="18" r="2" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Agentes de segurança',
+    desc: 'Profissionais certificados para proteção pessoal armada e desarmada em ambientes urbanos e rurais.',
     svg: (
       <svg
         viewBox="0 0 24 24"
@@ -32,8 +65,8 @@ const CRITERIA = [
     ),
   },
   {
-    title: 'Avaliação psicológica',
-    desc: 'Perfil testado para conduta em situações de estresse, conflito e exposição.',
+    title: 'Empresas de segurança',
+    desc: 'Parceiras homologadas com estrutura operacional, equipes treinadas e capacidade de atendimento regional.',
     svg: (
       <svg
         viewBox="0 0 24 24"
@@ -42,14 +75,14 @@ const CRITERIA = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M12 2 a4 4 0 0 1 4 4 v3 a4 4 0 0 1 -8 0 v-3 a4 4 0 0 1 4 -4 Z" />
-        <path d="M5 21 c1-4 5-6 7-6 s6 2 7 6" />
+        <rect x="3" y="10" width="18" height="11" />
+        <path d="M3 10 L12 3 L21 10" />
       </svg>
     ),
   },
   {
-    title: 'Treinamento contínuo',
-    desc: 'Reciclagens em defesa, primeiros socorros, condução evasiva, atendimento e LGPD.',
+    title: 'Atendimento sob demanda',
+    desc: 'Rede nacional escalável para mobilização rápida em qualquer cidade ou propriedade do Brasil.',
     svg: (
       <svg
         viewBox="0 0 24 24"
@@ -58,38 +91,8 @@ const CRITERIA = [
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M4 7 h16 M4 12 h16 M4 17 h10" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Auditorias operacionais',
-    desc: 'Avaliação por cliente e supervisão técnica em cada atendimento prestado.',
-    svg: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M3 12 l4 4 l4-8 l4 6 l4-2 l2 4" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Exames periódicos',
-    desc: 'Manutenção das condições físicas e mentais mínimas para atuação em campo.',
-    svg: (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <circle cx="12" cy="12" r="9" />
-        <path d="M12 7 v5 l3 2" />
+        <path d="M12 22 s8-6 8-12 a8 8 0 0 0 -16 0 c0 6 8 12 8 12 Z" />
+        <circle cx="12" cy="10" r="3" />
       </svg>
     ),
   },
@@ -100,23 +103,22 @@ export function Agentes() {
     <section>
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">[AGENTES CERTIFICADOS]</span>
+          <span className="eyebrow">[BANCO DE PROTETORES]</span>
           <h2>
-            Agentes selecionados para um padrão que não negocia qualidade.
+            O maior banco nacional de agentes de proteção sob demanda.
           </h2>
         </div>
         <div className="agents-wrap">
           <div>
             <p className="lead">
-              Toda operação iProtector é executada por profissionais experientes,
-              treinados e rigorosamente selecionados. Não basta ter um currículo:
-              cada agente da nossa rede passa por um filtro técnico, psicológico
-              e operacional contínuo.
+              Construímos a maior rede nacional de profissionais e empresas de
+              segurança para atendimento imediato. Vigilantes, escoltas,
+              operadores táticos, veículos blindados e empresas parceiras
+              cadastrados, homologados e prontos para operação.
             </p>
             <blockquote className="agents-quote">
-              Agentes habilitados para atuar com presença, prevenção, resposta
-              rápida e conduta técnica em qualquer ambiente — do evento privado
-              à propriedade rural, da residência ao deslocamento executivo.
+              Objetivo estratégico: 10.000 protetores cadastrados e 1.000
+              empresas parceiras integradas ao ecossistema iProtector até 2030.
             </blockquote>
           </div>
 

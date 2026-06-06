@@ -4,55 +4,55 @@ type FaqEntry = { q: string; a: string };
 
 const CLIENT: FaqEntry[] = [
   {
-    q: 'O iProtector é uma empresa de segurança?',
-    a: 'Não. O iProtector é uma plataforma de intermediação que conecta clientes a empresas de segurança parceiras altamente qualificadas. Operamos com tecnologia, central 24h e rede homologada — mas a execução em campo é feita por empresas e agentes credenciados na nossa rede.',
+    q: 'O que é o iProtector?',
+    a: 'O iProtector é uma plataforma de tecnologia para agenciamento de Proteção Pessoal, Patrimonial e Monitoramento Robótico com Treinamentos de Elite. Conectamos clientes, empresas de segurança, agentes protetores e fornecedores de tecnologias avançadas de gerenciamento de riscos.',
   },
   {
-    q: 'Como sei que o agente que vai me atender é confiável?',
-    a: 'Cada agente da rede iProtector passa por verificação completa de antecedentes, avaliação psicológica, certificação obrigatória e auditoria contínua. Você recebe no app o nome, foto e identificação do profissional antes do atendimento.',
+    q: 'Quem pode contratar proteção executiva?',
+    a: 'CEOs, empresários, investidores, autoridades, executivos C-Level e famílias de alta renda. Oferecemos segurança pessoal armada e desarmada, escolta executiva, proteção familiar, segurança em viagens e eventos privados.',
   },
   {
-    q: 'Posso contratar para um único evento?',
-    a: 'Sim. O modelo sob demanda permite contratação pontual — para um evento, um deslocamento, uma visita ou um período específico. Sem fidelidade, sem mensalidade obrigatória.',
+    q: 'Como funciona o fluxo de contratação?',
+    a: 'Cadastro via Website, WhatsApp ou Aplicativo → Análise de Risco → Seleção de Protetores → Contratação → Monitoramento Operacional. Toda a operação é acompanhada pela nossa central 24h.',
   },
   {
-    q: 'E se eu precisar de proteção contínua?',
-    a: 'Para necessidades recorrentes, você pode optar por uma assinatura mensal (Silver, Gold ou Black) ou por um contrato corporativo, com escopo, prazo e SLA definidos.',
+    q: 'Quais são os planos de proteção executiva?',
+    a: 'Plano Essential (R$ 18k–25k/mês), Plano Premium (R$ 35k–60k/mês) e Plano Family Office (R$ 80k–250k/mês), com escopo, agentes e recursos diferenciados para cada perfil.',
   },
   {
-    q: 'O atendimento é armado?',
-    a: 'Depende do escopo da operação, do tipo de risco envolvido e da legislação aplicável. A iProtector e suas empresas parceiras operam estritamente dentro do marco legal brasileiro. O nível de armamento é definido no escopo do atendimento.',
+    q: 'O que é o Monitoramento Robótico?',
+    a: 'É nossa solução Security as a Service (SaaS) com Drone Dock, Torres de Vigilância, Tags de Rastreamento e Mapeamento Topográfico — para condomínios, fazendas, resorts, associações e eventos abertos.',
   },
   {
-    q: 'Como funciona o pagamento?',
-    a: 'Atendimentos avulsos são cobrados via app (cartão, Pix ou cobrança). Assinaturas têm débito recorrente. Contratos corporativos são faturados conforme contrato.',
+    q: 'Vocês oferecem treinamento corporativo?',
+    a: 'Sim. O Treinamento de Elite possui três módulos: Protocolos Técnicos, Protocolos Operacionais e Treinamento VIP (Executive Protection). Planos de R$ 15k a R$ 150k conforme o programa.',
   },
   {
-    q: 'Vocês atendem em todo o Brasil?',
-    a: 'A cobertura cresce continuamente, conforme novas empresas parceiras são homologadas. Consulte a disponibilidade da sua região no app ou pelo WhatsApp.',
+    q: 'O iProtector atende em todo o Brasil?',
+    a: 'Estamos em expansão nacional estruturada em três fases — iniciando por São Paulo e Brasília, com crescimento para capitais do agronegócio e grandes centros urbanos.',
   },
   {
-    q: 'Posso cancelar um atendimento?',
-    a: 'Sim. As regras de cancelamento e reembolso variam por modelo de contratação e estão descritas nos Termos de Uso.',
+    q: 'Como funciona o monitoramento após a contratação?',
+    a: 'Toda operação conta com SLA inferior a 15 minutos, central 24h, telemetria, relatórios auditáveis e NPS alvo superior a 85. O acompanhamento é contínuo do início ao fim.',
   },
 ];
 
 const PARTNER: FaqEntry[] = [
   {
-    q: 'Como funciona o cadastro de uma empresa parceira?',
-    a: 'Você preenche o formulário de cadastro, envia documentação (CNPJ, alvarás, certificações, comprovação operacional) e passa por homologação da nossa equipe. Aprovada, sua empresa entra no fluxo de demanda da plataforma.',
+    q: 'Como funciona o Banco de Protetores?',
+    a: 'Cadastramos vigilantes, escoltas, operadores táticos, veículos blindados e empresas de segurança para compor o maior banco nacional de agentes de proteção sob demanda.',
   },
   {
-    q: 'Tenho que dar exclusividade?',
-    a: 'Não. A parceria com o iProtector não é exclusiva — sua empresa continua operando seus contratos próprios. O iProtector é uma camada adicional de demanda e padrão operacional.',
+    q: 'Como cadastrar minha empresa de segurança?',
+    a: 'Preencha o formulário de cadastro com CNPJ, alvarás, certificações e comprovação operacional. Após homologação e onboarding, sua empresa integra o fluxo de demanda da plataforma.',
   },
   {
-    q: 'Como funciona o repasse financeiro?',
-    a: 'O iProtector centraliza o recebimento do cliente final e repassa à empresa parceira o valor combinado, deduzido o take rate (15% a 30%, conforme tipo de operação). O ciclo é transparente, com extrato detalhado no painel.',
+    q: 'O que é a captação de investimentos LEGALCERT?',
+    a: 'Em parceria com LEGALCERT, oferecemos captação de investimentos para empresas de segurança — expansão operacional, frota blindada, centros de monitoramento e capital de giro.',
   },
   {
-    q: 'Posso usar minha própria marca nos uniformes?',
-    a: 'Sim. O iProtector preserva a identidade operacional das empresas parceiras. O padrão exigido é de qualidade, conduta, tempo de resposta e uso da plataforma — não substituição de marca.',
+    q: 'Quais documentos são exigidos para captação?',
+    a: 'DRE, balanço patrimonial, fluxo de caixa, relatórios de atividades, contratos relevantes, certidões, organograma e carteira de clientes dos últimos 3 anos.',
   },
 ];
 
@@ -87,7 +87,7 @@ export function Faq() {
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">[FAQ]</span>
-          <h2>Tudo o que você precisa saber antes de contratar.</h2>
+          <h2>Tudo o que você precisa saber sobre o ecossistema iProtector.</h2>
         </div>
 
         <div className="faq-tabs" role="tablist">

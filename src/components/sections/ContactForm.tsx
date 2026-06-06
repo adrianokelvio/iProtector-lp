@@ -8,11 +8,12 @@ import { buildContactMessage, openWhatsApp } from '../../utils/whatsapp';
 import type { ContactFormData, FieldErrors } from '../../types/forms';
 
 const ASSUNTOS = [
+  'Proteção executiva',
+  'Monitoramento robótico',
+  'Treinamento de elite',
+  'Cadastro banco de protetores',
+  'Captação de investimentos LEGALCERT',
   'Imprensa',
-  'Parcerias institucionais',
-  'Investidores',
-  'Dúvida geral',
-  'Reclamação',
   'Outro',
 ];
 

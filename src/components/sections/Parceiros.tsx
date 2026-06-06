@@ -3,28 +3,28 @@ import { useModals } from '../modals/ModalsContext';
 
 const VALUE_PROPS = [
   {
-    title: 'Fluxo contínuo de demanda qualificada.',
-    desc: 'Clientes prontos, segmentados e dispostos a pagar pelo serviço certo.',
+    title: 'Banco nacional de protetores.',
+    desc: 'Cadastro de vigilantes, escoltas, operadores táticos, veículos blindados e empresas de segurança para atendimento sob demanda.',
   },
   {
-    title: 'Operação digitalizada.',
-    desc: 'Recebimento de chamadas, despacho de agentes, telemetria e registro de ocorrência via plataforma — sem retrabalho.',
+    title: 'Demanda qualificada via marketplace.',
+    desc: 'Leads segmentados de proteção executiva, patrimonial e monitoramento robótico — com CRM e automação integrados.',
   },
   {
-    title: 'Pagamento garantido e rastreável.',
-    desc: 'A iProtector centraliza o pagamento e repassa de forma transparente.',
+    title: 'Captação de investimentos LEGALCERT.',
+    desc: 'Expansão operacional, aquisição de equipamentos, frota blindada, centros de monitoramento e capital de giro.',
   },
   {
-    title: 'Padrão de marca preservado.',
-    desc: 'Sua marca interna continua existindo. O iProtector é a camada de plataforma.',
+    title: 'Operação digitalizada e auditável.',
+    desc: 'Recebimento de chamadas, despacho de agentes, telemetria, SLA e registro de ocorrência via plataforma.',
   },
   {
-    title: 'Visibilidade comercial.',
-    desc: 'Acesso a métricas, avaliações e oportunidades de expansão de portfólio.',
+    title: 'Tecnologia avançada integrada.',
+    desc: 'Drone Dock, torres inteligentes, rastreamento, mapeamento topográfico e integração com IA e CRM operacional.',
   },
   {
-    title: 'Acesso a tecnologia.',
-    desc: 'Drones, rastreadores, dispositivos e integrações que reforçam sua entrega operacional.',
+    title: 'Expansão nacional estruturada.',
+    desc: 'Presença em São Paulo, Brasília e expansão para capitais estratégicas do agronegócio e grandes centros urbanos.',
   },
 ];
 
@@ -32,22 +32,22 @@ const STEPS = [
   {
     n: '1º',
     title: 'CADASTRO',
-    desc: 'Sua empresa preenche o formulário. Validamos CNPJ, alvarás, certificações e perfil operacional.',
+    desc: 'Protetores, empresas de segurança, veículos blindados e fornecedores de tecnologia entram na plataforma.',
   },
   {
     n: '2ª',
     title: 'HOMOLOGAÇÃO',
-    desc: 'Verificamos estrutura, equipe, processos e capacidade de atendimento por região.',
+    desc: 'Validação de documentação, certificações, estrutura operacional e capacidade de atendimento por região.',
   },
   {
     n: '3º',
     title: 'ONBOARDING',
-    desc: 'Sua equipe é treinada na operação iProtector — uso do app, protocolos da central, padrão de atendimento.',
+    desc: 'Treinamento na operação iProtector — protocolos, central 24h, CRM, padrão de atendimento e tecnologias.',
   },
   {
     n: '4ª',
     title: 'OPERAÇÃO ATIVA',
-    desc: 'Sua empresa passa a receber demanda da plataforma e ser remunerada por atendimento concluído.',
+    desc: 'Integração ao fluxo de demanda da plataforma com monitoramento, SLA e remuneração transparente.',
   },
 ];
 
@@ -58,31 +58,30 @@ export function Parceiros() {
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">[PARCEIROS B2B]</span>
-          <h2>Sua operação. Nossa demanda. Um padrão único.</h2>
+          <h2>Banco de protetores. Demanda qualificada. Escala nacional.</h2>
         </div>
 
         <div className="b2b-grid">
-          {/* Left: sticky pitch card */}
           <aside className="b2b-pitch">
             <p className="lead">
-              O iProtector é uma plataforma de intermediação. Trabalhamos lado
-              a lado com empresas de segurança parceiras que já operam com
-              excelência no mercado.
+              O iProtector é o marketplace nacional de segurança que conecta
+              empresas parceiras a demanda qualificada de proteção executiva,
+              patrimonial e monitoramento robótico.
             </p>
             <p className="b2b-pitch-sub">
-              Se a sua empresa tem agentes treinados, estrutura operacional e
-              capacidade para atender mais — nós trazemos a demanda, organizamos
-              o atendimento e garantimos o pagamento.
+              Cadastre protetores, empresas de segurança, veículos blindados e
+              fornecedores de tecnologia. Em parceria com LEGALCERT, oferecemos
+              também captação de investimentos para expansão operacional.
             </p>
 
             <div className="b2b-pitch-stats">
               <div>
-                <div className="stat-num">15–30%</div>
-                <div className="stat-lbl">[TAKE RATE TRANSPARENTE]</div>
+                <div className="stat-num">1.000</div>
+                <div className="stat-lbl">[META EMPRESAS PARCEIRAS]</div>
               </div>
               <div>
-                <div className="stat-num">24/7</div>
-                <div className="stat-lbl">[CENTRAL IPROTECTOR]</div>
+                <div className="stat-num">10k</div>
+                <div className="stat-lbl">[META PROTETORES 2030]</div>
               </div>
             </div>
 
@@ -91,7 +90,6 @@ export function Parceiros() {
             </button>
           </aside>
 
-          {/* Right: 2-col grid of value props, top-aligned with the pitch */}
           <div className="b2b-list">
             {VALUE_PROPS.map((v) => (
               <div className="b2b-item" key={v.title}>
@@ -114,14 +112,22 @@ export function Parceiros() {
 
         <div className="takerate">
           <div>
-            <div className="label">[MODELO DE REMUNERAÇÃO]</div>
-            <div className="value">Take rate de 15% a 30%</div>
+            <div className="label">[CAPTAÇÃO DE INVESTIMENTOS]</div>
+            <div className="value">Parceria LEGALCERT</div>
+            <a
+              className="btn btn-primary btn-sm takerate-link"
+              href="https://www.legalcert.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Conhecer a LEGALCERT <Arrow />
+            </a>
           </div>
           <p>
-            Sobre o valor pago pelo cliente final, com repasse direto e
-            transparente. Para contratos enterprise e operações continuadas,
-            modelos específicos são negociados conforme volume, complexidade e
-            exclusividade.
+            Expansão operacional, aquisição de equipamentos, frota blindada,
+            centros de monitoramento e capital de giro. Documentação exigida:
+            DRE, balanço patrimonial, fluxo de caixa, contratos relevantes,
+            certidões, organograma e carteira de clientes dos últimos 3 anos.
           </p>
         </div>
       </div>

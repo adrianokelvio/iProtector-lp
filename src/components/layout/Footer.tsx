@@ -21,7 +21,10 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
                 decoding="async"
               />
             </Link>
-            <p>A nova geração de proteção como serviço.</p>
+            <p>
+              Marketplace nacional de segurança — proteção executiva,
+              monitoramento robótico e treinamento de elite.
+            </p>
             <div className="footer-meta">
               {COMPANY.address.street}
               <br />
@@ -40,7 +43,13 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
                 <HashLink to="/#como-funciona">Como funciona</HashLink>
               </li>
               <li>
-                <HashLink to="/#servicos">Serviços</HashLink>
+                <HashLink to="/#servicos">Soluções</HashLink>
+              </li>
+              <li>
+                <HashLink to="/#tecnologia">Monitoramento</HashLink>
+              </li>
+              <li>
+                <HashLink to="/#treinamento">Treinamento</HashLink>
               </li>
               <li>
                 <HashLink to="/#planos">Planos</HashLink>
@@ -109,10 +118,10 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
 
         <div className="footer-bottom">
           <div>
-            © 2025 iProtector — Todos os direitos reservados. iProtector é uma
-            plataforma de intermediação. Os serviços de segurança em campo são
-            executados por empresas parceiras devidamente certificadas e
-            homologadas.
+            © 2025 iProtector — Todos os direitos reservados. iProtector é um
+            marketplace nacional de segurança. Os serviços em campo são
+            executados por empresas parceiras e agentes protetores devidamente
+            certificados e homologados.
           </div>
           <div className="socials">
             <a href="#" aria-label="Instagram">

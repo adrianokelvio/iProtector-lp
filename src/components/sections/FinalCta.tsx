@@ -6,10 +6,15 @@ export function FinalCta() {
   return (
     <section className="final-cta">
       <div className="container">
-        <h2>A iProtector não vende vigilância.</h2>
+        <span className="eyebrow">[VISÃO 2030]</span>
+        <h2>A maior plataforma brasileira de proteção e monitoramento inteligente.</h2>
         <p className="lead">
-          Vende tranquilidade, reação rápida, presença qualificada e proteção
-          contínua — da cidade ao campo, do imóvel à família, do evento ao CEO.
+          Tornar o iProtector o ecossistema nacional que conecta clientes,
+          agentes protetores, empresas de segurança e tecnologias avançadas de
+          gerenciamento de riscos — com meta de 10.000 protetores, 1.000
+          empresas parceiras, 500 condomínios monitorados, 200 fazendas
+          conectadas, 100 resorts atendidos e receita recorrente superior a
+          R$ 100 milhões por ano.
         </p>
         <div className="ctas">
           <button className="btn btn-primary" onClick={openClient}>

@@ -96,10 +96,11 @@ export function PartnerModal({ isOpen, onClose }: Props) {
     <ModalShell id="modal-partner" isOpen={isOpen} onClose={handleClose}>
       {!submitted ? (
         <div className="form-body">
-          <h3>Cadastre sua empresa na rede iProtector.</h3>
+          <h3>Integre-se ao banco nacional de protetores.</h3>
           <p className="sub">
-            Conte rapidamente sobre a sua operação. Após análise inicial, nossa
-            equipe entra em contato para a próxima etapa da homologação.
+            Cadastre sua empresa de segurança, protetores, veículos blindados
+            ou fornecedores de tecnologia. Após análise, nossa equipe inicia a
+            homologação e onboarding operacional.
           </p>
           <form className="form-grid" onSubmit={handleSubmit} noValidate>
             <label className="full">

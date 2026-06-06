@@ -7,25 +7,29 @@ export function ParaQuem() {
     <section id="para-quem">
       <div className="container">
         <div className="section-head">
-          <span className="eyebrow">[PARA QUEM]</span>
-          <h2>Duas jornadas. Uma única plataforma de proteção.</h2>
+          <span className="eyebrow">[ECOSSISTEMA]</span>
+          <h2>Um ecossistema nacional. Múltiplas jornadas conectadas.</h2>
+          <p className="lead">
+            O iProtector integra clientes finais, empresas de segurança,
+            agentes protetores e fornecedores de tecnologia em uma única
+            plataforma — do agenciamento executivo ao monitoramento robótico.
+          </p>
         </div>
         <div className="segment-grid">
           <article className="segment-card">
             <span className="tag">[CLIENTE FINAL]</span>
-            <h3>Para você, sua família ou sua empresa.</h3>
+            <h3>Proteção pessoal e patrimonial de elite.</h3>
             <p>
-              Solicite um agente de segurança qualificado para um evento, um
-              deslocamento, sua residência, sua fazenda, sua propriedade ou um
-              momento específico. Em poucos cliques, você tem ao seu lado um
-              profissional treinado, monitorado por nossa central 24h e
-              respaldado por toda a tecnologia operacional do iProtector.
+              Para CEOs, empresários, investidores, autoridades, executivos
+              C-Level e famílias de alta renda que exigem segurança pessoal
+              armada ou desarmada, escolta executiva, proteção familiar,
+              segurança em viagens e eventos privados.
             </p>
             <ul>
-              <li>Contratação sob demanda ou recorrente</li>
-              <li>Agentes certificados e auditados</li>
-              <li>Acompanhamento em tempo real</li>
-              <li>Histórico completo de cada atendimento</li>
+              <li>Segurança pessoal armada e desarmada</li>
+              <li>Escolta executiva e proteção familiar</li>
+              <li>Segurança em viagens e eventos privados</li>
+              <li>Análise de risco e monitoramento operacional</li>
             </ul>
             <button className="btn btn-primary" onClick={openClient}>
               Solicitar proteção <Arrow />
@@ -34,19 +38,18 @@ export function ParaQuem() {
 
           <article className="segment-card">
             <span className="tag">[EMPRESA PARCEIRA]</span>
-            <h3>Para empresas de segurança que querem escalar.</h3>
+            <h3>Banco de protetores e rede nacional.</h3>
             <p>
-              Sua empresa tem agentes qualificados, estrutura operacional e
-              capacidade ociosa. O iProtector traz a demanda. Conecte sua
-              operação à nossa plataforma e passe a receber atendimentos com
-              fluxo organizado, pagamento garantido e padrão operacional
-              unificado — sem perder a sua marca interna.
+              Para empresas de segurança, vigilantes, operadores táticos,
+              locadoras de blindados e fornecedores de tecnologia que desejam
+              integrar o maior banco nacional de agentes de proteção para
+              atendimento sob demanda.
             </p>
             <ul>
-              <li>Demanda qualificada e segmentada</li>
-              <li>Repasse transparente por atendimento</li>
-              <li>Operação integrada à central iProtector</li>
-              <li>Auditoria, telemetria e relatórios incluídos</li>
+              <li>Cadastro de protetores, escoltas e veículos blindados</li>
+              <li>Demanda qualificada via marketplace</li>
+              <li>Captação de investimentos via LEGALCERT</li>
+              <li>Integração com IA, CRM e tecnologias avançadas</li>
             </ul>
             <button className="btn btn-ghost" onClick={openPartner}>
               Quero ser parceiro <Arrow />

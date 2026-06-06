@@ -4,25 +4,27 @@ export function TrustBand() {
       <div className="container trust-band-inner">
         <div className="trust-stat">
           <div className="num">
-            24<em>/7</em>
+            10<em>k</em>
           </div>
-          <div className="lbl">Central de operações</div>
+          <div className="lbl">Meta: protetores cadastrados</div>
         </div>
         <div className="trust-stat">
           <div className="num">
-            100<em>%</em>
+            <em>&lt;</em>15'
           </div>
-          <div className="lbl">Atendimentos auditáveis</div>
+          <div className="lbl">SLA de resposta operacional</div>
         </div>
         <div className="trust-stat">
           <div className="num">
-            <em>&lt;</em>10'
+            85<em>+</em>
           </div>
-          <div className="lbl">Tempo médio de resposta</div>
+          <div className="lbl">NPS alvo de satisfação</div>
         </div>
         <div className="trust-stat">
-          <div className="num">LGPD</div>
-          <div className="lbl">Compliance e segurança de dados</div>
+          <div className="num">
+            R$100<em>M</em>
+          </div>
+          <div className="lbl">Meta receita recorrente 2030</div>
         </div>
       </div>
     </div>

@@ -19,17 +19,19 @@ export const COMPANY = {
 
 export const SITE = {
   name: 'iProtector',
-  tagline: 'Proteção pessoal sob demanda, monitorada 24h',
+  tagline:
+    'Plataforma de tecnologia para agenciamento de proteção pessoal, patrimonial e monitoramento robótico',
   description:
-    'Contrate seguranças qualificados em poucos cliques. Personal Protection as a Service com agentes certificados, monitoramento 24h e tecnologia em campo.',
+    'Marketplace nacional de segurança. Conectamos clientes, empresas de segurança, agentes protetores e fornecedores de tecnologias avançadas de gerenciamento de riscos — com treinamentos de elite e Security as a Service.',
   email: {
     contato: 'contato@iprotector.com.br',
   },
   nav: [
     { href: '/#como-funciona', label: 'Como funciona' },
-    { href: '/#servicos', label: 'Serviços' },
-    { href: '/#parceiros', label: 'Para empresas parceiras' },
+    { href: '/#servicos', label: 'Soluções' },
+    { href: '/#tecnologia', label: 'Monitoramento' },
     { href: '/#planos', label: 'Planos' },
+    { href: '/#parceiros', label: 'Parceiros' },
     { href: '/contato', label: 'Contato' },
   ],
 } as const;

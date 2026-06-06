@@ -1,23 +1,23 @@
 const STEPS = [
   {
     n: '1º PASSO',
-    title: 'Você solicita pelo app ou plataforma web.',
-    desc: 'Em poucos cliques, você informa o tipo de proteção, local, duração e nível de prioridade. Nada de ligação, espera ou burocracia.',
+    title: 'Cadastro via Website, WhatsApp ou Aplicativo.',
+    desc: 'O cliente final preenche o formulário digital informando perfil, necessidade de proteção, local e contexto operacional — sem burocracia.',
   },
   {
     n: '2º PASSO',
-    title: 'O sistema identifica a operação ideal.',
-    desc: 'A plataforma cruza geolocalização, perfil da ocorrência, tipo de necessidade e disponibilidade de agentes em tempo real para definir a melhor resposta possível.',
+    title: 'Análise de risco personalizada.',
+    desc: 'Nossa equipe avalia o cenário, o nível de exposição e os requisitos técnicos para definir o protocolo ideal de proteção.',
   },
   {
     n: '3º PASSO',
-    title: 'Um profissional qualificado entra em campo.',
-    desc: 'Um agente próximo, certificado e dentro do perfil exigido é acionado automaticamente. Você acompanha o deslocamento e tem o nome, foto e identificação no app.',
+    title: 'Seleção de protetores qualificados.',
+    desc: 'A plataforma identifica no banco nacional o agente, a equipe ou a empresa parceira mais adequada ao perfil da operação.',
   },
   {
     n: '4º PASSO',
-    title: 'A nossa central acompanha tudo em tempo real.',
-    desc: 'Toda a operação é supervisionada pelo Command Center 24h, com telemetria, registro de ocorrência, bodycam quando aplicável e relatório completo ao final.',
+    title: 'Contratação e monitoramento operacional.',
+    desc: 'Após a contratação, toda a operação é acompanhada em tempo real — com central 24h, telemetria, relatórios e SLA garantido.',
   },
 ];
 
@@ -27,10 +27,10 @@ export function ComoFunciona() {
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">[COMO FUNCIONA]</span>
-          <h2>Quatro passos. Uma operação inteira por trás.</h2>
+          <h2>Do cadastro ao monitoramento. Uma operação completa.</h2>
           <p className="lead">
-            Cada atendimento iProtector é orquestrado de ponta a ponta — do
-            clique no app até o registro auditável da ocorrência.
+            Cada atendimento iProtector segue um fluxo estruturado — da
+            solicitação inicial à supervisão contínua da operação em campo.
           </p>
         </div>
         <div className="steps">
