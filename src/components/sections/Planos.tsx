@@ -1,4 +1,5 @@
 import { useModals } from '../modals/ModalsContext';
+import { PhoneVideoEmbed } from '../ui/PhoneVideoEmbed';
 
 const MODELS = [
   {
@@ -25,6 +26,8 @@ const MODELS = [
 
 const MONITORING_IMPLANT_NOTE =
   'Equipamento: R$ 150 mil para implantação. Já inclui drone e sistema.';
+
+const MONITORING_DEMO_VIDEO_ID = 'hQ1Xl_CxYeE';
 
 export function Planos() {
   const { openClient } = useModals();
@@ -113,7 +116,8 @@ export function Planos() {
           <h2>Security as a Service com setup e mensalidade.</h2>
         </div>
 
-        <div className="plans">
+        <div className="plans-with-video">
+          <div className="plans plans--monitoring">
           <article className="plan">
             <div className="plan-name">[CONDOMÍNIOS]</div>
             <div className="plan-price" style={{ fontSize: '32px' }}>
@@ -164,6 +168,14 @@ export function Planos() {
               Solicitar proposta
             </button>
           </article>
+          </div>
+
+          <aside className="plans-video-col" aria-label="Demonstração em vídeo">
+            <PhoneVideoEmbed
+              videoId={MONITORING_DEMO_VIDEO_ID}
+              title="Demonstração de monitoramento robótico iProtector"
+            />
+          </aside>
         </div>
 
         <div className="section-head" style={{ marginTop: '4rem' }}>

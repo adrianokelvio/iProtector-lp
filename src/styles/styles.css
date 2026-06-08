@@ -764,6 +764,30 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   gap: 18px;
   margin-top: 60px;
 }
+.plans-with-video {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(220px, 1fr);
+  gap: 24px;
+  align-items: center;
+  margin-top: 60px;
+}
+.plans-with-video .plans {
+  margin-top: 0;
+}
+.plans-video-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .plans-with-video {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .plans-video-col {
+    order: -1;
+  }
+}
 .plan {
   padding: 36px 30px;
   border-radius: var(--radius-lg);
