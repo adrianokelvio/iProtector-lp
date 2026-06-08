@@ -1,4 +1,5 @@
 import { useModals } from '../modals/ModalsContext';
+import { PlanComparisonCard } from '../ui/PlanComparisonCard';
 import { PhoneVideoEmbed } from '../ui/PhoneVideoEmbed';
 
 const MODELS = [
@@ -41,6 +42,53 @@ const MONITORING_FEATURE_LABELS = [
   'Projetos para eventos e resorts',
 ] as const;
 
+const EXECUTIVE_FEATURE_LABELS = [
+  'Agente de proteção dedicado',
+  'Cobertura até 12 horas por dia',
+  'Atendimento urbano',
+  'Análise de risco incluída',
+  'Monitoramento operacional',
+  '2 agentes de proteção',
+  'Veículo dedicado',
+  'Monitoramento operacional 24h',
+  'Escolta executiva',
+  'Relatórios e telemetria completos',
+  'Proteção familiar completa',
+  'Monitoramento patrimonial',
+  'Veículos blindados sob demanda',
+  'Gestor de segurança exclusivo',
+] as const;
+
+const EXECUTIVE_PLANS = [
+  {
+    name: '[PLANO ESSENTIAL]',
+    priceMain: 'R$ 18k',
+    priceSuffix: ' a 25k /mês',
+    featured: false,
+    badge: null,
+    cta: 'Solicitar Essential',
+    features: [true, true, true, true, true, false, false, false, false, false, false, false, false, false],
+  },
+  {
+    name: '[PLANO PREMIUM]',
+    priceMain: 'R$ 35k',
+    priceSuffix: ' a 60k /mês',
+    featured: true,
+    badge: '[MAIS COMPLETO]',
+    cta: 'Solicitar Premium',
+    features: [true, false, true, true, true, true, true, true, true, true, false, false, false, false],
+  },
+  {
+    name: '[FAMILY OFFICE]',
+    priceMain: 'R$ 80k',
+    priceSuffix: ' a 250k /mês',
+    featured: false,
+    badge: null,
+    cta: 'Solicitar Family Office',
+    features: [true, false, true, true, true, true, true, true, true, true, true, true, true, true],
+  },
+] as const;
+
 const MONITORING_PLANS = [
   {
     name: '[CONDOMÍNIOS]',
@@ -48,6 +96,7 @@ const MONITORING_PLANS = [
     priceSuffix: ' a 30k /mês',
     featured: false,
     badge: null,
+    cta: 'Solicitar proposta',
     features: [true, true, true, false, false, false, false, false, false],
   },
   {
@@ -56,6 +105,7 @@ const MONITORING_PLANS = [
     priceSuffix: ' a 80k /mês',
     featured: true,
     badge: '[PATRIMONIAL]',
+    cta: 'Solicitar proposta',
     features: [true, true, true, true, true, true, false, false, false],
   },
   {
@@ -64,6 +114,7 @@ const MONITORING_PLANS = [
     priceSuffix: ' a 500k',
     featured: false,
     badge: null,
+    cta: 'Solicitar proposta',
     features: [true, true, true, true, true, true, true, true, true],
   },
 ] as const;
@@ -98,56 +149,15 @@ export function Planos() {
           <h2>Planos mensais para proteção pessoal e patrimonial.</h2>
         </div>
 
-        <div className="plans">
-          <article className="plan">
-            <div className="plan-name">[PLANO ESSENTIAL]</div>
-            <div className="plan-price">
-              R$ 18k<small> a 25k /mês</small>
-            </div>
-            <ul>
-              <li>1 agente de proteção</li>
-              <li>Até 12 horas por dia</li>
-              <li>Atendimento urbano</li>
-              <li>Análise de risco incluída</li>
-              <li>Monitoramento operacional</li>
-            </ul>
-            <button className="btn btn-dark" onClick={openClient}>
-              Solicitar Essential
-            </button>
-          </article>
-          <article className="plan featured">
-            <span className="pop-badge">[MAIS COMPLETO]</span>
-            <div className="plan-name">[PLANO PREMIUM]</div>
-            <div className="plan-price">
-              R$ 35k<small> a 60k /mês</small>
-            </div>
-            <ul>
-              <li>2 agentes de proteção</li>
-              <li>Veículo dedicado</li>
-              <li>Monitoramento operacional 24h</li>
-              <li>Escolta executiva</li>
-              <li>Relatórios e telemetria completos</li>
-            </ul>
-            <button className="btn btn-primary" onClick={openClient}>
-              Solicitar Premium
-            </button>
-          </article>
-          <article className="plan">
-            <div className="plan-name">[FAMILY OFFICE]</div>
-            <div className="plan-price">
-              R$ 80k<small> a 250k /mês</small>
-            </div>
-            <ul>
-              <li>Proteção familiar completa</li>
-              <li>Escolta executiva dedicada</li>
-              <li>Monitoramento patrimonial</li>
-              <li>Veículos blindados sob demanda</li>
-              <li>Gestor de segurança exclusivo</li>
-            </ul>
-            <button className="btn btn-dark" onClick={openClient}>
-              Solicitar Family Office
-            </button>
-          </article>
+        <div className="plans plans--comparison">
+          {EXECUTIVE_PLANS.map((plan) => (
+            <PlanComparisonCard
+              key={plan.name}
+              plan={plan}
+              featureLabels={EXECUTIVE_FEATURE_LABELS}
+              onCta={openClient}
+            />
+          ))}
         </div>
 
         <div className="section-head" style={{ marginTop: '4rem' }}>
@@ -158,42 +168,12 @@ export function Planos() {
         <div className="monitoring-layout">
           <div className="plans plans--monitoring">
             {MONITORING_PLANS.map((plan) => (
-              <article
+              <PlanComparisonCard
                 key={plan.name}
-                className={`plan${plan.featured ? ' featured' : ''}`}
-              >
-                {plan.badge ? (
-                  <span className="pop-badge">{plan.badge}</span>
-                ) : null}
-                <div className="plan-name">{plan.name}</div>
-                <div className="plan-price">
-                  {plan.priceMain}
-                  <small>{plan.priceSuffix}</small>
-                </div>
-                <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
-                <ul className="plan-feat-list">
-                  {MONITORING_FEATURE_LABELS.map((label, index) => {
-                    const included = plan.features[index];
-                    return (
-                      <li
-                        key={label}
-                        className={`plan-feat ${included ? 'plan-feat--yes' : 'plan-feat--no'}`}
-                      >
-                        <span className="plan-feat__icon" aria-hidden="true">
-                          {included ? '✓' : '✗'}
-                        </span>
-                        <span className="plan-feat__label">{label}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
-                <button
-                  className={`btn ${plan.featured ? 'btn-primary' : 'btn-dark'}`}
-                  onClick={openClient}
-                >
-                  Solicitar proposta
-                </button>
-              </article>
+                plan={{ ...plan, note: MONITORING_IMPLANT_NOTE }}
+                featureLabels={MONITORING_FEATURE_LABELS}
+                onCta={openClient}
+              />
             ))}
           </div>
 

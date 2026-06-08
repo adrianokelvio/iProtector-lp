@@ -846,6 +846,14 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   font-size: 12.5px;
 }
 
+.plans--comparison .plan-feat-list {
+  gap: 9px;
+}
+
+.plans--comparison .plan-feat {
+  font-size: 13px;
+}
+
 .monitoring-video-slot {
   width: 100%;
   max-width: 100%;
