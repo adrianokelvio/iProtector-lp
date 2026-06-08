@@ -765,57 +765,80 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   margin-top: 60px;
 }
 .monitoring-layout {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr) 190px;
+  column-gap: 20px;
   align-items: center;
-  gap: clamp(16px, 2vw, 28px);
   margin-top: 60px;
   width: 100%;
+  max-width: 100%;
 }
 
 .monitoring-video-slot {
-  flex: 0 0 clamp(180px, 18vw, 260px);
-  width: clamp(180px, 18vw, 260px);
-  max-width: 260px;
+  width: 100%;
+  max-width: 190px;
+  justify-self: center;
+}
+
+.monitoring-video-slot:first-child {
+  grid-column: 1;
+}
+
+.monitoring-video-slot:last-child {
+  grid-column: 3;
 }
 
 .monitoring-layout .plans--monitoring {
-  flex: 1 1 auto;
-  min-width: 0;
+  grid-column: 2;
   margin-top: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1279px) {
   .monitoring-layout {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 24px;
+    column-gap: 16px;
   }
 
   .monitoring-layout .plans--monitoring {
-    flex: 1 1 100%;
-    width: 100%;
-    order: 1;
+    grid-column: 1 / -1;
+    grid-row: 1;
   }
 
   .monitoring-video-slot {
-    flex: 1 1 calc(50% - 12px);
-    width: auto;
-    max-width: 280px;
-    order: 2;
+    max-width: none;
+    width: 100%;
+  }
+
+  .monitoring-video-slot:first-child {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .monitoring-video-slot:last-child {
+    grid-column: 2;
+    grid-row: 2;
   }
 }
 
 @media (max-width: 640px) {
   .monitoring-layout {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
 
-  .monitoring-video-slot {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 280px;
+  .monitoring-video-slot:first-child {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .monitoring-video-slot:last-child {
+    grid-column: 1;
+    grid-row: 3;
   }
 }
 
