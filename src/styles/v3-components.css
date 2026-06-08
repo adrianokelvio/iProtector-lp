@@ -27,6 +27,15 @@
   border: 1px solid var(--line);
 }
 
+.monitoring-video--landscape {
+  aspect-ratio: 16 / 9;
+  max-width: none;
+}
+
+.plans-video-col .monitoring-video {
+  max-width: none;
+}
+
 .monitoring-video iframe,
 .monitoring-video video {
   width: 100%;

@@ -28,6 +28,7 @@ const MONITORING_IMPLANT_NOTE =
   'Equipamento: R$ 150 mil para implantação. Já inclui drone e sistema.';
 
 const MONITORING_DEMO_VIDEO_SRC = '/assets/videos/monitoring-demo.mp4';
+const MONITORING_DEMO_VIDEO_2_SRC = '/assets/videos/monitoring-demo-2.mp4';
 
 export function Planos() {
   const { openClient } = useModals();
@@ -174,6 +175,11 @@ export function Planos() {
             <PhoneVideoEmbed
               src={MONITORING_DEMO_VIDEO_SRC}
               title="Demonstração de monitoramento robótico iProtector"
+            />
+            <PhoneVideoEmbed
+              src={MONITORING_DEMO_VIDEO_2_SRC}
+              title="Demonstração de monitoramento iProtector"
+              aspect="landscape"
             />
           </aside>
         </div>
