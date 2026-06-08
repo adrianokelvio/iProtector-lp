@@ -948,6 +948,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 .plan.featured {
   border-color: var(--gold);
   box-shadow: 0 30px 80px -20px rgba(201, 169, 97, 0.2);
+  position: relative;
+  z-index: 1;
 }
 .plan .pop-badge {
   position: absolute;
