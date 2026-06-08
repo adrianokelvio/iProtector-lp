@@ -25,7 +25,7 @@ const MODELS = [
 ];
 
 const MONITORING_IMPLANT_NOTE =
-  'Equipamento: R$ 150 mil para implantação. Já inclui drone e sistema.';
+  'Equipamento: R$ 180 mil para implantação. Já inclui drone e sistema.';
 
 const MONITORING_DEMO_VIDEO_2_SRC = '/assets/videos/monitoring-demo-2.mp4';
 
