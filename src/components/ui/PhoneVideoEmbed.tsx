@@ -1,18 +1,11 @@
 type Props = {
   src: string;
   title: string;
-  aspect?: 'portrait' | 'landscape';
 };
 
-export function PhoneVideoEmbed({
-  src,
-  title,
-  aspect = 'portrait',
-}: Props) {
+export function PhoneVideoEmbed({ src, title }: Props) {
   return (
-    <div
-      className={`monitoring-video${aspect === 'landscape' ? ' monitoring-video--landscape' : ''}`}
-    >
+    <div className="monitoring-video">
       <video
         src={src}
         title={title}

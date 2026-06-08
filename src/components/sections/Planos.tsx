@@ -179,7 +179,6 @@ export function Planos() {
             <PhoneVideoEmbed
               src={MONITORING_DEMO_VIDEO_2_SRC}
               title="Demonstração de monitoramento iProtector"
-              aspect="landscape"
             />
           </aside>
         </div>
