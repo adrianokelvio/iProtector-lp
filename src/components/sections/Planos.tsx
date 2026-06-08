@@ -118,6 +118,13 @@ export function Planos() {
         </div>
 
         <div className="monitoring-layout">
+          <aside className="monitoring-video-slot">
+            <PhoneVideoEmbed
+              src={MONITORING_DEMO_VIDEO_SRC}
+              title="Demonstração de monitoramento robótico iProtector"
+            />
+          </aside>
+
           <div className="plans plans--monitoring">
           <article className="plan">
             <div className="plan-name">[CONDOMÍNIOS]</div>
@@ -171,16 +178,12 @@ export function Planos() {
           </article>
           </div>
 
-          <div className="monitoring-videos">
-            <PhoneVideoEmbed
-              src={MONITORING_DEMO_VIDEO_SRC}
-              title="Demonstração de monitoramento robótico iProtector"
-            />
+          <aside className="monitoring-video-slot">
             <PhoneVideoEmbed
               src={MONITORING_DEMO_VIDEO_2_SRC}
               title="Demonstração de monitoramento iProtector"
             />
-          </div>
+          </aside>
         </div>
 
         <div className="section-head" style={{ marginTop: '4rem' }}>
