@@ -27,7 +27,7 @@ const MODELS = [
 const MONITORING_IMPLANT_NOTE =
   'Equipamento: R$ 150 mil para implantação. Já inclui drone e sistema.';
 
-const MONITORING_DEMO_VIDEO_ID = 'hQ1Xl_CxYeE';
+const MONITORING_DEMO_VIDEO_SRC = '/assets/videos/monitoring-demo.mp4';
 
 export function Planos() {
   const { openClient } = useModals();
@@ -172,7 +172,7 @@ export function Planos() {
 
           <aside className="plans-video-col" aria-label="Demonstração em vídeo">
             <PhoneVideoEmbed
-              videoId={MONITORING_DEMO_VIDEO_ID}
+              src={MONITORING_DEMO_VIDEO_SRC}
               title="Demonstração de monitoramento robótico iProtector"
             />
           </aside>
