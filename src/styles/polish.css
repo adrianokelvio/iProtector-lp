@@ -724,3 +724,35 @@ h4 { font-size: 16px !important; line-height: 1.35 !important; }
   box-shadow: 0 16px 42px rgba(201, 169, 97, 0.45) !important;
   font-weight: 600;
 }
+
+.monitoring-layout .plans--monitoring .plan.featured {
+  border: 2px solid rgba(201, 169, 97, 0.72) !important;
+  background:
+    linear-gradient(
+      165deg,
+      rgba(201, 169, 97, 0.24) 0%,
+      rgba(201, 169, 97, 0.11) 38%,
+      rgba(10, 26, 47, 0.96) 100%
+    ) !important;
+  box-shadow:
+    0 0 0 1px rgba(201, 169, 97, 0.22),
+    0 26px 72px -26px rgba(201, 169, 97, 0.52),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+  z-index: 3;
+}
+
+@media (min-width: 901px) {
+  .monitoring-layout .plans--monitoring .plan.featured {
+    transform: scale(1.035);
+  }
+}
+
+.monitoring-layout .plans--monitoring .plan.featured .plan-name {
+  color: #edd088 !important;
+}
+
+.monitoring-layout .plans--monitoring .plan.featured .pop-badge {
+  left: 50% !important;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}

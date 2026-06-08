@@ -104,7 +104,7 @@ const MONITORING_PLANS = [
     priceMain: 'R$ 8k',
     priceSuffix: ' a 80k /mês',
     featured: true,
-    badge: '[MAIS COMPLETO]',
+    badge: '[PATRIMONIAL · MAIS COMPLETO]',
     cta: 'Solicitar proposta',
     features: [true, true, true, true, true, true, false, false, false],
   },
