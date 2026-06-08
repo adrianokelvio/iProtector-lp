@@ -29,6 +29,45 @@ const MONITORING_IMPLANT_NOTE =
 
 const MONITORING_DEMO_VIDEO_2_SRC = '/assets/videos/monitoring-demo-2.mp4';
 
+const MONITORING_FEATURE_LABELS = [
+  'Drone Dock + torre inteligente',
+  'Central de monitoramento',
+  'Operação SaaS recorrente',
+  'Tags de rastreamento',
+  'Software operacional integrado',
+  'Mapeamento topográfico',
+  'Infraestrutura completa de campo',
+  'Equipe tática dedicada',
+  'Projetos para eventos e resorts',
+] as const;
+
+const MONITORING_PLANS = [
+  {
+    name: '[CONDOMÍNIOS]',
+    priceMain: 'R$ 5k',
+    priceSuffix: ' a 30k /mês',
+    featured: false,
+    badge: null,
+    features: [true, true, true, false, false, false, false, false, false],
+  },
+  {
+    name: '[FAZENDAS E RURAIS]',
+    priceMain: 'R$ 8k',
+    priceSuffix: ' a 80k /mês',
+    featured: true,
+    badge: '[PATRIMONIAL]',
+    features: [true, true, true, true, true, true, false, false, false],
+  },
+  {
+    name: '[RESORTS E EVENTOS]',
+    priceMain: 'R$ 20k',
+    priceSuffix: ' a 500k',
+    featured: false,
+    badge: null,
+    features: [true, true, true, true, true, true, true, true, true],
+  },
+] as const;
+
 export function Planos() {
   const { openClient } = useModals();
   return (
@@ -118,56 +157,44 @@ export function Planos() {
 
         <div className="monitoring-layout">
           <div className="plans plans--monitoring">
-          <article className="plan">
-            <div className="plan-name">[CONDOMÍNIOS]</div>
-            <div className="plan-price">
-              R$ 5k<small> a 30k /mês</small>
-            </div>
-            <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
-            <ul>
-              <li>Drone Dock + Torre Inteligente</li>
-              <li>Central de monitoramento</li>
-              <li>Condomínios residenciais horizontais</li>
-              <li>Operação SaaS recorrente</li>
-            </ul>
-            <button className="btn btn-dark" onClick={openClient}>
-              Solicitar proposta
-            </button>
-          </article>
-          <article className="plan featured">
-            <span className="pop-badge">[PATRIMONIAL]</span>
-            <div className="plan-name">[FAZENDAS E RURAIS]</div>
-            <div className="plan-price">
-              R$ 8k<small> a 80k /mês</small>
-            </div>
-            <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
-            <ul>
-              <li>Drone Dock + Torre de Vigilância</li>
-              <li>Tags de rastreamento</li>
-              <li>Software operacional integrado</li>
-              <li>Mapeamento topográfico incluído</li>
-            </ul>
-            <button className="btn btn-primary" onClick={openClient}>
-              Solicitar proposta
-            </button>
-          </article>
-          <article className="plan">
-            <div className="plan-name">[RESORTS E EVENTOS]</div>
-            <div className="plan-price">
-              R$ 20k<small> a 500k</small>
-            </div>
-            <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
-            <ul>
-              <li>Projeto sob demanda</li>
-              <li>Grandes eventos e resorts</li>
-              <li>Infraestrutura completa de campo</li>
-              <li>Equipe tática dedicada</li>
-              <li>Ticket médio personalizado</li>
-            </ul>
-            <button className="btn btn-dark" onClick={openClient}>
-              Solicitar proposta
-            </button>
-          </article>
+            {MONITORING_PLANS.map((plan) => (
+              <article
+                key={plan.name}
+                className={`plan${plan.featured ? ' featured' : ''}`}
+              >
+                {plan.badge ? (
+                  <span className="pop-badge">{plan.badge}</span>
+                ) : null}
+                <div className="plan-name">{plan.name}</div>
+                <div className="plan-price">
+                  {plan.priceMain}
+                  <small>{plan.priceSuffix}</small>
+                </div>
+                <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
+                <ul className="plan-feat-list">
+                  {MONITORING_FEATURE_LABELS.map((label, index) => {
+                    const included = plan.features[index];
+                    return (
+                      <li
+                        key={label}
+                        className={`plan-feat ${included ? 'plan-feat--yes' : 'plan-feat--no'}`}
+                      >
+                        <span className="plan-feat__icon" aria-hidden="true">
+                          {included ? '✓' : '✗'}
+                        </span>
+                        <span className="plan-feat__label">{label}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <button
+                  className={`btn ${plan.featured ? 'btn-primary' : 'btn-dark'}`}
+                  onClick={openClient}
+                >
+                  Solicitar proposta
+                </button>
+              </article>
+            ))}
           </div>
 
           <aside className="monitoring-video-slot">
