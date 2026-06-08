@@ -770,7 +770,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   gap: 28px;
   margin-top: 60px;
   width: 100%;
-  --monitoring-video-width: 750px;
+  --monitoring-plans-width: 1050px;
+  --monitoring-video-min: 750px;
 }
 
 .monitoring-layout .plans--monitoring {
@@ -878,11 +879,18 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 
 @media (min-width: 1320px) {
   #planos > .container {
-    max-width: 1900px;
+    max-width: 2100px;
   }
 
   .monitoring-layout {
-    grid-template-columns: minmax(0, 1fr) var(--monitoring-video-width);
+    --monitoring-plans-col: min(
+      var(--monitoring-plans-width),
+      calc(100% - var(--monitoring-video-min) - 24px)
+    );
+    grid-template-columns: var(--monitoring-plans-col) minmax(
+        var(--monitoring-video-min),
+        1fr
+      );
     column-gap: 24px;
     align-items: stretch;
   }
@@ -891,15 +899,17 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     grid-column: 1;
     grid-row: 1;
     align-items: stretch;
+    width: 100%;
+    max-width: var(--monitoring-plans-col);
   }
 
   .monitoring-layout .monitoring-video-slot {
     grid-column: 2;
     grid-row: 1;
     display: flex;
-    width: var(--monitoring-video-width);
-    max-width: var(--monitoring-video-width);
-    min-width: var(--monitoring-video-width);
+    width: 100%;
+    max-width: none;
+    min-width: var(--monitoring-video-min);
     flex-shrink: 0;
     margin: 0;
     justify-self: stretch;
