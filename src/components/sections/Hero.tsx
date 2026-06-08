@@ -24,7 +24,11 @@ export function Hero() {
             <span className="gold">
               <em>proteção</em>
             </span>{' '}
-            e <span className="stroke">monitoramento</span> do Brasil.
+            e{' '}
+            <span className="gold">
+              <em>monitoramento</em>
+            </span>{' '}
+            do Brasil.
           </h1>
           <p className="lead">
             O iProtector é uma plataforma de tecnologia para agenciamento de
