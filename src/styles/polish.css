@@ -167,15 +167,6 @@ h4 { font-size: 16px !important; line-height: 1.35 !important; }
   text-wrap: balance;
 }
 
-/* Stroke text fica difícil em mobile — vira gold fill */
-@media (max-width: 768px) {
-  .hero h1 .stroke {
-    -webkit-text-stroke-width: 0 !important;
-    color: var(--fg) !important;
-    opacity: 0.85;
-  }
-}
-
 .hero .lead {
   font-size: clamp(15.5px, 1.05vw, 17.5px) !important;
   line-height: 1.6 !important;
@@ -673,12 +664,6 @@ h4 { font-size: 16px !important; line-height: 1.35 !important; }
 /* ============================================================
    Stroke text na heading — fallback consistente
    ============================================================ */
-
-.hero h1 .stroke {
-  -webkit-text-stroke: 1.2px rgba(244,246,250,0.32) !important;
-  color: transparent !important;
-  font-style: normal !important;
-}
 
 /* ============================================================
    Faq tabs no mobile

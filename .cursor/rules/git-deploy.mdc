@@ -1,0 +1,16 @@
+---
+description: Commit e push automático para deploy na Vercel
+alwaysApply: true
+---
+
+# Git e deploy (Vercel)
+
+Este projeto está conectado à Vercel via GitHub (`adrianokelvio/iProtector-lp`).
+
+Sempre que você alterar arquivos do projeto:
+
+1. Faça `git add` dos arquivos relevantes
+2. Crie um commit com mensagem clara em português
+3. Execute `git push origin main` (o hook post-commit também faz push após commits locais)
+
+Não deixe alterações apenas locais sem commit/push — cada push na `main` dispara deploy na Vercel.
