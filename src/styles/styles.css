@@ -795,12 +795,14 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   .monitoring-layout .plans--monitoring {
     flex: 1 1 100%;
     width: 100%;
+    order: 1;
   }
 
   .monitoring-video-slot {
     flex: 1 1 calc(50% - 12px);
     width: auto;
     max-width: 280px;
+    order: 2;
   }
 }
 
