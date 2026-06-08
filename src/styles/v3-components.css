@@ -34,7 +34,7 @@
   aspect-ratio: 9 / 16;
 }
 
-.monitoring-video--landscape {
+.monitoring-video-slot .monitoring-video--landscape {
   aspect-ratio: 16 / 9;
 }
 
@@ -47,6 +47,11 @@
   object-fit: cover;
   object-position: center;
   background: #000;
+}
+
+.monitoring-video--landscape video {
+  object-fit: contain;
+  object-position: center left;
 }
 
 .phone-glow {
