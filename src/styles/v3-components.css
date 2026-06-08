@@ -27,10 +27,9 @@
   border: 1px solid var(--line);
 }
 
-.plans-video-side .monitoring-video,
-.plans-video-col .monitoring-video {
-  max-width: none;
+.monitoring-layout .monitoring-video {
   width: 100%;
+  max-width: none;
   aspect-ratio: 9 / 16;
 }
 
