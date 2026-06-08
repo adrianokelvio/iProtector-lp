@@ -118,17 +118,10 @@ export function Planos() {
         </div>
 
         <div className="monitoring-layout">
-          <aside className="monitoring-video-slot">
-            <PhoneVideoEmbed
-              src={MONITORING_DEMO_VIDEO_SRC}
-              title="Demonstração de monitoramento robótico iProtector"
-            />
-          </aside>
-
           <div className="plans plans--monitoring">
           <article className="plan">
             <div className="plan-name">[CONDOMÍNIOS]</div>
-            <div className="plan-price" style={{ fontSize: '32px' }}>
+            <div className="plan-price">
               R$ 5k<small> a 30k /mês</small>
             </div>
             <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
@@ -145,7 +138,7 @@ export function Planos() {
           <article className="plan featured">
             <span className="pop-badge">[PATRIMONIAL]</span>
             <div className="plan-name">[FAZENDAS E RURAIS]</div>
-            <div className="plan-price" style={{ fontSize: '32px' }}>
+            <div className="plan-price">
               R$ 8k<small> a 80k /mês</small>
             </div>
             <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
@@ -161,7 +154,7 @@ export function Planos() {
           </article>
           <article className="plan">
             <div className="plan-name">[RESORTS E EVENTOS]</div>
-            <div className="plan-price" style={{ fontSize: '32px' }}>
+            <div className="plan-price">
               R$ 20k<small> a 500k</small>
             </div>
             <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
@@ -178,13 +171,21 @@ export function Planos() {
           </article>
           </div>
 
-          <aside className="monitoring-video-slot">
-            <PhoneVideoEmbed
-              src={MONITORING_DEMO_VIDEO_2_SRC}
-              title="Demonstração de monitoramento iProtector"
-              variant="landscape"
-            />
-          </aside>
+          <div className="monitoring-videos-row">
+            <aside className="monitoring-video-slot">
+              <PhoneVideoEmbed
+                src={MONITORING_DEMO_VIDEO_SRC}
+                title="Demonstração de monitoramento robótico iProtector"
+              />
+            </aside>
+            <aside className="monitoring-video-slot">
+              <PhoneVideoEmbed
+                src={MONITORING_DEMO_VIDEO_2_SRC}
+                title="Demonstração de monitoramento iProtector"
+                variant="landscape"
+              />
+            </aside>
+          </div>
         </div>
 
         <div className="section-head" style={{ marginTop: '4rem' }}>
