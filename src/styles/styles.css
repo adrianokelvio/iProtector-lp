@@ -806,9 +806,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 
 @media (max-width: 1319px) {
   .monitoring-layout .monitoring-video-slot .monitoring-video--landscape video {
-    object-fit: contain;
+    object-fit: cover;
     object-position: left center;
-    background: var(--bg-1);
   }
 }
 
@@ -847,7 +846,7 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     height: 100%;
     min-height: 100%;
     aspect-ratio: auto;
-    background: var(--bg-1);
+    background: #000;
   }
 
   .monitoring-layout .monitoring-video-slot .monitoring-video--landscape {
@@ -855,9 +854,9 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   }
 
   .monitoring-layout .monitoring-video--landscape video {
-    object-fit: contain;
+    object-fit: cover;
     object-position: left center;
-    background: var(--bg-1);
+    background: #000;
   }
 }
 
