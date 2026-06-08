@@ -51,8 +51,8 @@
 }
 
 .monitoring-video--landscape video {
-  object-fit: cover;
-  object-position: left center;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .phone-glow {
