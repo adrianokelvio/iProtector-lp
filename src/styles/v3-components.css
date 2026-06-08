@@ -27,6 +27,7 @@
   border: 1px solid var(--line);
 }
 
+.plans-video-side .monitoring-video,
 .plans-video-col .monitoring-video {
   max-width: none;
   width: 100%;

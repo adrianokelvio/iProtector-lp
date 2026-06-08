@@ -118,6 +118,13 @@ export function Planos() {
         </div>
 
         <div className="plans-with-video">
+          <aside className="plans-video-side plans-video-side--left" aria-label="Demonstração em vídeo 1">
+            <PhoneVideoEmbed
+              src={MONITORING_DEMO_VIDEO_SRC}
+              title="Demonstração de monitoramento robótico iProtector"
+            />
+          </aside>
+
           <div className="plans plans--monitoring">
           <article className="plan">
             <div className="plan-name">[CONDOMÍNIOS]</div>
@@ -171,11 +178,7 @@ export function Planos() {
           </article>
           </div>
 
-          <aside className="plans-video-col" aria-label="Demonstração em vídeo">
-            <PhoneVideoEmbed
-              src={MONITORING_DEMO_VIDEO_SRC}
-              title="Demonstração de monitoramento robótico iProtector"
-            />
+          <aside className="plans-video-side plans-video-side--right" aria-label="Demonstração em vídeo 2">
             <PhoneVideoEmbed
               src={MONITORING_DEMO_VIDEO_2_SRC}
               title="Demonstração de monitoramento iProtector"
