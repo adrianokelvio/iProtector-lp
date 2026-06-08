@@ -23,9 +23,6 @@ const MODELS = [
   },
 ];
 
-const PLAN_IMPLANT_NOTE =
-  'Equipamento: R$ 150 mil para implantação. Já inclui drone e sistema.';
-
 export function Planos() {
   const { openClient } = useModals();
   return (
@@ -62,7 +59,6 @@ export function Planos() {
             <div className="plan-price">
               R$ 18k<small> – 25k /mês</small>
             </div>
-            <p className="plan-note">{PLAN_IMPLANT_NOTE}</p>
             <ul>
               <li>1 agente de proteção</li>
               <li>Até 12 horas por dia</li>
@@ -80,7 +76,6 @@ export function Planos() {
             <div className="plan-price">
               R$ 35k<small> – 60k /mês</small>
             </div>
-            <p className="plan-note">{PLAN_IMPLANT_NOTE}</p>
             <ul>
               <li>2 agentes de proteção</li>
               <li>Veículo dedicado</li>
@@ -97,7 +92,6 @@ export function Planos() {
             <div className="plan-price">
               R$ 80k<small> – 250k /mês</small>
             </div>
-            <p className="plan-note">{PLAN_IMPLANT_NOTE}</p>
             <ul>
               <li>Proteção familiar completa</li>
               <li>Escolta executiva dedicada</li>
