@@ -2,7 +2,7 @@ const STEPS = [
   {
     n: '1º PASSO',
     title: 'Cadastro via Website, WhatsApp ou Aplicativo.',
-    desc: 'O cliente final preenche o formulário digital informando perfil, necessidade de proteção, local e contexto operacional — sem burocracia.',
+    desc: 'O cliente final preenche o formulário digital informando perfil, necessidade de proteção, local e contexto operacional, sem burocracia.',
   },
   {
     n: '2º PASSO',
@@ -17,7 +17,7 @@ const STEPS = [
   {
     n: '4º PASSO',
     title: 'Contratação e monitoramento operacional.',
-    desc: 'Após a contratação, toda a operação é acompanhada em tempo real — com central 24h, telemetria, relatórios e SLA garantido.',
+    desc: 'Após a contratação, toda a operação é acompanhada em tempo real, com central 24h, telemetria, relatórios e SLA garantido.',
   },
 ];
 
@@ -29,7 +29,7 @@ export function ComoFunciona() {
           <span className="eyebrow">[COMO FUNCIONA]</span>
           <h2>Do cadastro ao monitoramento. Uma operação completa.</h2>
           <p className="lead">
-            Cada atendimento iProtector segue um fluxo estruturado — da
+            Cada atendimento iProtector segue um fluxo estruturado, da
             solicitação inicial à supervisão contínua da operação em campo.
           </p>
         </div>

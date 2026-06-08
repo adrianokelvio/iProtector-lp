@@ -1,6 +1,6 @@
 /**
  * App Store + Google Play badges.
- * SVG inline — sem dependência de imagem externa.
+ * SVG inline, sem dependência de imagem externa.
  */
 export function StoreBadges() {
   return (

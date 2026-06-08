@@ -3,9 +3,9 @@ import type { ClientFormData, PartnerFormData, ContactFormData } from '../types/
 
 export function buildClientMessage(data: ClientFormData): string {
   return [
-    '[iProtector — Solicitação Cliente]',
+    '[iProtector, Solicitação Cliente]',
     `Nome: ${data.nome}`,
-    `E-mail: ${data.email}`,
+    `Email: ${data.email}`,
     `Telefone: ${data.telefone}`,
     `Cidade/UF: ${data.cidade}`,
     `Tipo de proteção: ${data.tipo}`,
@@ -19,12 +19,12 @@ export function buildClientMessage(data: ClientFormData): string {
 
 export function buildPartnerMessage(data: PartnerFormData): string {
   return [
-    '[iProtector — Cadastro de Empresa Parceira]',
+    '[iProtector, Cadastro de Empresa Parceira]',
     `Razão social: ${data.razao}`,
     `Nome fantasia: ${data.fantasia}`,
     `CNPJ: ${data.cnpj}`,
     `Responsável: ${data.responsavel} (${data.cargo})`,
-    `E-mail corporativo: ${data.email}`,
+    `Email corporativo: ${data.email}`,
     `Telefone: ${data.telefone}`,
     `Regiões de atuação: ${data.regioes}`,
     `Tempo de operação: ${data.tempo}`,
@@ -38,9 +38,9 @@ export function buildPartnerMessage(data: PartnerFormData): string {
 
 export function buildContactMessage(data: ContactFormData): string {
   return [
-    '[iProtector — Contato Geral]',
+    '[iProtector, Contato Geral]',
     `Nome: ${data.nome}`,
-    `E-mail: ${data.email}`,
+    `Email: ${data.email}`,
     data.telefone ? `Telefone: ${data.telefone}` : null,
     `Assunto: ${data.assunto}`,
     `Mensagem: ${data.mensagem}`,

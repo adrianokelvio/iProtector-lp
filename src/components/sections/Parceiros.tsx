@@ -8,7 +8,7 @@ const VALUE_PROPS = [
   },
   {
     title: 'Demanda qualificada via marketplace.',
-    desc: 'Leads segmentados de proteção executiva, patrimonial e monitoramento robótico — com CRM e automação integrados.',
+    desc: 'Leads segmentados de proteção executiva, patrimonial e monitoramento robótico, com CRM e automação integrados.',
   },
   {
     title: 'Captação de investimentos LEGALCERT.',
@@ -42,7 +42,7 @@ const STEPS = [
   {
     n: '3º',
     title: 'ONBOARDING',
-    desc: 'Treinamento na operação iProtector — protocolos, central 24h, CRM, padrão de atendimento e tecnologias.',
+    desc: 'Treinamento na operação iProtector, protocolos, central 24h, CRM, padrão de atendimento e tecnologias.',
   },
   {
     n: '4ª',

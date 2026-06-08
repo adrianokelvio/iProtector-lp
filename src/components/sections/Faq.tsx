@@ -9,7 +9,7 @@ const CLIENT: FaqEntry[] = [
   },
   {
     q: 'Quem pode contratar proteção executiva?',
-    a: 'CEOs, empresários, investidores, autoridades, executivos C-Level e famílias de alta renda. Oferecemos segurança pessoal armada e desarmada, escolta executiva, proteção familiar, segurança em viagens e eventos privados.',
+    a: 'CEOs, empresários, investidores, autoridades, executivos C Level e famílias de alta renda. Oferecemos segurança pessoal armada e desarmada, escolta executiva, proteção familiar, segurança em viagens e eventos privados.',
   },
   {
     q: 'Como funciona o fluxo de contratação?',
@@ -17,11 +17,11 @@ const CLIENT: FaqEntry[] = [
   },
   {
     q: 'Quais são os planos de proteção executiva?',
-    a: 'Plano Essential (R$ 18k–25k/mês), Plano Premium (R$ 35k–60k/mês) e Plano Family Office (R$ 80k–250k/mês), com escopo, agentes e recursos diferenciados para cada perfil.',
+    a: 'Plano Essential (R$ 18k a 25k/mês), Plano Premium (R$ 35k a 60k/mês) e Plano Family Office (R$ 80k a 250k/mês), com escopo, agentes e recursos diferenciados para cada perfil.',
   },
   {
     q: 'O que é o Monitoramento Robótico?',
-    a: 'É nossa solução Security as a Service (SaaS) com Drone Dock, Torres de Vigilância, Tags de Rastreamento e Mapeamento Topográfico — para condomínios, fazendas, resorts, associações e eventos abertos.',
+    a: 'É nossa solução Security as a Service (SaaS) com Drone Dock, Torres de Vigilância, Tags de Rastreamento e Mapeamento Topográfico, para condomínios, fazendas, resorts, associações e eventos abertos.',
   },
   {
     q: 'Vocês oferecem treinamento corporativo?',
@@ -29,7 +29,7 @@ const CLIENT: FaqEntry[] = [
   },
   {
     q: 'O iProtector atende em todo o Brasil?',
-    a: 'Estamos em expansão nacional estruturada em três fases — iniciando por São Paulo e Brasília, com crescimento para capitais do agronegócio e grandes centros urbanos.',
+    a: 'Estamos em expansão nacional estruturada em três fases, iniciando por São Paulo e Brasília, com crescimento para capitais do agronegócio e grandes centros urbanos.',
   },
   {
     q: 'Como funciona o monitoramento após a contratação?',
@@ -48,7 +48,7 @@ const PARTNER: FaqEntry[] = [
   },
   {
     q: 'O que é a captação de investimentos LEGALCERT?',
-    a: 'Em parceria com LEGALCERT, oferecemos captação de investimentos para empresas de segurança — expansão operacional, frota blindada, centros de monitoramento e capital de giro.',
+    a: 'Em parceria com LEGALCERT, oferecemos captação de investimentos para empresas de segurança, expansão operacional, frota blindada, centros de monitoramento e capital de giro.',
   },
   {
     q: 'Quais documentos são exigidos para captação?',

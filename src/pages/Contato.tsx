@@ -8,8 +8,8 @@ export function Contato() {
   return (
     <main className="container">
       <SEO
-        title="Contato — iProtector | Fale com nossa equipe 24h"
-        description="Fale com o iProtector. Atendimento comercial, parcerias, imprensa, LGPD e suporte. Central 24h e canais por WhatsApp, e-mail e formulário."
+        title="Contato, iProtector | Fale com nossa equipe 24h"
+        description="Fale com o iProtector. Atendimento comercial, parcerias, imprensa, LGPD e suporte. Central 24h e canais por WhatsApp, email e formulário."
         path="/contato"
       />
       <section style={{ padding: '140px 0 60px' }}>
@@ -20,7 +20,7 @@ export function Contato() {
           <span className="eyebrow">[CONTATO]</span>
           <h1>Estamos prontos para atender. 24 horas por dia.</h1>
           <p className="lead">
-            Escolha o canal mais adequado ao seu caso — atendimento comercial,
+            Escolha o canal mais adequado ao seu caso, atendimento comercial,
             parcerias, imprensa, suporte ou emergência operacional.
           </p>
         </div>

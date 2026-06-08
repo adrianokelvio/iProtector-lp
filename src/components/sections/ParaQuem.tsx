@@ -12,7 +12,7 @@ export function ParaQuem() {
           <p className="lead">
             O iProtector integra clientes finais, empresas de segurança,
             agentes protetores e fornecedores de tecnologia em uma única
-            plataforma — do agenciamento executivo ao monitoramento robótico.
+            plataforma, do agenciamento executivo ao monitoramento robótico.
           </p>
         </div>
         <div className="segment-grid">
@@ -21,7 +21,7 @@ export function ParaQuem() {
             <h3>Proteção pessoal e patrimonial de elite.</h3>
             <p>
               Para CEOs, empresários, investidores, autoridades, executivos
-              C-Level e famílias de alta renda que exigem segurança pessoal
+              C Level e famílias de alta renda que exigem segurança pessoal
               armada ou desarmada, escolta executiva, proteção familiar,
               segurança em viagens e eventos privados.
             </p>

@@ -5,7 +5,7 @@ export function Termos() {
   return (
     <main className="container">
       <SEO
-        title="Termos de Uso — iProtector"
+        title="Termos de Uso, iProtector"
         description="Termos de uso da plataforma iProtector: objeto, cadastro, modelos de contratação, obrigações, responsabilidades, pagamentos, cancelamento, propriedade intelectual e lei aplicável."
         path="/termos"
       />
@@ -18,8 +18,8 @@ export function Termos() {
 
         <p>
           Estes Termos de Uso ("Termos") regulam o acesso e a utilização da
-          plataforma iProtector — incluindo site, aplicativo móvel e painel web
-          ("Plataforma") — operada pela pessoa jurídica inscrita no CNPJ sob o
+          plataforma iProtector, incluindo site, aplicativo móvel e painel web
+          ("Plataforma"), operada pela pessoa jurídica inscrita no CNPJ sob o
           nº <strong>17.738.538/0001-09</strong>, com sede na{' '}
           <strong>
             Av. Dr. Chucri Zaidan, 1649 · São Paulo / SP · CEP 04711-130
@@ -143,7 +143,7 @@ export function Termos() {
         <p>
           <strong>7.3</strong> Em caso de não execução do serviço por motivo
           atribuível ao iProtector ou à empresa parceira, o cliente terá direito
-          a reembolso conforme regras específicas do modelo contratado.
+         a reembolso conforme regras específicas do modelo contratado.
         </p>
 
         <h2 data-num="08">Cancelamento e reembolso</h2>
@@ -155,7 +155,7 @@ export function Termos() {
 
         <h2 data-num="09">Propriedade intelectual</h2>
         <p>
-          A marca, logotipo, layout, código-fonte, conteúdo, design e quaisquer
+          A marca, logotipo, layout, código fonte, conteúdo, design e quaisquer
           outros elementos da Plataforma são de propriedade exclusiva do
           iProtector e estão protegidos pela legislação aplicável. É vedado o
           uso, reprodução, distribuição ou modificação sem autorização expressa.
@@ -165,7 +165,7 @@ export function Termos() {
         <p>
           Na máxima extensão permitida pela lei, o iProtector não responde por
           danos indiretos, lucros cessantes ou eventos de força maior, observada
-          a responsabilidade própria da Plataforma quanto à operação digital, à
+         a responsabilidade própria da Plataforma quanto à operação digital, à
           segurança da informação e à conduta da central 24h.
         </p>
 
@@ -186,7 +186,7 @@ export function Termos() {
 
         <h2 data-num="13">Contato</h2>
         <p>
-          <strong>E-mail:</strong> contato@iprotector.com.br
+          <strong>Email:</strong> contato@iprotector.com.br
           <br />
           <strong>WhatsApp:</strong> +55 (11) 99719-4408
           <br />

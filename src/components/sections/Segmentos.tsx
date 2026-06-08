@@ -1,6 +1,6 @@
 const SEGS = [
   {
-    title: 'CEOs e executivos C-Level',
+    title: 'CEOs e executivos C Level',
     desc: 'Proteção pessoal armada, escolta executiva e segurança em viagens e eventos corporativos.',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
@@ -86,7 +86,7 @@ export function Segmentos() {
           <span className="eyebrow">[SEGMENTOS E EXPANSÃO]</span>
           <h2>Do executivo ao campo. Presença nacional em expansão.</h2>
           <p className="lead">
-            Atendemos perfis de alta exposição e patrimônios de grande porte —
+            Atendemos perfis de alta exposição e patrimônios de grande porte , 
             com expansão estruturada em três fases para cobertura nacional
             completa.
           </p>

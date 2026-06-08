@@ -43,7 +43,7 @@ export function ContactForm() {
     e.preventDefault();
     const next: FieldErrors<ContactFormData> = {};
     if (!isNonEmpty(data.nome)) next.nome = 'Informe seu nome.';
-    if (!validateEmail(data.email)) next.email = 'E-mail inválido.';
+    if (!validateEmail(data.email)) next.email = 'Email inválido.';
     if (!data.assunto) next.assunto = 'Selecione o assunto.';
     if (!isNonEmpty(data.mensagem)) next.mensagem = 'Escreva sua mensagem.';
     if (!data.privacidade)
@@ -83,7 +83,7 @@ export function ContactForm() {
         {errors.nome && <p className="field-error">{errors.nome}</p>}
       </label>
       <label>
-        E-mail *
+        Email *
         <input
           type="email"
           value={data.email}

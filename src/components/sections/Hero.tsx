@@ -33,7 +33,7 @@ export function Hero() {
           <p className="lead">
             O iProtector é uma plataforma de tecnologia para agenciamento de
             Proteção Pessoal, Patrimonial e Monitoramento Robótico com
-            Treinamentos de Elite — conectando clientes, empresas de segurança,
+            Treinamentos de Elite, conectando clientes, empresas de segurança,
             agentes protetores e fornecedores de tecnologias avançadas de
             gerenciamento de riscos.
           </p>

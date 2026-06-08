@@ -65,7 +65,7 @@ const ITEMS = [
   },
   {
     title: 'Central de monitoramento',
-    desc: 'Security as a Service recorrente para condomínios, fazendas, resorts, associações e eventos abertos — com operação 24h.',
+    desc: 'Security as a Service recorrente para condomínios, fazendas, resorts, associações e eventos abertos, com operação 24h.',
     svg: (
       <svg
         viewBox="0 0 24 24"
@@ -104,9 +104,9 @@ export function Tecnologia() {
           <h2>Security as a Service. Vigilância inteligente e recorrente.</h2>
           <p className="lead">
             Solução SaaS para condomínios residenciais horizontais, condomínios
-            rurais, fazendas, resorts, associações e eventos abertos — com
+            rurais, fazendas, resorts, associações e eventos abertos, com
             tecnologia de ativação remota, operação autônoma e resposta rápida
-            a incidentes.
+           a incidentes.
           </p>
         </div>
 

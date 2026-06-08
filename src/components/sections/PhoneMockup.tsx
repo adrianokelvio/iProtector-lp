@@ -1,5 +1,5 @@
 /**
- * Phone mockup — iProtector app preview.
+ * Phone mockup, iProtector app preview.
  * SVG + HTML compostos, escala via container `.phone-mock`.
  */
 export function PhoneMockup() {

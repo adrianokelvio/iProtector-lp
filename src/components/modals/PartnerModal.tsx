@@ -61,7 +61,7 @@ export function PartnerModal({ isOpen, onClose }: Props) {
     if (!isNonEmpty(data.responsavel))
       next.responsavel = 'Informe o responsável.';
     if (!isNonEmpty(data.cargo)) next.cargo = 'Informe o cargo.';
-    if (!validateEmail(data.email)) next.email = 'E-mail inválido.';
+    if (!validateEmail(data.email)) next.email = 'Email inválido.';
     if (data.telefone.replace(/\D/g, '').length < 10)
       next.telefone = 'Telefone inválido.';
     if (!isNonEmpty(data.regioes)) next.regioes = 'Informe as regiões.';
@@ -164,7 +164,7 @@ export function PartnerModal({ isOpen, onClose }: Props) {
               {errors.cargo && <p className="field-error">{errors.cargo}</p>}
             </label>
             <label>
-              E-mail corporativo *
+              Email corporativo *
               <input
                 type="email"
                 value={data.email}

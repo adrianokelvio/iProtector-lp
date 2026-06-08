@@ -10,12 +10,12 @@ import { getWhatsAppUrl } from '../../config/site';
 import type { ClientFormData, FieldErrors } from '../../types/forms';
 
 const TIPOS = [
-  'Proteção executiva — Plano Essential',
-  'Proteção executiva — Plano Premium',
-  'Proteção executiva — Family Office',
-  'Monitoramento robótico — Condomínio',
-  'Monitoramento robótico — Fazenda / Rural',
-  'Monitoramento robótico — Resort / Evento',
+  'Proteção executiva, Plano Essential',
+  'Proteção executiva, Plano Premium',
+  'Proteção executiva, Family Office',
+  'Monitoramento robótico, Condomínio',
+  'Monitoramento robótico, Fazenda / Rural',
+  'Monitoramento robótico, Resort / Evento',
   'Treinamento de elite corporativo',
   'Veículos blindados / Transporte executivo',
   'Outro',
@@ -62,7 +62,7 @@ export function ClientModal({ isOpen, onClose }: Props) {
     e.preventDefault();
     const next: FieldErrors<ClientFormData> = {};
     if (!isNonEmpty(data.nome)) next.nome = 'Informe seu nome completo.';
-    if (!validateEmail(data.email)) next.email = 'E-mail inválido.';
+    if (!validateEmail(data.email)) next.email = 'Email inválido.';
     if (data.telefone.replace(/\D/g, '').length < 10)
       next.telefone = 'Telefone inválido.';
     if (!isNonEmpty(data.cidade)) next.cidade = 'Informe sua cidade e estado.';
@@ -111,7 +111,7 @@ export function ClientModal({ isOpen, onClose }: Props) {
               {errors.nome && <p className="field-error">{errors.nome}</p>}
             </label>
             <label>
-              E-mail *
+              Email *
               <input
                 type="email"
                 value={data.email}
@@ -202,7 +202,7 @@ export function ClientModal({ isOpen, onClose }: Props) {
                 checked={data.marketing}
                 onChange={(e) => update('marketing', e.target.checked)}
               />
-              Aceito receber comunicações comerciais por e-mail e WhatsApp.
+              Aceito receber comunicações comerciais por email e WhatsApp.
             </label>
             <button className="btn btn-primary submit full" type="submit">
               Enviar pelo WhatsApp <Arrow />

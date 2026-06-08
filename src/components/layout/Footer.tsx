@@ -22,7 +22,7 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
               />
             </Link>
             <p>
-              Marketplace nacional de segurança — proteção executiva,
+              Marketplace nacional de segurança, proteção executiva,
               monitoramento robótico e treinamento de elite.
             </p>
             <div className="footer-meta">
@@ -118,7 +118,7 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
 
         <div className="footer-bottom">
           <div>
-            © 2025 iProtector — Todos os direitos reservados. iProtector é um
+            © 2025 iProtector, Todos os direitos reservados. iProtector é um
             marketplace nacional de segurança. Os serviços em campo são
             executados por empresas parceiras e agentes protetores devidamente
             certificados e homologados.

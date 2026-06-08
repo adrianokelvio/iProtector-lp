@@ -1,4 +1,4 @@
-// Número internacional do WhatsApp (só dígitos) — central iProtector.
+// Número internacional do WhatsApp (só dígitos), central iProtector.
 export const WHATSAPP_NUMBER = '5511997194408';
 
 export const COMPANY = {
@@ -22,7 +22,7 @@ export const SITE = {
   tagline:
     'Plataforma de tecnologia para agenciamento de proteção pessoal, patrimonial e monitoramento robótico',
   description:
-    'Marketplace nacional de segurança. Conectamos clientes, empresas de segurança, agentes protetores e fornecedores de tecnologias avançadas de gerenciamento de riscos — com treinamentos de elite e Security as a Service.',
+    'Marketplace nacional de segurança. Conectamos clientes, empresas de segurança, agentes protetores e fornecedores de tecnologias avançadas de gerenciamento de riscos, com treinamentos de elite e Security as a Service.',
   email: {
     contato: 'contato@iprotector.com.br',
   },

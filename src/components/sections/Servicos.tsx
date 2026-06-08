@@ -10,7 +10,7 @@ export function Servicos() {
           <p className="lead">
             O iProtector opera como marketplace de segurança, SaaS, treinamento
             corporativo, agenciamento de proteção executiva e captação de
-            investimentos para empresas de segurança — tudo em um único
+            investimentos para empresas de segurança, tudo em um único
             ecossistema.
           </p>
         </div>
@@ -22,7 +22,7 @@ export function Servicos() {
               e patrimonial
             </h3>
             <p style={{ marginBottom: '1rem', color: 'var(--fg-dim)', fontSize: '14px' }}>
-              CEOs, empresários, investidores, autoridades, executivos C-Level
+              CEOs, empresários, investidores, autoridades, executivos C Level
               e famílias de alta renda.
             </p>
             <ul>

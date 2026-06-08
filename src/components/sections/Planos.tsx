@@ -38,7 +38,7 @@ export function Planos() {
           <span className="eyebrow">[MODELO DE RECEITA]</span>
           <h2>Precificação transparente para cada solução.</h2>
           <p className="lead">
-            Proteção executiva, monitoramento robótico e treinamento de elite —
+            Proteção executiva, monitoramento robótico e treinamento de elite , 
             com planos estruturados para clientes corporativos, patrimoniais e
             operacionais.
           </p>
@@ -63,7 +63,7 @@ export function Planos() {
           <article className="plan">
             <div className="plan-name">[PLANO ESSENTIAL]</div>
             <div className="plan-price">
-              R$ 18k<small> – 25k /mês</small>
+              R$ 18k<small> a 25k /mês</small>
             </div>
             <ul>
               <li>1 agente de proteção</li>
@@ -80,7 +80,7 @@ export function Planos() {
             <span className="pop-badge">[MAIS COMPLETO]</span>
             <div className="plan-name">[PLANO PREMIUM]</div>
             <div className="plan-price">
-              R$ 35k<small> – 60k /mês</small>
+              R$ 35k<small> a 60k /mês</small>
             </div>
             <ul>
               <li>2 agentes de proteção</li>
@@ -96,7 +96,7 @@ export function Planos() {
           <article className="plan">
             <div className="plan-name">[FAMILY OFFICE]</div>
             <div className="plan-price">
-              R$ 80k<small> – 250k /mês</small>
+              R$ 80k<small> a 250k /mês</small>
             </div>
             <ul>
               <li>Proteção familiar completa</li>
@@ -121,7 +121,7 @@ export function Planos() {
           <article className="plan">
             <div className="plan-name">[CONDOMÍNIOS]</div>
             <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 5k<small> – 30k /mês</small>
+              R$ 5k<small> a 30k /mês</small>
             </div>
             <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
             <ul>
@@ -138,7 +138,7 @@ export function Planos() {
             <span className="pop-badge">[PATRIMONIAL]</span>
             <div className="plan-name">[FAZENDAS E RURAIS]</div>
             <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 8k<small> – 80k /mês</small>
+              R$ 8k<small> a 80k /mês</small>
             </div>
             <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
             <ul>
@@ -154,7 +154,7 @@ export function Planos() {
           <article className="plan">
             <div className="plan-name">[RESORTS E EVENTOS]</div>
             <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 20k<small> – 500k</small>
+              R$ 20k<small> a 500k</small>
             </div>
             <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
             <ul>
@@ -187,7 +187,7 @@ export function Planos() {
           <article className="plan">
             <div className="plan-name">[CORPORATIVO]</div>
             <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 15k<small> – 30k</small>
+              R$ 15k<small> a 30k</small>
             </div>
             <ul>
               <li>Até 20 participantes</li>
@@ -202,7 +202,7 @@ export function Planos() {
           <article className="plan">
             <div className="plan-name">[TÁTICO AVANÇADO]</div>
             <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 30k<small> – 80k</small>
+              R$ 30k<small> a 80k</small>
             </div>
             <ul>
               <li>Até 20 participantes</li>
@@ -218,7 +218,7 @@ export function Planos() {
             <span className="pop-badge">[VIP]</span>
             <div className="plan-name">[EXECUTIVE PROTECTION]</div>
             <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 50k<small> – 150k</small>
+              R$ 50k<small> a 150k</small>
             </div>
             <ul>
               <li>Até 10 participantes</li>
@@ -234,7 +234,7 @@ export function Planos() {
 
         <p className="plans-footer">
           Captação de investimentos para empresas de segurança em parceria com
-          LEGALCERT — expansão operacional, frota blindada e centros de
+          LEGALCERT, expansão operacional, frota blindada e centros de
           monitoramento.{' '}
           <button type="button" className="link-button gold-link" onClick={openClient}>
             Falar com especialista →

@@ -5,7 +5,7 @@ export function Privacidade() {
   return (
     <main className="container">
       <SEO
-        title="Política de Privacidade — iProtector"
+        title="Política de Privacidade, iProtector"
         description="Como o iProtector trata dados pessoais em conformidade com a LGPD: coleta, finalidades, bases legais, direitos do titular, retenção e contato com o Encarregado de Dados (DPO)."
         path="/privacidade"
       />
@@ -21,7 +21,7 @@ export function Privacidade() {
           seus usuários, clientes finais, empresas parceiras e visitantes. Esta
           Política de Privacidade descreve como tratamos os dados pessoais
           coletados em nossas plataformas (site, aplicativos e painel web), em
-          conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº
+          conformidade com a Lei Geral de Proteção de Dados (LGPD, Lei nº
           13.709/2018) e demais normas aplicáveis.
         </p>
 
@@ -40,7 +40,7 @@ export function Privacidade() {
         <h2 data-num="02">Dados que coletamos</h2>
         <p>
           <strong>2.1 Dados de cadastro e identificação:</strong> nome completo,
-          CPF/CNPJ, RG, data de nascimento, e-mail, telefone, endereço.
+          CPF/CNPJ, RG, data de nascimento, email, telefone, endereço.
         </p>
         <p>
           <strong>2.2 Dados profissionais (empresas parceiras e agentes):</strong>{' '}
@@ -137,7 +137,7 @@ export function Privacidade() {
           <li>Apresentar reclamação à ANPD.</li>
         </ul>
         <p>
-          Para exercer seus direitos, envie e-mail ao Encarregado de Dados (DPO)
+          Para exercer seus direitos, envie email ao Encarregado de Dados (DPO)
           em <strong>contato@iprotector.com.br</strong>.
         </p>
 
@@ -160,7 +160,7 @@ export function Privacidade() {
           Contato
         </h2>
         <p>
-          <strong>E-mail:</strong> contato@iprotector.com.br
+          <strong>Email:</strong> contato@iprotector.com.br
           <br />
           <strong>WhatsApp da central:</strong> +55 (11) 99719-4408
           <br />

@@ -11,7 +11,7 @@ export function FinalCta() {
         <p className="lead">
           Tornar o iProtector o ecossistema nacional que conecta clientes,
           agentes protetores, empresas de segurança e tecnologias avançadas de
-          gerenciamento de riscos — com meta de 10.000 protetores, 1.000
+          gerenciamento de riscos, com meta de 10.000 protetores, 1.000
           empresas parceiras, 500 condomínios monitorados, 200 fazendas
           conectadas, 100 resorts atendidos e receita recorrente superior a
           R$ 100 milhões por ano.
