@@ -29,7 +29,7 @@
 
 .monitoring-video-slot .monitoring-video {
   width: 100%;
-  max-width: 100%;
+  max-width: none;
   margin: 0;
   aspect-ratio: 9 / 16;
   display: flex;

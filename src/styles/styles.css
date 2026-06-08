@@ -813,12 +813,12 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 
 @media (min-width: 1320px) {
   #planos > .container {
-    max-width: 1440px;
+    max-width: 1520px;
   }
 
   .monitoring-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(500px, 580px);
-    column-gap: 28px;
+    grid-template-columns: minmax(0, 1fr) minmax(620px, 1.15fr);
+    column-gap: 24px;
     align-items: stretch;
   }
 
@@ -843,19 +843,24 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   .monitoring-layout .monitoring-video-slot .monitoring-video {
     flex: 1;
     width: 100%;
+    max-width: none;
     height: 100%;
     min-height: 100%;
     aspect-ratio: auto;
+    margin: 0;
     background: #000;
   }
 
   .monitoring-layout .monitoring-video-slot .monitoring-video--landscape {
     aspect-ratio: auto;
+    max-width: none;
   }
 
   .monitoring-layout .monitoring-video--landscape video {
-    object-fit: cover;
-    object-position: left center;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
     background: #000;
   }
 }
