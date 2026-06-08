@@ -23,6 +23,9 @@ const MODELS = [
   },
 ];
 
+const MONITORING_IMPLANT_NOTE =
+  'Equipamento: R$ 150 mil para implantação. Já inclui drone e sistema.';
+
 export function Planos() {
   const { openClient } = useModals();
   return (
@@ -116,6 +119,7 @@ export function Planos() {
             <div className="plan-price" style={{ fontSize: '32px' }}>
               R$ 5k<small> – 30k /mês</small>
             </div>
+            <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
             <ul>
               <li>Drone Dock + Torre Inteligente</li>
               <li>Central de monitoramento</li>
@@ -132,6 +136,7 @@ export function Planos() {
             <div className="plan-price" style={{ fontSize: '32px' }}>
               R$ 8k<small> – 80k /mês</small>
             </div>
+            <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
             <ul>
               <li>Drone Dock + Torre de Vigilância</li>
               <li>Tags de rastreamento</li>
@@ -147,6 +152,7 @@ export function Planos() {
             <div className="plan-price" style={{ fontSize: '32px' }}>
               R$ 20k<small> – 500k</small>
             </div>
+            <p className="plan-note">{MONITORING_IMPLANT_NOTE}</p>
             <ul>
               <li>Projeto sob demanda</li>
               <li>Grandes eventos e resorts</li>
