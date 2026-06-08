@@ -120,7 +120,7 @@ const MONITORING_PLANS = [
 ] as const;
 
 const TRAINING_FEATURE_LABELS = [
-  'Até 20 participantes',
+  'Acima de 20 participantes',
   'Protocolos técnicos e operacionais',
   'Gestão de riscos e prevenção',
   'Certificação iProtector',
@@ -141,7 +141,7 @@ const TRAINING_PLANS = [
     featured: false,
     badge: null,
     cta: 'Solicitar treinamento',
-    features: [true, true, true, true, false, false, false, false, false, false, false],
+    features: [false, true, true, true, false, false, false, false, false, false, false],
   },
   {
     name: '[TÁTICO AVANÇADO]',
@@ -150,7 +150,7 @@ const TRAINING_PLANS = [
     featured: false,
     badge: null,
     cta: 'Solicitar treinamento',
-    features: [true, true, true, true, true, true, true, false, false, false, false],
+    features: [false, true, true, true, true, true, true, false, false, false, false],
   },
   {
     name: '[EXECUTIVE PROTECTION]',
@@ -159,7 +159,7 @@ const TRAINING_PLANS = [
     featured: true,
     badge: '[VIP]',
     cta: 'Solicitar treinamento',
-    features: [false, true, true, true, true, true, true, true, true, true, true],
+    features: [true, true, true, true, true, true, true, true, true, true, true],
   },
 ] as const;
 
