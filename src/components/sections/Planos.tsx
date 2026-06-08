@@ -27,7 +27,6 @@ const MODELS = [
 const MONITORING_IMPLANT_NOTE =
   'Equipamento: R$ 150 mil para implantação. Já inclui drone e sistema.';
 
-const MONITORING_DEMO_VIDEO_SRC = '/assets/videos/monitoring-demo.mp4';
 const MONITORING_DEMO_VIDEO_2_SRC = '/assets/videos/monitoring-demo-2.mp4';
 
 export function Planos() {
@@ -171,21 +170,13 @@ export function Planos() {
           </article>
           </div>
 
-          <div className="monitoring-videos-row">
-            <aside className="monitoring-video-slot">
-              <PhoneVideoEmbed
-                src={MONITORING_DEMO_VIDEO_SRC}
-                title="Demonstração de monitoramento robótico iProtector"
-              />
-            </aside>
-            <aside className="monitoring-video-slot">
-              <PhoneVideoEmbed
-                src={MONITORING_DEMO_VIDEO_2_SRC}
-                title="Demonstração de monitoramento iProtector"
-                variant="landscape"
-              />
-            </aside>
-          </div>
+          <aside className="monitoring-video-slot">
+            <PhoneVideoEmbed
+              src={MONITORING_DEMO_VIDEO_2_SRC}
+              title="Demonstração de monitoramento iProtector"
+              variant="landscape"
+            />
+          </aside>
         </div>
 
         <div className="section-head" style={{ marginTop: '4rem' }}>
