@@ -770,6 +770,7 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   gap: 28px;
   margin-top: 60px;
   width: 100%;
+  --monitoring-video-width: 680px;
 }
 
 .monitoring-layout .plans--monitoring {
@@ -873,9 +874,9 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   }
 
   .monitoring-layout {
-    grid-template-columns: minmax(0, 1fr) var(--monitoring-video-width, 580px);
+    grid-template-columns: minmax(0, 1fr) var(--monitoring-video-width);
     column-gap: 24px;
-    align-items: stretch;
+    align-items: center;
   }
 
   .monitoring-layout .plans--monitoring {
@@ -888,37 +889,37 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     grid-column: 2;
     grid-row: 1;
     display: flex;
-    width: var(--monitoring-video-width, 580px);
-    max-width: var(--monitoring-video-width, 580px);
-    min-width: var(--monitoring-video-width, 580px);
+    width: var(--monitoring-video-width);
+    max-width: var(--monitoring-video-width);
+    min-width: var(--monitoring-video-width);
     flex-shrink: 0;
     margin: 0;
     justify-self: end;
-    align-self: stretch;
-    min-height: 100%;
+    align-self: center;
+    height: auto;
   }
 
   .monitoring-layout .monitoring-video-slot .monitoring-video {
     flex: 1;
     width: 100%;
     max-width: none;
-    height: 100%;
-    min-height: 100%;
-    aspect-ratio: auto;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
     margin: 0;
     background: #000;
   }
 
   .monitoring-layout .monitoring-video-slot .monitoring-video--landscape {
-    aspect-ratio: auto;
+    aspect-ratio: 16 / 9;
     max-width: none;
   }
 
   .monitoring-layout .monitoring-video--landscape video {
     width: 100%;
     height: 100%;
-    object-fit: fill;
-    object-position: center;
+    object-fit: cover;
+    object-position: left center;
     background: #000;
   }
 }
