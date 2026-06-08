@@ -30,24 +30,13 @@ function buildEmbedUrl(videoId: string): string {
 
 export function PhoneVideoEmbed({ videoId, title }: Props) {
   return (
-    <div className="phone-video-mock" aria-hidden="true">
-      <div className="phone-glow" aria-hidden="true" />
-      <div className="phone-frame phone-frame--video">
-        <div className="phone-notch" aria-hidden="true" />
-        <div className="phone-screen phone-screen--video">
-          <div className="phone-video-crop">
-            <iframe
-              src={buildEmbedUrl(videoId)}
-              title={title}
-              tabIndex={-1}
-              allow="autoplay; encrypted-media; picture-in-picture"
-              referrerPolicy="strict-origin-when-cross-origin"
-            />
-            <div className="phone-video-mask phone-video-mask--top" />
-            <div className="phone-video-mask phone-video-mask--bottom" />
-          </div>
-        </div>
-      </div>
+    <div className="monitoring-video">
+      <iframe
+        src={buildEmbedUrl(videoId)}
+        title={title}
+        allow="autoplay; encrypted-media; picture-in-picture"
+        referrerPolicy="strict-origin-when-cross-origin"
+      />
     </div>
   );
 }

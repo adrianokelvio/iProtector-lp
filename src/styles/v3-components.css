@@ -16,65 +16,22 @@
   isolation: isolate;
 }
 
-.phone-video-mock {
-  position: relative;
+.monitoring-video {
   width: 100%;
-  max-width: 260px;
+  max-width: 280px;
+  aspect-ratio: 9 / 16;
   margin: 0 auto;
-  aspect-ratio: 9 / 19;
-  isolation: isolate;
-}
-
-.phone-frame--video {
-  height: 100%;
-}
-
-.phone-screen--video {
-  padding: 0 !important;
-  gap: 0 !important;
-  background: #000 !important;
-  overflow: hidden;
-}
-
-.phone-video-crop {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   background: #000;
+  border: 1px solid var(--line);
 }
 
-.phone-video-crop iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.monitoring-video iframe {
   width: 100%;
   height: 100%;
   border: 0;
   display: block;
-  pointer-events: none;
-  user-select: none;
-  transform: translate(-50%, -48%) scale(1.78);
-  transform-origin: center center;
-}
-
-.phone-video-mask {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  pointer-events: none;
-  background: #000;
-}
-
-.phone-video-mask--top {
-  top: 0;
-  height: 17%;
-}
-
-.phone-video-mask--bottom {
-  bottom: 0;
-  height: 11%;
 }
 
 .phone-glow {
