@@ -235,7 +235,7 @@ export function Planos() {
           <h2>Capacitação corporativa com até 20 participantes.</h2>
         </div>
 
-        <div className="plans plans--comparison">
+        <div className="plans plans--comparison plans--training">
           {TRAINING_PLANS.map((plan) => (
             <PlanComparisonCard
               key={plan.name}
