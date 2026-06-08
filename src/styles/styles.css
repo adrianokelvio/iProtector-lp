@@ -770,8 +770,6 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   gap: 28px;
   margin-top: 60px;
   width: 100%;
-  --monitoring-plans-width: 1050px;
-  --monitoring-video-min: 750px;
 }
 
 .monitoring-layout .plans--monitoring {
@@ -858,16 +856,21 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 
 .monitoring-video-slot {
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
-@media (max-width: 1319px) {
-  .monitoring-layout .monitoring-video-slot {
-    max-width: min(100%, 720px);
+@media (max-width: 1519px) {
+  .monitoring-layout .plans--monitoring {
+    order: 1;
   }
 
-  .monitoring-layout .monitoring-video-slot .monitoring-video--landscape {
+  .monitoring-layout .monitoring-video-slot {
+    order: 2;
+  }
+
+  .monitoring-layout .monitoring-video-slot .monitoring-video {
+    height: auto;
+    min-height: 0;
     aspect-ratio: 16 / 9;
   }
 
@@ -877,20 +880,13 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   }
 }
 
-@media (min-width: 1320px) {
+@media (min-width: 1520px) {
   #planos > .container {
-    max-width: 2100px;
+    max-width: 1680px;
   }
 
   .monitoring-layout {
-    --monitoring-plans-col: min(
-      var(--monitoring-plans-width),
-      calc(100% - var(--monitoring-video-min) - 24px)
-    );
-    grid-template-columns: var(--monitoring-plans-col) minmax(
-        var(--monitoring-video-min),
-        1fr
-      );
+    grid-template-columns: 1.15fr 0.85fr;
     column-gap: 24px;
     align-items: stretch;
   }
@@ -899,8 +895,6 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     grid-column: 1;
     grid-row: 1;
     align-items: stretch;
-    width: 100%;
-    max-width: var(--monitoring-plans-col);
   }
 
   .monitoring-layout .monitoring-video-slot {
@@ -908,11 +902,7 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     grid-row: 1;
     display: flex;
     width: 100%;
-    max-width: none;
-    min-width: var(--monitoring-video-min);
-    flex-shrink: 0;
-    margin: 0;
-    justify-self: stretch;
+    min-width: 0;
     align-self: stretch;
     min-height: 100%;
   }
@@ -920,7 +910,6 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   .monitoring-layout .monitoring-video-slot .monitoring-video {
     flex: 1;
     width: 100%;
-    max-width: none;
     height: 100%;
     min-height: 100%;
     aspect-ratio: auto;
@@ -930,7 +919,6 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 
   .monitoring-layout .monitoring-video-slot .monitoring-video--landscape {
     aspect-ratio: auto;
-    max-width: none;
   }
 
   .monitoring-layout .monitoring-video--landscape video {
@@ -939,16 +927,6 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     object-fit: cover;
     object-position: left bottom;
     background: #000;
-  }
-}
-
-@media (max-width: 1319px) {
-  .monitoring-layout .plans--monitoring {
-    order: 1;
-  }
-
-  .monitoring-layout .monitoring-video-slot {
-    order: 2;
   }
 }
 
