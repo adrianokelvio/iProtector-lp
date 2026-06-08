@@ -119,6 +119,50 @@ const MONITORING_PLANS = [
   },
 ] as const;
 
+const TRAINING_FEATURE_LABELS = [
+  'Até 20 participantes',
+  'Protocolos técnicos e operacionais',
+  'Gestão de riscos e prevenção',
+  'Certificação iProtector',
+  'Gestão de crises e evacuação',
+  'Controle de perímetro',
+  'Cenários de alto risco',
+  'Turma exclusiva até 10 participantes',
+  'Executive Protection Premium',
+  'Ambiente urbano e rural',
+  'Protocolos VIP de elite',
+] as const;
+
+const TRAINING_PLANS = [
+  {
+    name: '[CORPORATIVO]',
+    priceMain: 'R$ 15k',
+    priceSuffix: ' a 30k',
+    featured: false,
+    badge: null,
+    cta: 'Solicitar treinamento',
+    features: [true, true, true, true, false, false, false, false, false, false, false],
+  },
+  {
+    name: '[TÁTICO AVANÇADO]',
+    priceMain: 'R$ 30k',
+    priceSuffix: ' a 80k',
+    featured: false,
+    badge: null,
+    cta: 'Solicitar treinamento',
+    features: [true, true, true, true, true, true, true, false, false, false, false],
+  },
+  {
+    name: '[EXECUTIVE PROTECTION]',
+    priceMain: 'R$ 50k',
+    priceSuffix: ' a 150k',
+    featured: true,
+    badge: '[VIP]',
+    cta: 'Solicitar treinamento',
+    features: [false, true, true, true, true, true, true, true, true, true, true],
+  },
+] as const;
+
 export function Planos() {
   const { openClient } = useModals();
   return (
@@ -191,53 +235,15 @@ export function Planos() {
           <h2>Capacitação corporativa com até 20 participantes.</h2>
         </div>
 
-        <div className="plans">
-          <article className="plan">
-            <div className="plan-name">[CORPORATIVO]</div>
-            <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 15k<small> a 30k</small>
-            </div>
-            <ul>
-              <li>Até 20 participantes</li>
-              <li>Protocolos técnicos e operacionais</li>
-              <li>Gestão de riscos e prevenção</li>
-              <li>Certificação iProtector</li>
-            </ul>
-            <button className="btn btn-dark" onClick={openClient}>
-              Solicitar treinamento
-            </button>
-          </article>
-          <article className="plan">
-            <div className="plan-name">[TÁTICO AVANÇADO]</div>
-            <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 30k<small> a 80k</small>
-            </div>
-            <ul>
-              <li>Até 20 participantes</li>
-              <li>Gestão de crises e evacuação</li>
-              <li>Controle de perímetro</li>
-              <li>Cenários de alto risco</li>
-            </ul>
-            <button className="btn btn-dark" onClick={openClient}>
-              Solicitar treinamento
-            </button>
-          </article>
-          <article className="plan featured">
-            <span className="pop-badge">[VIP]</span>
-            <div className="plan-name">[EXECUTIVE PROTECTION]</div>
-            <div className="plan-price" style={{ fontSize: '32px' }}>
-              R$ 50k<small> a 150k</small>
-            </div>
-            <ul>
-              <li>Até 10 participantes</li>
-              <li>Executive Protection Premium</li>
-              <li>Ambiente urbano e rural</li>
-              <li>Protocolos VIP de elite</li>
-            </ul>
-            <button className="btn btn-primary" onClick={openClient}>
-              Solicitar treinamento
-            </button>
-          </article>
+        <div className="plans plans--comparison">
+          {TRAINING_PLANS.map((plan) => (
+            <PlanComparisonCard
+              key={plan.name}
+              plan={plan}
+              featureLabels={TRAINING_FEATURE_LABELS}
+              onCta={openClient}
+            />
+          ))}
         </div>
 
         <p className="plans-footer">
