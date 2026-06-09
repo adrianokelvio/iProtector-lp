@@ -1,11 +1,21 @@
 import { Arrow } from '../ui/Arrow';
+import { BackgroundVideo } from '../ui/BackgroundVideo';
 import { useModals } from '../modals/ModalsContext';
+
+const FINAL_CTA_VIDEO_SRC = '/assets/videos/final-cta-bg.mp4';
 
 export function FinalCta() {
   const { openClient, openPartner } = useModals();
   return (
     <section className="final-cta">
-      <div className="container">
+      <div className="final-cta__media" aria-hidden="true">
+        <BackgroundVideo
+          src={FINAL_CTA_VIDEO_SRC}
+          title="Visão iProtector"
+        />
+        <div className="final-cta__overlay" />
+      </div>
+      <div className="container final-cta__content">
         <span className="eyebrow">[VISÃO 2030]</span>
         <h2>A maior plataforma brasileira de proteção e monitoramento inteligente.</h2>
         <p className="lead">

@@ -1214,11 +1214,35 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   padding: clamp(80px, 12vw, 160px) 0;
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 50%, rgba(201, 169, 97, 0.12), transparent 60%),
-    linear-gradient(180deg, #04101F, #02080F);
   text-align: center;
   border-top: 1px solid var(--line);
+}
+
+.final-cta__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.final-cta__media .background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.final-cta__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(201, 169, 97, 0.1), transparent 55%),
+    linear-gradient(180deg, rgba(4, 16, 31, 0.82), rgba(2, 8, 15, 0.92));
+}
+
+.final-cta__content {
+  position: relative;
+  z-index: 1;
 }
 .final-cta h2 { font-size: clamp(36px, 6vw, 88px); max-width: 18ch; margin: 0 auto; letter-spacing: -0.03em; }
 .final-cta .lead { margin: 28px auto 0; }
