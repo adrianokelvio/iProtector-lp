@@ -777,20 +777,42 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   min-width: 0;
   width: 100%;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 24px;
 }
 
-.monitoring-layout .plan {
-  padding: 26px 24px;
+.monitoring-layout .plans--monitoring .plan {
+  padding: 32px 28px !important;
 }
 
 .monitoring-layout .plan-price {
   font-size: clamp(28px, 2.2vw, 40px) !important;
+  margin-top: 16px !important;
+}
+
+.monitoring-layout .plan-price small {
+  display: block;
+  margin-top: 6px;
 }
 
 .monitoring-layout .plan-note {
-  font-size: 10.5px;
-  line-height: 1.4;
+  font-size: 11px;
+  line-height: 1.55;
+  margin-top: 12px;
+}
+
+.monitoring-layout .plan-feat-list {
+  gap: 11px;
+  margin: 26px 0 26px;
+}
+
+.monitoring-layout .plan-feat {
+  font-size: 13px;
+  line-height: 1.55;
+  gap: 11px;
+}
+
+.monitoring-layout .plan .btn {
+  margin-top: 4px;
 }
 
 .plan-feat-list {
@@ -839,11 +861,12 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 }
 
 .monitoring-layout .plan-feat-list {
-  gap: 9px;
+  gap: 11px;
 }
 
 .monitoring-layout .plan-feat {
-  font-size: 12.5px;
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .plans--comparison .plan-feat-list {
@@ -886,8 +909,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   }
 
   .monitoring-layout {
-    grid-template-columns: 1.05fr 0.95fr;
-    column-gap: 24px;
+    grid-template-columns: 1.12fr 0.88fr;
+    column-gap: 28px;
     align-items: center;
   }
 
