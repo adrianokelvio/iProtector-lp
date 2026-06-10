@@ -1,6 +1,5 @@
 import { Arrow } from '../ui/Arrow';
 import { StoreBadges } from '../ui/StoreBadges';
-import { PhoneMockup } from './PhoneMockup';
 import { useModals } from '../modals/ModalsContext';
 
 export function Hero() {
@@ -47,10 +46,6 @@ export function Hero() {
           </div>
 
           <StoreBadges />
-        </div>
-
-        <div className="hero-visual-stack" aria-hidden="true">
-          <PhoneMockup />
         </div>
       </div>
 
