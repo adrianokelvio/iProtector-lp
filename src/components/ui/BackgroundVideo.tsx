@@ -14,7 +14,9 @@ export function BackgroundVideo({ src, title }: Props) {
       loop
       playsInline
       controls={false}
+      controlsList="nodownload noplaybackrate nofullscreen noremoteplayback"
       disablePictureInPicture
+      disableRemotePlayback
       preload="auto"
       aria-hidden="true"
     />
