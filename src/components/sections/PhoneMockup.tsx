@@ -5,37 +5,9 @@
 export function PhoneMockup() {
   return (
     <div className="phone-mock" aria-hidden="true">
-      {/* Glow dourado atrás */}
       <div className="phone-glow" />
 
-      <div className="phone-frame">
-        {/* Notch */}
-        <div className="phone-notch" />
-
-        <div className="phone-screen">
-          {/* Status bar */}
-          <div className="phone-status">
-            <span className="time">9:41</span>
-            <div className="status-icons">
-              <svg viewBox="0 0 18 12" width="18" height="10" fill="currentColor">
-                <rect x="0" y="6" width="3" height="6" rx="0.5" />
-                <rect x="5" y="4" width="3" height="8" rx="0.5" />
-                <rect x="10" y="2" width="3" height="10" rx="0.5" />
-                <rect x="15" y="0" width="3" height="12" rx="0.5" />
-              </svg>
-              <svg viewBox="0 0 16 12" width="16" height="10" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M2 4 Q 8 -1 14 4" />
-                <path d="M4 6 Q 8 3 12 6" />
-                <circle cx="8" cy="9.5" r="0.8" fill="currentColor" />
-              </svg>
-              <svg viewBox="0 0 24 12" width="22" height="10" fill="none" stroke="currentColor" strokeWidth="1.2">
-                <rect x="1" y="2" width="18" height="8" rx="2" />
-                <rect x="3" y="4" width="14" height="4" rx="1" fill="currentColor" />
-                <rect x="20" y="5" width="2" height="2" rx="0.5" fill="currentColor" />
-              </svg>
-            </div>
-          </div>
-
+      <div className="phone-screen">
           {/* App header */}
           <div className="phone-header">
             <div className="phone-greet">
@@ -142,7 +114,6 @@ export function PhoneMockup() {
               <span>Conta</span>
             </button>
           </div>
-        </div>
       </div>
     </div>
   );
