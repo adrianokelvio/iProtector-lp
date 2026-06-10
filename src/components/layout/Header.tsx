@@ -1,4 +1,4 @@
-import { HashLink } from '../ui/HashLink';
+import { Link } from 'react-router-dom';
 import { Brand } from './Brand';
 import { Arrow } from '../ui/Arrow';
 import { useScrolled } from '../../hooks/useScrolled';
@@ -19,9 +19,9 @@ export function Header({ onOpenClient, onOpenPartner, onOpenDrawer }: Props) {
 
         <nav className="nav" aria-label="Navegação principal">
           {SITE.nav.map((item) => (
-            <HashLink key={item.href} to={item.href}>
+            <Link key={item.href} to={item.href}>
               {item.label}
-            </HashLink>
+            </Link>
           ))}
         </nav>
 

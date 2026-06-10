@@ -49,7 +49,7 @@ export function Contato() {
               Cadastre sua empresa na rede iProtector e amplie sua operação.
             </p>
             <div className="email">contato@iprotector.com.br</div>
-            <Link className="btn btn-dark btn-sm" to="/#parceiros">
+            <Link className="btn btn-dark btn-sm" to="/parceiros">
               Cadastrar empresa <Arrow />
             </Link>
           </article>

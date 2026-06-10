@@ -1,4 +1,4 @@
-import { HashLink } from '../ui/HashLink';
+import { Link } from 'react-router-dom';
 import { Arrow } from '../ui/Arrow';
 import { SITE } from '../../config/site';
 
@@ -30,9 +30,9 @@ export function Drawer({ isOpen, onClose, onOpenClient, onOpenPartner }: Props) 
         </svg>
       </button>
       {SITE.nav.map((item) => (
-        <HashLink key={item.href} to={item.href} onClick={onClose}>
+        <Link key={item.href} to={item.href} onClick={onClose}>
           {item.label}
-        </HashLink>
+        </Link>
       ))}
       <button
         className="btn btn-ghost"

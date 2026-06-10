@@ -1209,6 +1209,11 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 }
 .faq-item.open .faq-a { max-height: 400px; margin-top: 16px; }
 
+/* ---------- Page routes ---------- */
+.page-main {
+  padding-top: 108px;
+}
+
 /* ---------- Final CTA + Footer ---------- */
 .final-cta {
   padding: clamp(80px, 12vw, 160px) 0;

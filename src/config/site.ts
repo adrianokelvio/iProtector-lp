@@ -27,11 +27,11 @@ export const SITE = {
     contato: 'contato@iprotector.com.br',
   },
   nav: [
-    { href: '/#como-funciona', label: 'Como funciona' },
-    { href: '/#servicos', label: 'Soluções' },
-    { href: '/#tecnologia', label: 'Monitoramento' },
-    { href: '/#planos', label: 'Planos' },
-    { href: '/#parceiros', label: 'Parceiros' },
+    { href: '/como-funciona', label: 'Como funciona' },
+    { href: '/solucoes', label: 'Soluções' },
+    { href: '/monitoramento', label: 'Monitoramento' },
+    { href: '/planos', label: 'Planos' },
+    { href: '/parceiros', label: 'Parceiros' },
     { href: '/contato', label: 'Contato' },
   ],
 } as const;

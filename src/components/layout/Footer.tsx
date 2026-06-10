@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { HashLink } from '../ui/HashLink';
 import { getWhatsAppUrl, COMPANY } from '../../config/site';
 
 type Props = {
@@ -40,19 +39,19 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
             <h5>[PRODUTO]</h5>
             <ul>
               <li>
-                <HashLink to="/#como-funciona">Como funciona</HashLink>
+                <Link to="/como-funciona">Como funciona</Link>
               </li>
               <li>
-                <HashLink to="/#servicos">Soluções</HashLink>
+                <Link to="/solucoes">Soluções</Link>
               </li>
               <li>
-                <HashLink to="/#tecnologia">Monitoramento</HashLink>
+                <Link to="/monitoramento">Monitoramento</Link>
               </li>
               <li>
-                <HashLink to="/#treinamento">Treinamento</HashLink>
+                <Link to="/solucoes">Treinamento</Link>
               </li>
               <li>
-                <HashLink to="/#planos">Planos</HashLink>
+                <Link to="/planos">Planos</Link>
               </li>
               <li>
                 <a href="#">App (iOS / Android)</a>
@@ -64,7 +63,7 @@ export function Footer({ onOpenPartner, onOpenCookies }: Props) {
             <h5>[PARCEIROS]</h5>
             <ul>
               <li>
-                <HashLink to="/#parceiros">Para empresas de segurança</HashLink>
+                <Link to="/parceiros">Para empresas de segurança</Link>
               </li>
               <li>
                 <button type="button" className="link-button" onClick={onOpenPartner}>

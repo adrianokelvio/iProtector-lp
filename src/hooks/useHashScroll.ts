@@ -6,7 +6,9 @@ export function useHashScroll(): void {
 
   useEffect(() => {
     if (!hash) {
-      window.scrollTo({ top: 0, behavior: 'auto' });
+      document.documentElement.style.scrollBehavior = 'auto';
+      window.scrollTo(0, 0);
+      document.documentElement.style.scrollBehavior = '';
       return;
     }
     const id = hash.replace('#', '');

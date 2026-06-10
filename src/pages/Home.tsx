@@ -1,13 +1,6 @@
 import { SEO } from '../components/seo/SEO';
 import { Hero } from '../components/sections/Hero';
 import { ParaQuem } from '../components/sections/ParaQuem';
-import { ComoFunciona } from '../components/sections/ComoFunciona';
-import { Servicos } from '../components/sections/Servicos';
-import { Agentes } from '../components/sections/Agentes';
-import { Tecnologia } from '../components/sections/Tecnologia';
-import { Treinamento } from '../components/sections/Treinamento';
-import { Planos } from '../components/sections/Planos';
-import { Parceiros } from '../components/sections/Parceiros';
 import { Diferenciais } from '../components/sections/Diferenciais';
 import { Segmentos } from '../components/sections/Segmentos';
 import { Faq } from '../components/sections/Faq';
@@ -23,13 +16,6 @@ export function Home() {
       />
       <Hero />
       <ParaQuem />
-      <ComoFunciona />
-      <Servicos />
-      <Agentes />
-      <Tecnologia />
-      <Treinamento />
-      <Planos />
-      <Parceiros />
       <Diferenciais />
       <Segmentos />
       <Faq />

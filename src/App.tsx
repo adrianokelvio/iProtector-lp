@@ -10,6 +10,11 @@ import { ClientModal } from './components/modals/ClientModal';
 import { PartnerModal } from './components/modals/PartnerModal';
 import { ModalsProvider } from './components/modals/ModalsContext';
 import { Home } from './pages/Home';
+import { ComoFuncionaPage } from './pages/ComoFuncionaPage';
+import { SolucoesPage } from './pages/SolucoesPage';
+import { MonitoramentoPage } from './pages/MonitoramentoPage';
+import { PlanosPage } from './pages/PlanosPage';
+import { ParceirosPage } from './pages/ParceirosPage';
 import { Contato } from './pages/Contato';
 import { Privacidade } from './pages/Privacidade';
 import { Termos } from './pages/Termos';
@@ -38,6 +43,11 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/como-funciona" element={<ComoFuncionaPage />} />
+        <Route path="/solucoes" element={<SolucoesPage />} />
+        <Route path="/monitoramento" element={<MonitoramentoPage />} />
+        <Route path="/planos" element={<PlanosPage />} />
+        <Route path="/parceiros" element={<ParceirosPage />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/privacidade" element={<Privacidade />} />
         <Route path="/termos" element={<Termos />} />
