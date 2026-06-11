@@ -1,25 +1,12 @@
 import { Arrow } from '../ui/Arrow';
 import { StoreBadges } from '../ui/StoreBadges';
-import { BackgroundVideo } from '../ui/BackgroundVideo';
 import { useModals } from '../modals/ModalsContext';
-
-const HERO_BG_VIDEO = '/assets/videos/hero-bg.mp4';
 
 export function Hero() {
   const { openClient, openPartner } = useModals();
 
   return (
     <section className="hero" id="top">
-      <div className="hero-bg" aria-hidden="true">
-        <BackgroundVideo
-          src={HERO_BG_VIDEO}
-          title="iProtector"
-          poster="/assets/hero-bg-source.png"
-        />
-      </div>
-
-      <div className="hero-overlay" aria-hidden="true" />
-
       <div className="container hero-inner">
         <div className="hero-content">
           <h1>

@@ -1283,6 +1283,62 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   backdrop-filter: blur(10px);
 }
 
+.page-main--home {
+  min-height: 100vh;
+}
+
+.page-main--home .page-bg-video__overlay--home {
+  background:
+    radial-gradient(circle at 72% 18%, rgba(201, 169, 97, 0.1), transparent 42%),
+    linear-gradient(
+      180deg,
+      rgba(4, 16, 31, 0.78) 0%,
+      rgba(4, 16, 31, 0.72) 45%,
+      rgba(2, 8, 15, 0.82) 100%
+    );
+}
+
+.page-main--home .hero {
+  background: transparent !important;
+}
+
+.page-main--home section,
+.page-main--home .final-cta {
+  background: transparent !important;
+}
+
+.page-main--home .segment-card,
+.page-main--home .diff,
+.page-main--home .seg-card,
+.page-main--home .model,
+.page-main--home .faq-item,
+.page-main--home .faq-tabs,
+.page-main--home .diffs {
+  backdrop-filter: blur(10px);
+}
+
+.page-main--home .segment-card,
+.page-main--home .seg-card,
+.page-main--home .model {
+  background: rgba(4, 16, 31, 0.78) !important;
+}
+
+.page-main--home .diff {
+  background: rgba(4, 16, 31, 0.55) !important;
+}
+
+.page-main--home .diff:hover {
+  background: rgba(4, 16, 31, 0.72) !important;
+}
+
+.page-main--home .faq-item {
+  background: rgba(4, 16, 31, 0.65) !important;
+}
+
+.page-main--home .faq-item.open {
+  background: rgba(4, 16, 31, 0.78) !important;
+}
+
 .page-main--contato .contact-card,
 .page-main--contato .contact-form-wrap,
 .page-main--contato .contact-info-section {
