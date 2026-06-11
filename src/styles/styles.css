@@ -790,35 +790,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   width: 100%;
   height: auto;
 }
-.tech-modal__tags-hero {
-  margin: 0 0 20px;
-  padding: 28px 22px 24px;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  background:
-    radial-gradient(circle at 50% 0%, rgba(201, 169, 97, 0.14), transparent 55%),
-    linear-gradient(160deg, rgba(18, 40, 71, 0.85), rgba(6, 16, 31, 0.9));
-  text-align: center;
-}
-.tech-modal__tags-hero-icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 18px;
-  border-radius: 14px;
-  border: 1px solid rgba(201, 169, 97, 0.28);
-  background:
-    radial-gradient(circle at 30% 30%, rgba(201, 169, 97, 0.2), transparent 70%),
-    rgba(10, 26, 47, 0.8);
-  display: grid;
-  place-items: center;
-}
-.tech-modal__tags-hero-icon svg {
-  width: 28px;
-  height: 28px;
-  stroke: var(--gold);
-}
 .tech-modal__tags-label {
-  margin: 0 0 12px;
+  margin: 20px 0 12px;
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.14em;
@@ -828,11 +801,10 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 .tech-modal__tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 8px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 4px;
 }
 .tech-modal__tag {
   display: inline-flex;

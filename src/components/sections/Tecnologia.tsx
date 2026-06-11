@@ -68,6 +68,8 @@ const ITEMS: TechItem[] = [
       'Histórico operacional para auditoria',
     ],
     assetTags: ['Veículos', 'Máquinas', 'Equipamentos', 'Animais', 'Ativos críticos'],
+    image: '/assets/images/tracking-tag.jpg',
+    imageAlt: 'Motorista em veículo com monitoramento e rastreamento GPS em tempo real',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 22 s8-6 8-12 a8 8 0 0 0 -16 0 c0 6 8 12 8 12 Z" />
@@ -182,19 +184,7 @@ export function Tecnologia() {
       >
         {selected && (
           <div className="tech-modal">
-            {selected.assetTags ? (
-              <div className="tech-modal__tags-hero">
-                <div className="tech-modal__tags-hero-icon">{selected.svg}</div>
-                <p className="tech-modal__tags-label">Ativos monitorados</p>
-                <div className="tech-modal__tags" role="list" aria-label="Tipos de ativos rastreados">
-                  {selected.assetTags.map((tag) => (
-                    <span className="tech-modal__tag" role="listitem" key={tag}>
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ) : selected.image ? (
+            {selected.image ? (
               <figure className="tech-modal__figure">
                 <img
                   src={selected.image}
@@ -208,6 +198,18 @@ export function Tecnologia() {
             )}
             <h3>{selected.title}</h3>
             <p className="sub">{selected.body}</p>
+            {selected.assetTags ? (
+              <>
+                <p className="tech-modal__tags-label">Ativos monitorados</p>
+                <div className="tech-modal__tags" role="list" aria-label="Tipos de ativos rastreados">
+                  {selected.assetTags.map((tag) => (
+                    <span className="tech-modal__tag" role="listitem" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </>
+            ) : null}
             <ul className="tech-modal__list">
               {selected.highlights.map((item) => (
                 <li key={item}>{item}</li>
