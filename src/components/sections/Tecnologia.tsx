@@ -49,6 +49,8 @@ const ITEMS: TechItem[] = [
       'Detecção de intrusão em perímetros extensos',
       'Indicada para fazendas, resorts e eventos',
     ],
+    image: '/assets/images/surveillance-tower.jpg',
+    imageAlt: 'Torre de vigilância com câmeras de segurança para monitoramento perimetral',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 2 v20 M8 6 h8 M7 10 h10 M6 14 h12 M5 18 h14" />
@@ -66,6 +68,8 @@ const ITEMS: TechItem[] = [
       'Rastreamento de veículos, máquinas e equipamentos',
       'Monitoramento de animais e ativos críticos',
     ],
+    image: '/assets/images/tracking-tag.jpg',
+    imageAlt: 'Tag de rastreamento GPS para monitoramento de ativos em tempo real',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 22 s8-6 8-12 a8 8 0 0 0 -16 0 c0 6 8 12 8 12 Z" />
@@ -84,6 +88,8 @@ const ITEMS: TechItem[] = [
       'Planejamento de perímetros e rotas de patrulha',
       'Essencial para fazendas e grandes propriedades',
     ],
+    image: '/assets/images/topographic-mapping.jpg',
+    imageAlt: 'Vista aérea topográfica de terreno para mapeamento e planejamento de segurança',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M3 18 L9 10 L14 14 L21 6" />
@@ -102,6 +108,8 @@ const ITEMS: TechItem[] = [
       'Registro completo de ocorrências e alertas',
       'Atende condomínios, fazendas, resorts e eventos',
     ],
+    image: '/assets/images/monitoring-center.jpg',
+    imageAlt: 'Central de monitoramento com múltiplas telas de vigilância em operação 24h',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="2" y="4" width="20" height="14" rx="2" />
@@ -120,6 +128,8 @@ const ITEMS: TechItem[] = [
       'Conecta demanda, parceiros e fornecedores',
       'Automação de fluxos e relatórios operacionais',
     ],
+    image: '/assets/images/tech-integration.jpg',
+    imageAlt: 'Ecossistema tecnológico integrado para gestão operacional e análise de dados',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="12" cy="12" r="3" />

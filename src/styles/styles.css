@@ -783,7 +783,7 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--line);
-  background: #fff;
+  background: rgba(6, 16, 31, 0.65);
 }
 .tech-modal__figure img {
   display: block;
