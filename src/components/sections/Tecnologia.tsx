@@ -69,7 +69,8 @@ const ITEMS: TechItem[] = [
       'Monitoramento de animais e ativos críticos',
     ],
     image: '/assets/images/tracking-tag.jpg',
-    imageAlt: 'Tag de rastreamento GPS para monitoramento de ativos em tempo real',
+    imageAlt:
+      'Mapa global com pontos de geolocalização para rastreamento de ativos em tempo real',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 22 s8-6 8-12 a8 8 0 0 0 -16 0 c0 6 8 12 8 12 Z" />
@@ -131,7 +132,8 @@ const ITEMS: TechItem[] = [
       'Automação de fluxos e relatórios operacionais',
     ],
     image: '/assets/images/tech-integration.jpg',
-    imageAlt: 'Ecossistema tecnológico integrado para gestão operacional e análise de dados',
+    imageAlt:
+      'Integração entre dispositivos móveis e plataforma de software para operações conectadas',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="12" cy="12" r="3" />
