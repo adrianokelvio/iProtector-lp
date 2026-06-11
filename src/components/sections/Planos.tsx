@@ -29,7 +29,7 @@ const MONITORING_IMPLANT_NOTE =
   'Equipamento: R$ 180 mil para implantação. Já inclui drone e sistema.';
 
 const MONITORING_DEMO_VIDEO_2_SRC = '/assets/videos/monitoring-demo-2.mp4';
-const EXECUTIVE_DEMO_VIDEO_YOUTUBE_ID = 'CJ4Gd1IHDcM';
+const EXECUTIVE_DEMO_VIDEO_SRC = '/assets/videos/executive-demo.mp4';
 
 const MONITORING_FEATURE_LABELS = [
   'Drone Dock + torre inteligente',
@@ -208,7 +208,7 @@ export function Planos() {
 
           <aside className="monitoring-video-slot">
             <PhoneVideoEmbed
-              youtubeId={EXECUTIVE_DEMO_VIDEO_YOUTUBE_ID}
+              src={EXECUTIVE_DEMO_VIDEO_SRC}
               title="Demonstração de proteção executiva iProtector"
               variant="landscape"
             />
