@@ -10,6 +10,8 @@ type Props = {
 type YTPlayer = {
   mute: () => void;
   playVideo: () => void;
+  seekTo: (seconds: number, allowSeekAhead?: boolean) => void;
+  getPlayerState: () => number;
   setPlaybackQuality: (quality: string) => void;
 };
 
@@ -76,7 +78,13 @@ function YouTubeCleanEmbed({
     if (!mount) return;
 
     let player: { destroy: () => void } | undefined;
+    let loopTimer: number | undefined;
     let cancelled = false;
+
+    const restartLoop = (target: YTPlayer) => {
+      target.seekTo(0, true);
+      target.playVideo();
+    };
 
     void loadYouTubeApi().then(() => {
       if (cancelled || !mountRef.current || !window.YT?.Player) return;
@@ -102,16 +110,28 @@ function YouTubeCleanEmbed({
         },
         events: {
           onReady: (event) => {
-            event.target.mute();
-            event.target.playVideo();
+            const target = event.target;
+            target.mute();
+            target.playVideo();
             try {
-              event.target.setPlaybackQuality('hd2160');
+              target.setPlaybackQuality('hd2160');
             } catch {
               /* quality may be unavailable */
             }
+
+            loopTimer = window.setInterval(() => {
+              if (target.getPlayerState() === YT_ENDED) {
+                restartLoop(target);
+              }
+            }, 400);
           },
           onStateChange: (event) => {
-            if (event.data === YT_PAUSED || event.data === YT_ENDED) {
+            if (event.data === YT_ENDED) {
+              restartLoop(event.target);
+              return;
+            }
+
+            if (event.data === YT_PAUSED) {
               event.target.playVideo();
             }
           },
@@ -121,6 +141,7 @@ function YouTubeCleanEmbed({
 
     return () => {
       cancelled = true;
+      if (loopTimer) window.clearInterval(loopTimer);
       player?.destroy();
     };
   }, [youtubeId]);
