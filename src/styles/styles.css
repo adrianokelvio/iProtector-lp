@@ -728,8 +728,27 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   position: relative;
   overflow: hidden;
   transition: border-color .25s ease, transform .25s ease;
+  appearance: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
 }
 .tech-card:hover { border-color: rgba(201, 169, 97, 0.4); transform: translateY(-3px); }
+.tech-card:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+.tech-card__cta {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
 .tech-card .tech-illu {
   height: 100px;
   margin-bottom: 22px;
@@ -745,6 +764,42 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 .tech-card .tech-illu svg { width: 44px; height: 44px; stroke: var(--gold); }
 .tech-card h4 { font-size: 17px; }
 .tech-card p { font-size: 14px; margin-top: 8px; color: var(--muted); }
+
+.tech-modal__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 50% 60%, rgba(201, 169, 97, 0.16), transparent 60%),
+    rgba(18, 40, 71, 0.5);
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+}
+.tech-modal__icon svg { width: 36px; height: 36px; stroke: var(--gold); }
+.tech-modal__list {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 0;
+  display: grid;
+  gap: 10px;
+}
+.tech-modal__list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--fg-dim);
+}
+.tech-modal__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #6ee7a0;
+  font-weight: 700;
+  font-size: 12px;
+}
 @media (max-width: 900px) { .tech-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .tech-grid { grid-template-columns: 1fr; } }
 
