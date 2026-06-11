@@ -9,6 +9,7 @@ type TechItem = {
   highlights: string[];
   image?: string;
   imageAlt?: string;
+  assetTags?: string[];
 };
 
 const ITEMS: TechItem[] = [
@@ -65,12 +66,8 @@ const ITEMS: TechItem[] = [
       'Geolocalização em tempo real via GPS',
       'Alertas de saída de perímetro e movimentação',
       'Histórico operacional para auditoria',
-      'Rastreamento de veículos, máquinas e equipamentos',
-      'Monitoramento de animais e ativos críticos',
     ],
-    image: '/assets/images/tracking-tag.jpg',
-    imageAlt:
-      'Mapa global com pontos de geolocalização para rastreamento de ativos em tempo real',
+    assetTags: ['Veículos', 'Máquinas', 'Equipamentos', 'Animais', 'Ativos críticos'],
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 22 s8-6 8-12 a8 8 0 0 0 -16 0 c0 6 8 12 8 12 Z" />
@@ -185,7 +182,19 @@ export function Tecnologia() {
       >
         {selected && (
           <div className="tech-modal">
-            {selected.image ? (
+            {selected.assetTags ? (
+              <div className="tech-modal__tags-hero">
+                <div className="tech-modal__tags-hero-icon">{selected.svg}</div>
+                <p className="tech-modal__tags-label">Ativos monitorados</p>
+                <div className="tech-modal__tags" role="list" aria-label="Tipos de ativos rastreados">
+                  {selected.assetTags.map((tag) => (
+                    <span className="tech-modal__tag" role="listitem" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ) : selected.image ? (
               <figure className="tech-modal__figure">
                 <img
                   src={selected.image}
