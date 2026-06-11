@@ -778,6 +778,18 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   margin-bottom: 18px;
 }
 .tech-modal__icon svg { width: 36px; height: 36px; stroke: var(--gold); }
+.tech-modal__figure {
+  margin: 0 0 20px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.tech-modal__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .tech-modal__list {
   list-style: none;
   padding: 0;

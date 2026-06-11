@@ -7,6 +7,8 @@ type TechItem = {
   svg: ReactNode;
   body: string;
   highlights: string[];
+  image?: string;
+  imageAlt?: string;
 };
 
 const ITEMS: TechItem[] = [
@@ -21,6 +23,9 @@ const ITEMS: TechItem[] = [
       'Recarga automática entre missões',
       'Ideal para condomínios, fazendas e resorts',
     ],
+    image: '/assets/images/drone-dock.png',
+    imageAlt:
+      'Drone Dock iProtector — estação automatizada com drone, controle remoto e base de recarga',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="6" cy="6" r="3" />
@@ -166,7 +171,18 @@ export function Tecnologia() {
       >
         {selected && (
           <div className="tech-modal">
-            <div className="tech-modal__icon">{selected.svg}</div>
+            {selected.image ? (
+              <figure className="tech-modal__figure">
+                <img
+                  src={selected.image}
+                  alt={selected.imageAlt ?? selected.title}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            ) : (
+              <div className="tech-modal__icon">{selected.svg}</div>
+            )}
             <h3>{selected.title}</h3>
             <p className="sub">{selected.body}</p>
             <ul className="tech-modal__list">
