@@ -1,4 +1,5 @@
 import { useEffect, type ReactNode } from 'react';
+import { createPortal } from 'react-dom';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 type Props = {
@@ -20,9 +21,11 @@ export function ModalShell({ id, isOpen, onClose, children }: Props) {
     return () => document.removeEventListener('keydown', onKey);
   }, [isOpen, onClose]);
 
-  return (
+  if (!isOpen) return null;
+
+  return createPortal(
     <div
-      className={`modal ${isOpen ? 'open' : ''}`}
+      className="modal open"
       id={id}
       role="dialog"
       aria-modal="true"
@@ -31,7 +34,7 @@ export function ModalShell({ id, isOpen, onClose, children }: Props) {
       }}
     >
       <div className="modal-card">
-        <button className="modal-close" onClick={onClose} aria-label="Fechar">
+        <button type="button" className="modal-close" onClick={onClose} aria-label="Fechar">
           <svg
             width="14"
             height="14"
@@ -46,6 +49,7 @@ export function ModalShell({ id, isOpen, onClose, children }: Props) {
         </button>
         {children}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
