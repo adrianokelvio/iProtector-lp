@@ -7,7 +7,7 @@ const PARCEIROS_BG_VIDEO = '/assets/videos/parceiros-bg.mp4';
 
 export function ParceirosPage() {
   return (
-    <PageMain className="page-main--parceiros">
+    <PageMain className="page-main--video-bg page-main--parceiros">
       <div className="page-bg-video" aria-hidden="true">
         <BackgroundVideo src={PARCEIROS_BG_VIDEO} title="Parceiros iProtector" />
         <div className="page-bg-video__overlay" />
