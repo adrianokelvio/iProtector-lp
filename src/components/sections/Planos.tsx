@@ -30,6 +30,7 @@ const MONITORING_IMPLANT_NOTE =
 
 const MONITORING_DEMO_VIDEO_2_SRC = '/assets/videos/monitoring-demo-2.mp4';
 const EXECUTIVE_DEMO_VIDEO_SRC = '/assets/videos/executive-demo.mp4';
+const TRAINING_DEMO_VIDEO_SRC = '/assets/videos/training-demo.mp4';
 
 const MONITORING_FEATURE_LABELS = [
   'Drone Dock + torre inteligente',
@@ -246,15 +247,25 @@ export function Planos() {
           <h2>Capacitação corporativa com até 20 participantes.</h2>
         </div>
 
-        <div className="plans plans--comparison plans--training">
-          {TRAINING_PLANS.map((plan) => (
-            <PlanComparisonCard
-              key={plan.name}
-              plan={plan}
-              featureLabels={TRAINING_FEATURE_LABELS}
-              onCta={openClient}
+        <div className="monitoring-layout">
+          <div className="plans plans--comparison plans--training">
+            {TRAINING_PLANS.map((plan) => (
+              <PlanComparisonCard
+                key={plan.name}
+                plan={plan}
+                featureLabels={TRAINING_FEATURE_LABELS}
+                onCta={openClient}
+              />
+            ))}
+          </div>
+
+          <aside className="monitoring-video-slot">
+            <PhoneVideoEmbed
+              src={TRAINING_DEMO_VIDEO_SRC}
+              title="Demonstração de treinamento de elite iProtector"
+              variant="landscape"
             />
-          ))}
+          </aside>
         </div>
 
         <p className="plans-footer">
