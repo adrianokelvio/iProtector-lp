@@ -17,6 +17,7 @@
 }
 
 .monitoring-video {
+  position: relative;
   width: 100%;
   max-width: 280px;
   aspect-ratio: 9 / 16;
@@ -48,6 +49,12 @@
   object-fit: cover;
   object-position: center;
   background: #000;
+  pointer-events: none;
+}
+
+.monitoring-video iframe {
+  position: absolute;
+  inset: 0;
 }
 
 .monitoring-video--landscape video {

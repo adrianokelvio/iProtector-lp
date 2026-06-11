@@ -780,7 +780,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   width: 100%;
 }
 
-.monitoring-layout .plans--monitoring {
+.monitoring-layout .plans--monitoring,
+.monitoring-layout .plans--comparison {
   margin-top: 0;
   min-width: 0;
   width: 100%;
@@ -788,7 +789,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   gap: 24px;
 }
 
-.monitoring-layout .plans--monitoring .plan {
+.monitoring-layout .plans--monitoring .plan,
+.monitoring-layout .plans--comparison .plan {
   padding: 32px 28px !important;
 }
 
@@ -891,7 +893,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 }
 
 @media (max-width: 1519px) {
-  .monitoring-layout .plans--monitoring {
+  .monitoring-layout .plans--monitoring,
+  .monitoring-layout .plans--comparison {
     order: 1;
   }
 
@@ -905,7 +908,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     aspect-ratio: 16 / 9;
   }
 
-  .monitoring-layout .monitoring-video-slot .monitoring-video--landscape video {
+  .monitoring-layout .monitoring-video-slot .monitoring-video--landscape video,
+  .monitoring-layout .monitoring-video-slot .monitoring-video--landscape iframe {
     object-fit: cover;
     object-position: center center;
   }
@@ -922,7 +926,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     align-items: center;
   }
 
-  .monitoring-layout .plans--monitoring {
+  .monitoring-layout .plans--monitoring,
+  .monitoring-layout .plans--comparison {
     grid-column: 1;
     grid-row: 1;
     align-items: stretch;
@@ -952,7 +957,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     aspect-ratio: 16 / 9;
   }
 
-  .monitoring-layout .monitoring-video--landscape video {
+  .monitoring-layout .monitoring-video--landscape video,
+  .monitoring-layout .monitoring-video--landscape iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -962,7 +968,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 }
 
 @media (max-width: 900px) {
-  .monitoring-layout .plans--monitoring {
+  .monitoring-layout .plans--monitoring,
+  .monitoring-layout .plans--comparison {
     grid-template-columns: 1fr;
   }
 }
