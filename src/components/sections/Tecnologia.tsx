@@ -89,7 +89,8 @@ const ITEMS: TechItem[] = [
       'Essencial para fazendas e grandes propriedades',
     ],
     image: '/assets/images/topographic-mapping.jpg',
-    imageAlt: 'Vista aérea topográfica de terreno para mapeamento e planejamento de segurança',
+    imageAlt:
+      'Vista aérea de condomínio horizontal com casas, ruas e áreas comuns',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M3 18 L9 10 L14 14 L21 6" />
@@ -109,7 +110,8 @@ const ITEMS: TechItem[] = [
       'Atende condomínios, fazendas, resorts e eventos',
     ],
     image: '/assets/images/monitoring-center.jpg',
-    imageAlt: 'Central de monitoramento com múltiplas telas de vigilância em operação 24h',
+    imageAlt:
+      'Operador de segurança monitorando câmeras de vigilância em central 24h',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="2" y="4" width="20" height="14" rx="2" />
