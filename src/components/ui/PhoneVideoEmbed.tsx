@@ -18,6 +18,8 @@ type YTPlayer = {
 type YTPlayerOptions = {
   videoId: string;
   host?: string;
+  width?: number | string;
+  height?: number | string;
   playerVars?: Record<string, number | string>;
   events?: {
     onReady?: (event: { target: YTPlayer }) => void;
@@ -62,6 +64,22 @@ function loadYouTubeApi() {
   return youtubeApiPromise;
 }
 
+function fitYouTubeIframe(mount: HTMLElement) {
+  const iframe = mount.querySelector('iframe');
+  if (!iframe) return;
+
+  iframe.style.position = 'absolute';
+  iframe.style.top = '50%';
+  iframe.style.left = '50%';
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.minWidth = '100%';
+  iframe.style.minHeight = '100%';
+  iframe.style.transform = 'translate(-50%, -50%)';
+  iframe.style.border = '0';
+  iframe.style.pointerEvents = 'none';
+}
+
 function YouTubeCleanEmbed({
   youtubeId,
   title,
@@ -71,14 +89,17 @@ function YouTubeCleanEmbed({
   title: string;
   className: string;
 }) {
+  const rootRef = useRef<HTMLDivElement>(null);
   const mountRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const mount = mountRef.current;
-    if (!mount) return;
+    const root = rootRef.current;
+    if (!mount || !root) return;
 
     let player: { destroy: () => void } | undefined;
     let loopTimer: number | undefined;
+    let resizeObserver: ResizeObserver | undefined;
     let cancelled = false;
 
     const restartLoop = (target: YTPlayer) => {
@@ -89,8 +110,12 @@ function YouTubeCleanEmbed({
     void loadYouTubeApi().then(() => {
       if (cancelled || !mountRef.current || !window.YT?.Player) return;
 
+      const { width, height } = root.getBoundingClientRect();
+
       player = new window.YT.Player(mountRef.current, {
         host: 'https://www.youtube-nocookie.com',
+        width: Math.max(1, Math.round(width)),
+        height: Math.max(1, Math.round(height)),
         videoId: youtubeId,
         playerVars: {
           autoplay: 1,
@@ -113,11 +138,17 @@ function YouTubeCleanEmbed({
             const target = event.target;
             target.mute();
             target.playVideo();
+            fitYouTubeIframe(mountRef.current!);
             try {
               target.setPlaybackQuality('hd2160');
             } catch {
               /* quality may be unavailable */
             }
+
+            resizeObserver = new ResizeObserver(() => {
+              fitYouTubeIframe(mountRef.current!);
+            });
+            resizeObserver.observe(root);
 
             loopTimer = window.setInterval(() => {
               if (target.getPlayerState() === YT_ENDED) {
@@ -141,13 +172,17 @@ function YouTubeCleanEmbed({
 
     return () => {
       cancelled = true;
+      resizeObserver?.disconnect();
       if (loopTimer) window.clearInterval(loopTimer);
       player?.destroy();
     };
   }, [youtubeId]);
 
   return (
-    <div className={`${className} monitoring-video--youtube`}>
+    <div
+      ref={rootRef}
+      className={`${className} monitoring-video--youtube`}
+    >
       <div className="monitoring-video__yt-wrap" ref={mountRef} title={title} />
       <div className="monitoring-video__yt-mask" aria-hidden="true" />
     </div>
