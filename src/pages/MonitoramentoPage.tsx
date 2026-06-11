@@ -3,7 +3,7 @@ import { PageMain } from '../components/layout/PageMain';
 import { BackgroundVideo } from '../components/ui/BackgroundVideo';
 import { Tecnologia } from '../components/sections/Tecnologia';
 
-const MONITORAMENTO_BG_VIDEO = '/assets/videos/monitoramento-bg.mp4';
+const MONITORAMENTO_BG_VIDEO = '/assets/videos/parceiros-bg.mp4';
 
 export function MonitoramentoPage() {
   return (

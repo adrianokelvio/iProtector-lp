@@ -3,7 +3,7 @@ import { PageMain } from '../components/layout/PageMain';
 import { BackgroundVideo } from '../components/ui/BackgroundVideo';
 import { Parceiros } from '../components/sections/Parceiros';
 
-const PARCEIROS_BG_VIDEO = '/assets/videos/parceiros-bg.mp4';
+const PARCEIROS_BG_VIDEO = '/assets/videos/monitoramento-bg.mp4';
 
 export function ParceirosPage() {
   return (
