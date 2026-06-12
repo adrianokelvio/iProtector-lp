@@ -111,7 +111,7 @@ const ITEMS: TechItem[] = [
     ],
     image: '/assets/images/monitoring-center.jpg',
     imageAlt:
-      'Operador de segurança monitorando câmeras de vigilância em central 24h',
+      'Operadores em central de monitoramento com parede de telas exibindo câmeras de vigilância',
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="2" y="4" width="20" height="14" rx="2" />
