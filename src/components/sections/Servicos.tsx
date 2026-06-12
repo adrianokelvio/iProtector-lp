@@ -1,4 +1,9 @@
+import { Arrow } from '../ui/Arrow';
+import { useModals } from '../modals/ModalsContext';
+
 export function Servicos() {
+  const { openClient, openPartner } = useModals();
+
   return (
     <section id="servicos">
       <div className="container">
@@ -33,6 +38,9 @@ export function Servicos() {
               <li>Segurança em viagens</li>
               <li>Segurança para eventos privados</li>
             </ul>
+            <button className="btn btn-primary delivery-col__cta" onClick={openClient}>
+              Contrate um agente <Arrow />
+            </button>
           </div>
           <div className="delivery-col">
             <h3>
@@ -50,6 +58,9 @@ export function Servicos() {
               <li>Operadores táticos</li>
               <li>Empresas de segurança</li>
             </ul>
+            <button className="btn btn-primary delivery-col__cta" onClick={openPartner}>
+              Faça parte do nosso banco de protetores <Arrow />
+            </button>
           </div>
           <div className="delivery-col">
             <h3>
@@ -65,6 +76,9 @@ export function Servicos() {
               <li>Eventos corporativos</li>
               <li>Transporte executivo</li>
             </ul>
+            <button className="btn btn-primary delivery-col__cta" onClick={openClient}>
+              Solicite um veículo blindado <Arrow />
+            </button>
           </div>
         </div>
       </div>
