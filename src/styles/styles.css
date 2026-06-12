@@ -1420,6 +1420,19 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   backdrop-filter: blur(10px);
 }
 
+.page-main--como-funciona {
+  min-height: 100vh;
+}
+
+.page-main--como-funciona #como-funciona {
+  background: transparent;
+}
+
+.page-main--como-funciona .step {
+  background: rgba(4, 16, 31, 0.78) !important;
+  backdrop-filter: blur(10px);
+}
+
 .page-main--planos #planos {
   background: transparent;
 }
