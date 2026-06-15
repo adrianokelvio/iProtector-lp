@@ -1429,18 +1429,17 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   background: transparent;
   padding: clamp(28px, 4vh, 48px) 0 clamp(36px, 5vh, 56px);
   min-height: calc(100vh - 108px);
+  display: flex;
+  flex-direction: column;
 }
 
 .page-main--como-funciona #como-funciona > .container {
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - 108px - clamp(28px, 4vh, 48px) - clamp(36px, 5vh, 56px));
+  flex-shrink: 0;
 }
 
 .page-main--como-funciona #como-funciona .section-head {
   max-width: 960px;
   margin-bottom: clamp(24px, 3vh, 36px);
-  flex-shrink: 0;
 }
 
 .page-main--como-funciona #como-funciona .section-head h2 {
@@ -1455,30 +1454,31 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 
 .como-funciona-visual {
   margin: 0;
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: rgba(4, 16, 31, 0.78);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+  padding: 0 clamp(var(--pad), 3vw, 32px);
   flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
   line-height: 0;
 }
 
 .como-funciona-visual picture {
   display: block;
-  width: 100%;
-  max-width: 1024px;
+  width: min(100%, 1400px);
   margin: 0 auto;
+  border-radius: calc(var(--radius) + 4px);
+  overflow: hidden;
+  border: 1px solid rgba(201, 169, 97, 0.22);
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
 }
 
 .como-funciona-visual img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
-  object-position: center center;
-  background: rgba(2, 8, 15, 0.55);
+  vertical-align: top;
   image-rendering: auto;
 }
 
@@ -1488,8 +1488,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
     padding: clamp(32px, 6vw, 56px) 0 clamp(40px, 6vw, 64px);
   }
 
-  .page-main--como-funciona #como-funciona > .container {
-    min-height: auto;
+  .como-funciona-visual {
+    padding: 0 var(--pad);
   }
 }
 
