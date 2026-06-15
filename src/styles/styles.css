@@ -1511,9 +1511,10 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   width: 100%;
   flex: 1;
   min-height: clamp(180px, 22vh, 340px);
-  height: 100%;
-  object-fit: cover;
-  object-position: center 35%;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
+  background: rgba(2, 8, 15, 0.55);
 }
 
 .como-funciona-visual figcaption {

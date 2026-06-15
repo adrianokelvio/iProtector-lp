@@ -45,16 +45,16 @@ export function ComoFunciona() {
         </div>
         <figure className="como-funciona-visual">
           <img
-            src="/assets/images/monitoring-center.jpg"
-            alt="Operadores em central de monitoramento com parede de telas exibindo câmeras de vigilância em tempo real"
+            src="/assets/images/como-funciona-processo.png"
+            alt="Infográfico iProtector: cadastro, análise de risco, seleção de protetores e monitoramento operacional 24h"
             loading="eager"
             fetchPriority="high"
-            width={1600}
-            height={900}
+            width={1536}
+            height={1024}
           />
           <figcaption>
-            Central de monitoramento iProtector — supervisão 24h, telemetria e
-            acompanhamento operacional em tempo real.
+            Proteção · Confiança · Inteligência — do cadastro ao monitoramento
+            operacional em tempo real.
           </figcaption>
         </figure>
       </div>
