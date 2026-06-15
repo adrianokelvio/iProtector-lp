@@ -47,7 +47,8 @@ export function ComoFunciona() {
           <img
             src="/assets/images/monitoring-center.jpg"
             alt="Operadores em central de monitoramento com parede de telas exibindo câmeras de vigilância em tempo real"
-            loading="lazy"
+            loading="eager"
+            fetchPriority="high"
             width={1600}
             height={900}
           />
