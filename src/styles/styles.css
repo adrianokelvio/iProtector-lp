@@ -1462,20 +1462,22 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
   backdrop-filter: blur(10px);
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: clamp(320px, 52vh, 680px);
+  line-height: 0;
+}
+
+.como-funciona-visual picture {
+  display: block;
+  width: 100%;
 }
 
 .como-funciona-visual img {
   display: block;
   width: 100%;
-  flex: 1;
-  min-height: clamp(280px, 48vh, 640px);
   height: auto;
   object-fit: contain;
   object-position: center center;
   background: rgba(2, 8, 15, 0.55);
+  image-rendering: auto;
 }
 
 @media (max-width: 980px) {
@@ -1486,16 +1488,6 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 
   .page-main--como-funciona #como-funciona > .container {
     min-height: auto;
-  }
-
-  .como-funciona-visual {
-    min-height: clamp(240px, 50vw, 480px);
-  }
-}
-
-@media (max-width: 560px) {
-  .como-funciona-visual img {
-    min-height: 220px;
   }
 }
 
