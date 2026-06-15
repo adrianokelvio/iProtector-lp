@@ -1,26 +1,3 @@
-const STEPS = [
-  {
-    n: '1º PASSO',
-    title: 'Cadastro via Website, WhatsApp ou Aplicativo.',
-    desc: 'O cliente final preenche o formulário digital informando perfil, necessidade de proteção, local e contexto operacional, sem burocracia.',
-  },
-  {
-    n: '2º PASSO',
-    title: 'Análise de risco personalizada.',
-    desc: 'Nossa equipe avalia o cenário, o nível de exposição e os requisitos técnicos para definir o protocolo ideal de proteção.',
-  },
-  {
-    n: '3º PASSO',
-    title: 'Seleção de protetores qualificados.',
-    desc: 'A plataforma identifica no banco nacional o agente, a equipe ou a empresa parceira mais adequada ao perfil da operação.',
-  },
-  {
-    n: '4º PASSO',
-    title: 'Contratação e monitoramento operacional.',
-    desc: 'Após a contratação, toda a operação é acompanhada em tempo real, com central 24h, telemetria, relatórios e SLA garantido.',
-  },
-];
-
 export function ComoFunciona() {
   return (
     <section id="como-funciona">
@@ -33,16 +10,6 @@ export function ComoFunciona() {
             solicitação inicial à supervisão contínua da operação em campo.
           </p>
         </div>
-        <div className="steps">
-          {STEPS.map((s, i) => (
-            <div className="step" key={s.n}>
-              <div className="step-num">{s.n}</div>
-              <h3>{s.title}</h3>
-              <p>{s.desc}</p>
-              {i < STEPS.length - 1 && <div className="step-line"></div>}
-            </div>
-          ))}
-        </div>
         <figure className="como-funciona-visual">
           <img
             src="/assets/images/como-funciona-processo.png"
@@ -52,10 +19,6 @@ export function ComoFunciona() {
             width={1536}
             height={1024}
           />
-          <figcaption>
-            Proteção · Confiança · Inteligência — do cadastro ao monitoramento
-            operacional em tempo real.
-          </figcaption>
         </figure>
       </div>
     </section>
