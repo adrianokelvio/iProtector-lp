@@ -50,7 +50,7 @@ export function Drawer({ isOpen, onClose, onOpenClient, onOpenPartner }: Props) 
           onOpenClient();
         }}
       >
-        Contratar proteção <Arrow />
+        Contratar proteção pessoal <Arrow />
       </button>
     </aside>
   );

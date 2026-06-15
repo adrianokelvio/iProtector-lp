@@ -32,7 +32,7 @@ export function ParaQuem() {
               <li>Análise de risco e monitoramento operacional</li>
             </ul>
             <button className="btn btn-primary" onClick={openClient}>
-              Solicitar proteção <Arrow />
+              Solicitar proteção pessoal <Arrow />
             </button>
           </article>
 

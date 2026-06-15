@@ -30,7 +30,7 @@ export function Header({ onOpenClient, onOpenPartner, onOpenDrawer }: Props) {
             Sou empresa de segurança
           </button>
           <button className="btn btn-primary btn-sm" onClick={onOpenClient}>
-            Contratar proteção <Arrow />
+            Contratar proteção pessoal <Arrow />
           </button>
           <button
             className="mobile-toggle"
