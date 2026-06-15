@@ -1468,6 +1468,8 @@ section { padding: clamp(80px, 10vw, 140px) 0; position: relative; }
 .como-funciona-visual picture {
   display: block;
   width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .como-funciona-visual img {

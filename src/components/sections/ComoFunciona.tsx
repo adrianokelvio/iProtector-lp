@@ -14,14 +14,13 @@ export function ComoFunciona() {
           <picture>
             <source
               type="image/webp"
-              srcSet="/assets/images/como-funciona-processo-2k.webp 1920w, /assets/images/como-funciona-processo-4k.webp 3840w"
-              sizes="(min-width: 1280px) 1280px, 100vw"
+              srcSet="/assets/images/como-funciona-processo.webp"
             />
             <img
-              src="/assets/images/como-funciona-processo-4k.png"
+              src="/assets/images/como-funciona-processo.png"
               alt="Infográfico iProtector: cadastro, análise de risco, seleção de protetores e monitoramento operacional 24h"
-              width={3840}
-              height={2603}
+              width={1024}
+              height={682}
               loading="eager"
               fetchPriority="high"
               decoding="async"
